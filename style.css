@@ -3,6 +3,8 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
 }
 
 /*centers all text*/
@@ -18,41 +20,37 @@
     background-size: cover;
 }
 
-/*header*/
+/*BusyBakes' header*/
 header{
-    border: 1px solid yellow;
     height: 50px;
     width: 100%;
+    font-size: 35px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 /*nav*/
-nav{
-    background-color: rgba(255, 145, 0, 0.397);
-    border: 1px solid yellow;
-    height: 50px;
-    width: 100%;  
+a, li{
+    text-decoration: none;
+    display: inline;
+    font-size: x-large; 
 }
 
 /*main*/
 main{
-    border: 1px solid yellow;
     height: 500px;
     width: 100%;
 } 
 
-h1, p{
-    color: white;
-}
-
 h1{
     font-size: 30px;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
-p{
+main p{
     font-size: 20px;
-    margin: 30px 20px 40px 20px;
+    margin: 40px 20px 30px 20px;
 }
 
 .crossed_out{
@@ -62,20 +60,32 @@ p{
 .bold{
     font-weight: bold;
     background-color: greenyellow;
+    font-style: italic;
 }
 
-a{
+/*sign up button*/
+.button{
     background-color: orange;
+    border: 1px solid orangered;
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
+    font-size: 25px;
 }
 
 /*footer*/
-footer{
+footer p{
+    font-size: 15px;
+}
+
+.footer1,.footer2{
     background-color: red;
-    border: 1px solid yellow;
-    height: 50px;
+    /* border: 1px solid yellow; */
     width: 100%;
+    height: 50px;
+}
+
+p.footer2{
+    height: 20px;
+    padding-bottom: 5px;
 }
