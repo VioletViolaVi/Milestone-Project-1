@@ -74,6 +74,12 @@ main p{
 }
 
 /*footer*/
+footer i.fab{
+    font-size: xx-large;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+}
+
 footer p{
     font-size: 15px;
 }
