@@ -30,10 +30,20 @@ header{
 }
 
 /*nav*/
+nav{
+    background-color: rgba(218, 165, 32, 0.582);
+}
+
 a, li{
     text-decoration: none;
     display: inline;
     font-size: x-large; 
+
+}
+
+.vertical_line{
+    border-right: solid 2px white;
+    padding-right: 5px; 
 }
 
 /*main*/
@@ -85,13 +95,16 @@ footer p{
 }
 
 .footer1,.footer2{
-    background-color: GoldenRod;
     width: 100%;
     height: 50px;
 }
 
-p.footer2{
+.footer1{
+    background-color: rgba(218, 165, 32, 0.582);
+}
+
+.footer2{
+    background-color: DarkGoldenRod;
     height: 20px;
     padding-bottom: 5px;
-    background-color: DarkGoldenRod;
 }
