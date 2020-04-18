@@ -7,7 +7,7 @@
 
 /*centers all text*/
 .container{
-    text-align: center;
+    text-align: center; 
 }
 
 /*background image*/
@@ -27,6 +27,7 @@ header{
 
 /*nav*/
 nav{
+    background-color: rgba(255, 145, 0, 0.397);
     border: 1px solid yellow;
     height: 50px;
     width: 100%;  
