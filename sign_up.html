@@ -26,38 +26,43 @@
           </ul>
         </nav>
 
-<!-- <button onclick="alert('Form sent')">Submit</button> -->
+<!-- <button onclick="alert('Form sent')">Submit</button> maybe use instead of input -->
 
         <main>
-          <form method="post" action="#">  
-            <div>
+          <form method="post" action="#">            
                <label for="fname">First Name</label>
-               <input type="text" id="fname" name="fname" placeholder="First Name" required>
-            </div>
-
-            <div>
+               <input type="text" id="fname" name="fname" required>
+                       
                <label for="lname">Last Name</label>
-               <input type="text" id="lname" name="lname" placeholder="Last Name" required>
-            </div>
-
-            <div>
+               <input type="text" id="lname" name="lname" required>
+                       
                <label for="email">Email</label>
-               <input type="email" id="email" name="email" placeholder="Email" required>
-            </div>
-
-            <div>
+               <input type="email" id="email" name="email" required>
+                       
                <label for="phone">Phone Number</label>
-               <input type="tel" id="phone" name="phone" placeholder="012-3456-7890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
-            </div>
-
-            <div>
+               <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+               <small>Format: 012-3456-7890</small>          
+                        
                <label for="address">Address</label>
-               <input type="text" id="address" name="address" placeholder="Address" required>
-            </div>
+               <input type="text" id="address" name="address" required>
 
-            <div>
-               <input type="submit" value="Sign Up">        
-            </div>
+               <label for="choosen_schedule">Select all preferred times:</label>
+               <select name="choosen_schedule" id="choosen_schedule" multiple>
+                <option value="tuesday_morning">Tuesday Morning 08:00-09:00</option>
+                <option value="tuesday_afternoon">Tuesday Afternoon 14:00-15:00</option>
+                <option value="tuesday_evening">Tuesday Evening 21:00-22:00</option>
+                <option value="friday_morning">Friday Morning 08:00-09:00</option>
+                <option value="friday_afternoon">Friday Morning 14:00-15:00</option>
+                <option value="friday_evening">Friday Morning 21:00-22:00</option>
+                <option value="saturday_morning">Saturday Morning 10:00-11:00</option>
+                <option value="saturday_afternoon">Saturday Afternoon 15:00-16:00</option>
+                <option value="saturday_evening">Saturday Evening 20:00-21:00</option>
+                <option value="sunday_morning">Sunday Morning 10:00-11:00</option>
+                <option value="sunday_afternoon">Sunday Afternoon 15:00-16:00</option>
+                <option value="sunday_evening">Sunday Evening 20:00-21:00</option>
+               </select>
+
+               <input type="submit" value="Sign Up">                             
           </form>
         </main>
       </div>
