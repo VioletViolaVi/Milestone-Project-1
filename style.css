@@ -1,4 +1,5 @@
-/*settings for whole webpage*/
+/*-------------------------------------------------------------AllPages-------------------------------------------------------------*/
+/*univesal settings*/
 *{
     padding: 0px;
     margin: 0px;
@@ -12,7 +13,7 @@
     text-align: center; 
 }
 
-/*background image*/
+/*website's background image*/
 .background div, body{
     background-image: url(images/scene.jpg);
     background-repeat: no-repeat;
@@ -20,7 +21,7 @@
     background-size: cover;
 }
 
-/*BusyBakes' header*/
+/*BusyBakes logo*/
 header{
     height: 50px;
     width: 100%;
@@ -29,11 +30,12 @@ header{
     margin-top: 30px;
 }
 
-/*nav*/
+/*nav background colour*/
 nav{
     background-color: rgba(218, 165, 32, 0.582);
 }
 
+/*nav tabs*/
 a, li{
     text-decoration: none;
     display: inline;
@@ -41,32 +43,67 @@ a, li{
 
 }
 
+/*nav tab dividers*/
 .vertical_line{
     border-right: solid 2px white;
     padding-right: 6px; 
 }
 
-/*main*/
+/*footer icons*/
+footer i.fab{
+    font-size: xx-large;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+}
+
+/*footer paragraphs*/
+footer p{
+    font-size: 15px;
+}
+
+/*footer contacts & copyright*/
+.footer1,.footer2{
+    width: 100%;
+    height: 50px;
+}
+
+/*footer contacts*/
+.footer1{
+    background-color: rgba(218, 165, 32, 0.582);
+}
+
+/*footer copyright*/
+.footer2{
+    background-color: DarkGoldenRod;
+    height: 20px;
+    padding-bottom: 5px;
+}
+/*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
+/*main portion*/
 main{
     height: 500px;
     width: 100%;
 } 
 
+/*main heading*/
 h1{
     font-size: 30px;
     text-transform: uppercase;
     margin-top: 70px;
 }
 
+/*main paragraph*/
 main p{
     font-size: 20px;
     margin: 40px 20px 30px 20px;
 }
 
+/*main paragraph expensive price*/
 .crossed_out{
     text-decoration: line-through;
 }
 
+/*main paragraph cheap price*/
 .bold{
     font-weight: bold;
     background-color: GoldenRod;
@@ -82,29 +119,5 @@ main p{
     border-radius: 10px;
     font-size: 25px;
 }
-
-/*footer*/
-footer i.fab{
-    font-size: xx-large;
-    letter-spacing: 5px;
-    padding-bottom: 5px;
-}
-
-footer p{
-    font-size: 15px;
-}
-
-.footer1,.footer2{
-    width: 100%;
-    height: 50px;
-}
-
-.footer1{
-    background-color: rgba(218, 165, 32, 0.582);
-}
-
-.footer2{
-    background-color: DarkGoldenRod;
-    height: 20px;
-    padding-bottom: 5px;
-}
+/*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
+/*sign up*/
