@@ -48,18 +48,30 @@
 
                <label for="choosen_schedule">Select all preferred times:</label>
                <select name="choosen_schedule" id="choosen_schedule" multiple>
-                <option value="tuesday_morning">Tuesday Morning 08:00-09:00</option>
-                <option value="tuesday_afternoon">Tuesday Afternoon 14:00-15:00</option>
-                <option value="tuesday_evening">Tuesday Evening 21:00-22:00</option>
-                <option value="friday_morning">Friday Morning 08:00-09:00</option>
-                <option value="friday_afternoon">Friday Morning 14:00-15:00</option>
-                <option value="friday_evening">Friday Morning 21:00-22:00</option>
-                <option value="saturday_morning">Saturday Morning 10:00-11:00</option>
-                <option value="saturday_afternoon">Saturday Afternoon 15:00-16:00</option>
-                <option value="saturday_evening">Saturday Evening 20:00-21:00</option>
-                <option value="sunday_morning">Sunday Morning 10:00-11:00</option>
-                <option value="sunday_afternoon">Sunday Afternoon 15:00-16:00</option>
-                <option value="sunday_evening">Sunday Evening 20:00-21:00</option>
+                
+                 <optgroup label="Tuesday">
+                   <option value="tuesday_morning">Tuesday Morning 08:00-09:00</option>
+                   <option value="tuesday_afternoon">Tuesday Afternoon 14:00-15:00</option>
+                   <option value="tuesday_evening">Tuesday Evening 21:00-22:00</option>
+                 </optgroup>
+
+                 <optgroup label="Friday">
+                   <option value="friday_morning">Friday Morning 08:00-09:00</option>
+                   <option value="friday_afternoon">Friday Morning 14:00-15:00</option>
+                   <option value="friday_evening">Friday Morning 21:00-22:00</option>
+                 </optgroup>
+
+                 <optgroup label="Saturday">
+                   <option value="saturday_morning">Saturday Morning 10:00-11:00</option>
+                   <option value="saturday_afternoon">Saturday Afternoon 15:00-16:00</option>
+                   <option value="saturday_evening">Saturday Evening 20:00-21:00</option>
+                 </optgroup>
+
+                 <optgroup label="Sunday">
+                   <option value="sunday_morning">Sunday Morning 10:00-11:00</option>
+                   <option value="sunday_afternoon">Sunday Afternoon 15:00-16:00</option>
+                   <option value="sunday_evening">Sunday Evening 20:00-21:00</option>
+                 </optgroup>               
                </select>
 
                <input type="submit" value="Sign Up">                             
