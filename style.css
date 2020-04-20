@@ -115,7 +115,7 @@ main p{
     background-color: GoldenRod;
     border: 2px solid DarkGoldenRod;
     text-decoration: none;
-    padding: 5px;
+    padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 25px;
     margin: 0px;
@@ -138,6 +138,8 @@ input[type=text]{
     padding-right: 60px;
     color: black;
     border: 2px solid DarkGoldenRod;
+    border-radius: 4px;
+    background-color: GoldenRod;
 }
 
 /*inside space of email box*/
@@ -146,6 +148,8 @@ input[type=email]{
     padding-right: 60px;
     color: black;
     border: 2px solid DarkGoldenRod;
+    border-radius: 4px;
+    background-color: GoldenRod;
 }
 
 /*inside space of phone box*/
@@ -154,6 +158,8 @@ input[type=tel]{
     padding-right: 60px;
     color: black;
     border: 2px solid DarkGoldenRod;
+    border-radius: 4px;
+    background-color: GoldenRod;
 }
 
 /*inside space of preferred times box*/
@@ -161,6 +167,8 @@ select{
     padding-bottom: 5px;
     padding-right: 60px;
     border: 2px solid DarkGoldenRod;
+    border-radius: 4px;
+    background-color: GoldenRod;
 }
 
 /*text colour of preferred times box*/
@@ -173,7 +181,7 @@ input[type=submit]{
     background-color: GoldenRod;
     border: 2px solid DarkGoldenRod;
     text-decoration: none;
-    padding: 5px;
+    padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
     margin-top: 10px;
