@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: black;
     line-height: 1.6;
 }
 
@@ -14,12 +14,12 @@
 }
 
 /*website's background image*/
-.background div, body{
+/* .background div, body{
     background-image: url(images/scene.jpg);
     background-repeat: no-repeat;
     background-position: center;  
     background-size: cover;
-}
+} */
 
 /*BusyBakes logo*/
 header{
@@ -121,13 +121,22 @@ main p{
     margin: 0px;
 }
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
-/*sign up*/
-form, label, input{
-    display: block;
-    text-align: left;
+/*form background & border colour*/
+.form_container{
+    background-color: rgba(218, 165, 32, 0.582); 
+    border: 2px solid DarkGoldenRod;
+    border-radius: 10px;
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
 }
 
-/*names of each forms*/
+/*all form boxes, labels & sign up button*/
+form, label, input{
+    display: inline-block;
+}
+
+/*spaces between names of each form*/
 label{
 margin-top: 10px;
 }
@@ -185,4 +194,5 @@ input[type=submit]{
     border-radius: 10px;
     font-size: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
