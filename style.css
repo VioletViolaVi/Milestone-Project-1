@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+/*to help keep footers at the bottom of the page*/
+body{
+    position: relative;
+    padding-bottom: 112px;
+    min-height: 100vh;
+}
+
 /*website's background image*/
 .background div, body{
     background-image: url(images/scene.jpg);
@@ -26,30 +33,36 @@ h1{
     margin-top: 30px;
 }
 
-/*nav background colour*/
+/*navbar background colour*/
 nav{
     background-color: rgba(218, 165, 32, 0.582);
 }
 
-/*nav tabs*/
+/*navbar pushing down sign up form*/
+ul{
+    margin-bottom: 20px;
+}
+
+/*navbar tabs*/
 a, li{
     text-decoration: none;
     display: inline;
     font-size: x-large; 
 }
 
-/*nav tab dividers*/
+/*navbar tab dividers*/
 .vertical_line{
     border-right: solid 2px white;
     padding-right: 6px; 
 }
 
-/*-------------------------------------------------------------Footers*/
-/*icons, contact details & copyright stuck at bottom of page*/
-/* footer{
+/*------------------Footers------------------------------*/
+/*keeps all footers at the bottom of the page*/
+footer{
+    position:absolute;
     bottom: 0px;
-    display: inline;    
-} */
+    width: 100%;
+}
 
 /*footer paragraphs*/
 footer p{
@@ -63,13 +76,13 @@ footer i.fab{
 }
 
 .socials{
-    border: solid 1px green;
+    height: 112px;
 }
 
 /*footer contacts*/
 .contacts{
     background-color: rgba(218, 165, 32, 0.582);
-    border: solid 1px blue;
+    height: 75px;
 }
 
 /*footer copyright*/
@@ -77,7 +90,6 @@ footer i.fab{
     background-color: DarkGoldenRod;
     height: 20px;
     padding-bottom: 5px;
-    border: solid 1px red;
 }
 
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
@@ -123,6 +135,11 @@ section p{
     margin: 0px;
 }
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
+/*to help keep footers at the bottom of the page*/
+section{
+    padding-bottom: 112px;
+}
+
 /*form background & border colour*/
 section.form_container{
     background-color: rgba(218, 165, 32, 0.582);
