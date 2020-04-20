@@ -81,38 +81,38 @@ footer i.fab{
 }
 
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
-/*main portion*/
-main{
+/*section area*/
+section{
     height: 500px;
     width: 100%;
 } 
 
-/*main heading*/
+/*homepage heading*/
 h2{
     font-size: 30px;
     text-transform: uppercase;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
-/*main paragraph*/
-main p{
+/*homepage paragraph*/
+section p{
     font-size: 20px;
     margin: 40px 20px 30px 20px;
 }
 
-/*main paragraph expensive price*/
+/*homepage paragraph expensive price*/
 .crossed_out{
     text-decoration: line-through;
 }
 
-/*main paragraph cheap price*/
+/*homepage paragraph cheap price*/
 .bold{
     font-weight: bold;
     background-color: GoldenRod;
     font-style: italic;
 }
 
-/*sign up button*/
+/*homepage sign up button*/
 .button{
     background-color: GoldenRod;
     border: 2px solid DarkGoldenRod;
