@@ -113,11 +113,68 @@ main p{
 /*sign up button*/
 .button{
     background-color: GoldenRod;
-    border: 1px solid DarkGoldenRod;
+    border: 2px solid DarkGoldenRod;
     text-decoration: none;
     padding: 5px;
     border-radius: 10px;
     font-size: 25px;
+    margin: 0px;
 }
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
 /*sign up*/
+form, label, input{
+    display: block;
+    text-align: left;
+}
+
+/*names of each forms*/
+label{
+margin-top: 10px;
+}
+
+/*inside space of first name, last name & address boxes*/
+input[type=text]{
+    padding-bottom: 5px;
+    padding-right: 60px;
+    color: black;
+    border: 2px solid DarkGoldenRod;
+}
+
+/*inside space of email box*/
+input[type=email]{
+    padding-bottom: 5px;
+    padding-right: 60px;
+    color: black;
+    border: 2px solid DarkGoldenRod;
+}
+
+/*inside space of phone box*/
+input[type=tel]{
+    padding-bottom: 5px;
+    padding-right: 60px;
+    color: black;
+    border: 2px solid DarkGoldenRod;
+}
+
+/*inside space of preferred times box*/
+select{
+    padding-bottom: 5px;
+    padding-right: 60px;
+    border: 2px solid DarkGoldenRod;
+}
+
+/*text colour of preferred times box*/
+.text{
+    color: black;
+}
+
+/*form sign up button*/
+input[type=submit]{
+    background-color: GoldenRod;
+    border: 2px solid DarkGoldenRod;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
