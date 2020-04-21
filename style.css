@@ -31,6 +31,7 @@ h1{
     font-size: 35px;
     margin-bottom: 25px;
     margin-top: 30px;
+    font-weight: bold;
 }
 
 /*-----------------------------------------------------Navbar*/
@@ -177,6 +178,7 @@ section p{
     border-radius: 10px;
     font-size: 25px;
     margin: 0px;
+    font-weight: bold;
 }
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
 /*to help keep footers at the bottom of the page*/
@@ -192,7 +194,13 @@ section.form_container{
     width: 250px;
     margin: 50px 20px 20px 20px ;
     display: inline-block;
-    padding-bottom: 560px;
+    padding-bottom: 570px;
+}
+
+/*form labels*/
+label,small{
+    font-weight: bold;
+    font-size: 17px;
 }
 
 /*all form boxes, labels & sign up button*/
@@ -267,5 +275,6 @@ input[type=submit]{
     padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 35px;
+    font-weight: bold;
 }
