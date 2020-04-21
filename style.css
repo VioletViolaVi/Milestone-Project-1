@@ -9,19 +9,16 @@
     text-align: center;
 }
 
-/*provides space between sections and footers to help keep footers at the bottom of the page*/
+/*website's background image and space provided after section-ends to help keep footers at the bottom*/
 body{
+/*for the footer*/
     position: relative;
     padding-bottom: 140px;
     min-height: 100vh;
-}
-
-/*website's background image*/
- div .background, body{
+/*for the background image*/
     background-image: url(images/scene.jpg);
-    background-repeat: no-repeat;
-    background-position: center;  
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /*BusyBakes logo*/
