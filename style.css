@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-/*provides space between section and footers to help keep footers at the bottom of the page*/
+/*provides space between sections and footers to help keep footers at the bottom of the page*/
 body{
     position: relative;
     padding-bottom: 140px;
@@ -17,7 +17,7 @@ body{
 }
 
 /*website's background image*/
-.background div, body{
+ div .background, body{
     background-image: url(images/scene.jpg);
     background-repeat: no-repeat;
     background-position: center;  
@@ -45,7 +45,7 @@ a{
     color: white;
 }
 
-/*navbar logo */
+/*navbar logo*/
 a.navbar_logo{
     font-size: 20px;
     font-weight: bolder;
@@ -117,9 +117,6 @@ footer p{
 footer i.fab{
     font-size: xx-large;
     letter-spacing: 5px;
-}
-
-.socials{
     height: 94px;
 }
 
@@ -149,6 +146,7 @@ h2{
     font-size: 30px;
     text-transform: uppercase;
     margin-top: 30px;
+    font-weight: bold;
 }
 
 /*homepage paragraph*/
@@ -170,7 +168,7 @@ section p{
 }
 
 /*homepage sign up button*/
-.button{
+a.button{
     background-color: GoldenRod;
     border: 2px solid DarkGoldenRod;
     text-decoration: none;
@@ -180,6 +178,7 @@ section p{
     margin: 0px;
     font-weight: bold;
 }
+
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
 /*to help keep footers at the bottom of the page*/
 section{
@@ -191,10 +190,12 @@ section.form_container{
     background-color: rgba(218, 165, 32, 0.582);
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
-    width: 250px;
+    width: 83%;
     margin: 50px 20px 20px 20px ;
     display: inline-block;
-    padding-bottom: 570px;
+    padding-bottom: 680px;
+    padding-left: 2px;
+    padding-right: 3px;
 }
 
 /*form labels*/
@@ -205,10 +206,10 @@ label,small{
 
 /*all form boxes, labels & sign up button*/
 form, label, input{
-    display: inline-block;
+    display: block;
 }
 
-/*colour of text typed in for boxes*/
+/*text typed in from left hand-side in boxes*/
 input{
     text-align: left;
 }
@@ -216,65 +217,190 @@ input{
 /*spaces between names of each form*/
 label{
 margin-top: 10px;
+font-size: 150%;
 }
 
 /*inside space of first name, last name & address boxes*/
 input[type=text]{
     padding-bottom: 5px;
-    padding-right: 60px;
     color: black;
     border: 2px solid DarkGoldenRod;
     border-radius: 4px;
     background-color: GoldenRod;
+    width: 100%;
 }
 
 /*inside space of email box*/
 input[type=email]{
     padding-bottom: 5px;
-    padding-right: 60px;
     color: black;
     border: 2px solid DarkGoldenRod;
     border-radius: 4px;
     background-color: GoldenRod;
+    width: 100%;
 }
 
 /*inside space of phone box*/
 input[type=tel]{
     padding-bottom: 5px;
-    padding-right: 60px;
     color: black;
     border: 2px solid DarkGoldenRod;
     border-radius: 4px;
     background-color: GoldenRod;
+    width: 100%;
 }
 
 /*inside space of preferred times box*/
 select{
     padding-bottom: 5px;
-    padding-right: 60px;
+    margin: 0px 5px;
     border: 2px solid DarkGoldenRod;
     border-radius: 4px;
     background-color: GoldenRod;
 }
 
-/*preferred times box days pushed to the left */
-select#choosen_schedule optgroup{
-    text-align: left;
+/*stretched out select box*/
+select#choosen_schedule{
+    width: 80%;
+    margin: 0px;
 }
 
-/*preferred times box time pushed to the left */
+/*preferred times box DAY pushed to the left*/
+select#choosen_schedule optgroup{
+    text-align: left;
+    width: 100%;
+}
+
+/*preferred times box TIME pushed to the left*/
 select#choosen_schedule optgroup option{
     text-align: left;
+    width: 100%;
 }
 
 /*form sign up button*/
-input[type=submit]{
+button.form_button{
     background-color: GoldenRod;
     border: 2px solid DarkGoldenRod;
-    text-decoration: none;
     padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
-    margin-top: 35px;
     font-weight: bold;
+    display: inline-block;
+    margin-top: 60px;
 }
+/*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
+/*Tablet*/
+@media (min-width: 768px){
+
+    /*-----------------------------------------------------Navbar*/
+    /*navbar logo */
+    a.navbar_logo{
+                  font-size: 33px;
+                 }
+    
+    /*navbar links design*/
+    li.nav-item{
+               font-size: 30px;
+               }
+
+    /*-----------------------------------------------------Footer*/
+    /*footer icons*/
+    footer i.fab{
+                height: 65px;
+                }
+
+    /*footer contacts*/
+    .contacts{
+             height: 33px;
+             }
+
+    /*footer copyright*/
+    .copyright{
+              height: 23px;
+              }
+
+    /*-----------------------------------------------------Homepage*/
+    /*homepage heading*/
+    h2{
+        margin-top: 90px;
+        font-size: 33px;
+      }  
+    
+    /*homepage paragraph*/
+    section p{
+             margin: 40px 40px 70px;
+             font-size: 30px;
+             }
+
+    /*homepage sign up button*/
+    .button{
+           margin-top: 100px; 
+           }
+
+    /*-----------------------------------------------------Sign Up*/    
+    /*stretched out select box*/
+    select#choosen_schedule{
+                           width: 40%;
+                           height: 130px;
+                           }
+
+    /*form sign up button*/
+    button.form_button{
+                       display: block;
+                       margin-top: 60px;
+                      }   
+
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 267px;
+                         }                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*end*/
+
+/*Laptop*/
+@media (min-width: 1440px){}
+/*end*/
