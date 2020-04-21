@@ -9,10 +9,10 @@
     text-align: center;
 }
 
-/*to help keep footers at the bottom of the page*/
+/*provides space between section and footers to help keep footers at the bottom of the page*/
 body{
     position: relative;
-    padding-bottom: 112px;
+    padding-bottom: 140px;
     min-height: 100vh;
 }
 
@@ -33,30 +33,73 @@ h1{
     margin-top: 30px;
 }
 
+/*-----------------------------------------------------Navbar*/
 /*navbar background colour*/
-nav{
+.navbar.navbar-expand-lg.navbar-light{
     background-color: rgba(218, 165, 32, 0.582);
 }
 
-/*navbar pushing down sign up form*/
-ul{
-    margin-bottom: 20px;
+/*navbar text */
+a{ 
+    color: white;
 }
 
-/*navbar tabs*/
-a, li{
+/*navbar logo */
+a.navbar_logo{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/*hamburger outline*/
+button.navbar-toggler{
+    border:none;
+    background-color: rgba(184, 135, 11, 0.582);
+    border-radius: 15px;
+    padding: 0px 9px;
+}
+
+/*removes clicked hamburger outline*/
+button:focus { 
+    outline: none; 
+}
+
+/*navbar links design*/
+li.nav-item{
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*spacing above navbar home link*/
+li.home_link{
+    margin-top: 5px;
+}
+
+/*spacing below navbar sign up link*/
+li.sign_up_link{
+    margin-bottom: 0px;
+}
+
+/*nav links background when clicked*/
+li.nav-item:active{
+    background-color: DarkGoldenRod;
+    border-radius: 15px;
+}
+
+/*nav links when clicked*/
+a:active{
     text-decoration: none;
-    display: inline;
-    font-size: x-large; 
+    color: white;
 }
 
-/*navbar tab dividers*/
-.vertical_line{
-    border-right: solid 2px white;
-    padding-right: 6px; 
+/*nav links after being clicked*/
+a:visited{
+    color: white;
 }
 
-/*------------------Footers------------------------------*/
+/*-----------------------------------------------------Footers*/
 /*keeps all footers at the bottom of the page*/
 footer{
     position:absolute;
@@ -76,20 +119,21 @@ footer i.fab{
 }
 
 .socials{
-    height: 112px;
+    height: 94px;
 }
 
 /*footer contacts*/
 .contacts{
     background-color: rgba(218, 165, 32, 0.582);
-    height: 75px;
+    height: 57px;
 }
 
 /*footer copyright*/
 .copyright{
     background-color: DarkGoldenRod;
     height: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 23px;
+    margin-bottom: 0px;
 }
 
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
@@ -137,7 +181,7 @@ section p{
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
 /*to help keep footers at the bottom of the page*/
 section{
-    padding-bottom: 112px;
+    padding-bottom: 94px;
 }
 
 /*form background & border colour*/
@@ -146,8 +190,9 @@ section.form_container{
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
     width: 250px;
-    margin: 20px;
+    margin: 50px 20px 20px 20px ;
     display: inline-block;
+    padding-bottom: 560px;
 }
 
 /*all form boxes, labels & sign up button*/
@@ -222,5 +267,5 @@ input[type=submit]{
     padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
