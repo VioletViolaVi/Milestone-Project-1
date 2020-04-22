@@ -21,7 +21,7 @@ body{
     background-attachment: fixed;
 }
 
-/*BusyBakes logo*/
+/*Website title*/
 h1{
     height: 50px;
     width: 100%;
@@ -47,7 +47,6 @@ a.navbar_logo{
     font-size: 20px;
     font-weight: bolder;
 }
-
 
 /*hamburger outline*/
 button.navbar-toggler{
@@ -188,7 +187,7 @@ section.form_container{
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
     width: 83%;
-    margin: 50px 20px 20px 20px ;
+    margin: 50px 20px 20px 25px;
     display: inline-block;
     padding-bottom: 680px;
     padding-left: 2px;
@@ -286,9 +285,30 @@ button.form_button{
     margin-top: 60px;
 }
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
+/*big mobile*/
+@media (min-width: 375px){
+/*-----------------------------------------------------Sign Up*/    
+    /*form background & border colour*/
+    section.form_container{
+                           margin-left: 30px;
+                          }
+}
+/*end*/
+
+
+/*bigger mobile*/
+@media (min-width: 425px){
+/*-----------------------------------------------------Sign Up*/    
+    /*form background & border colour*/
+    section.form_container{
+                           margin-left: 34px;
+                          }
+}
+/*end*/
+
+
 /*Tablet*/
 @media (min-width: 768px){
-
     /*-----------------------------------------------------Navbar*/
     /*navbar logo */
     a.navbar_logo{
@@ -335,6 +355,14 @@ button.form_button{
            }
 
     /*-----------------------------------------------------Sign Up*/    
+    
+    /*form background & border colour*/
+    section.form_container{
+        margin-left: 60px;
+                          }
+    
+    
+    
     /*stretched out select box*/
     select#choosen_schedule{
                            width: 40%;
@@ -351,53 +379,101 @@ button.form_button{
     .centered_form_button{
                           margin-left: 267px;
                          }                  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 /*end*/
 
-/*Laptop*/
-@media (min-width: 1440px){}
+
+/*big Laptop*/
+@media (min-width: 800px){
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 300px;
+                         }     
+}
+/*end*/
+
+
+/* bigger Laptop*/
+@media (min-width: 991px){
+    /*Website title*/
+    h1{
+    font-size: 70px;
+      }
+
+    /*navbar placement*/
+    nav.navbar.navbar-expand-lg.navbar-light{
+                                             margin-top: 80px;
+                                           }               
+
+    /*navbar logo*/
+    a.navbar_logo{
+    font-size: 40px;
+    margin-bottom: 30px;
+                 } 
+
+    /*navbar links*/
+    ul.navbar-nav{
+                 margin-left: 40px;
+                 } 
+
+    /*sign up link*/
+    .sign_up_link a{
+                   padding-left:20px;
+                   }
+
+    /*navbar tab dividers*/
+    .vertical_line{
+                   border-right: solid 5px white;
+                   padding:0px 20px;
+                  }
+
+    /*navbar link text size*/
+    ul.navbar-nav li a{
+                      font-size: 35px;
+                      }
+
+    /*navbar link text hover*/
+    ul.navbar-nav li a:hover{
+                            text-decoration: none;
+                            border-radius: 4px;
+                            background-color: GoldenRod;
+                            }
+
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 360px;
+                         } 
+}
+/*end*/
+
+
+/* bigger-er Laptop*/
+@media (min-width: 1024px){
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 380px;
+                         }
+
+    /*navbar tab dividers*/
+    .vertical_line{
+                   border-right: solid 5px white;
+                   padding:0px 20px;
+                  } 
+}
+/*end*/
+
+
+/* bigger-er-er Laptop*/
+@media (min-width: 1440px){
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 540px;
+                         }
+
+    /*navbar tab dividers*/
+    .vertical_line{
+                   border-right: solid 5px white;
+                   padding:0px 20px;
+                  }            
+}
 /*end*/
