@@ -284,14 +284,52 @@ button.form_button{
     display: inline-block;
     margin-top: 60px;
 }
+
+/*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
+/*people pictures*/
+img{
+    border: 5px solid DarkGoldenRod;
+    border-radius: 900px;
+    margin-top: 20px; 
+    width: 60%; 
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+/*people pictures opinions*/
+.people p{
+    background-color: GoldenRod;
+    border: solid 5px DarkGoldenRod;
+    border-radius: 20px;
+}
+
+/*last person's comment to lift up sign up button*/
+p.last_comment{
+    margin-bottom: 30px;
+}
+
+/*keeps footers at the bottom for testimonials*/
+section.people{
+    padding-bottom: 1430px;
+}
+
+/*space above 1st person*/
+img.person1{
+    margin-top: 40px;
+}
+
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
 /*big mobile*/
+
 @media (min-width: 375px){
 /*-----------------------------------------------------Sign Up*/    
     /*form background & border colour*/
     section.form_container{
                            margin-left: 30px;
                           }
+
+/*-----------------------------------------------------Footer*/ 
 }
 /*end*/
 
@@ -303,13 +341,14 @@ button.form_button{
     section.form_container{
                            margin-left: 34px;
                           }
+
 }
 /*end*/
 
 
 /*Tablet*/
 @media (min-width: 768px){
-    /*-----------------------------------------------------Navbar*/
+/*-----------------------------------------------------Navbar*/
     /*navbar logo */
     a.navbar_logo{
                   font-size: 33px;
@@ -320,7 +359,7 @@ button.form_button{
                font-size: 30px;
                }
 
-    /*-----------------------------------------------------Footer*/
+/*-----------------------------------------------------Footer*/
     /*footer icons*/
     footer i.fab{
                 height: 65px;
@@ -334,9 +373,9 @@ button.form_button{
     /*footer copyright*/
     .copyright{
               height: 23px;
-              }
+              }      
 
-    /*-----------------------------------------------------Homepage*/
+/*-----------------------------------------------------Homepage*/
     /*homepage heading*/
     h2{
         margin-top: 90px;
@@ -354,7 +393,7 @@ button.form_button{
            margin-top: 100px; 
            }
 
-    /*-----------------------------------------------------Sign Up*/    
+/*-----------------------------------------------------Sign Up*/    
     
     /*form background & border colour*/
     section.form_container{
