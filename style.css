@@ -9,12 +9,17 @@
     text-align: center;
 }
 
+html{
+    height: 100%;
+}
+
 /*website's background image and space provided after section-ends to help keep footers at the bottom*/
 body{
 /*for the footer*/
     position: relative;
     padding-bottom: 140px;
     min-height: 100vh;
+    height: 100%;
 /*for the background image*/
     background-image: url(images/scene.jpg);
     background-size: cover;
@@ -107,8 +112,10 @@ section{
 /*keeps all footers at the bottom of the page*/
 footer{
     position:absolute;
+    min-height: 0%;
     bottom: 0;
     width: 100%;
+    border: purple solid 3px;
 }
 
 /*footer paragraphs*/
@@ -244,17 +251,14 @@ section.people{
 
 /*---------------------------------------------------------------SignUp---------------------------------------------------------------*/
 /*whole form*/
-.centering_form{
-    display: block;
-    left: auto;
-    right: auto;
-    text-align: left;
+#centering_form{
     background-color: rgba(218, 165, 32, 0.582);
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
     width: 83%; 
-    margin: 50px 20px 600px 25px;
-    padding: 0px 3px;
+    padding: 0px 10px;
+    margin: auto;
+    min-height: 100%;
 }
 
 /*form labels*/
