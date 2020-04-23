@@ -21,6 +21,16 @@ body{
     background-attachment: fixed;
 }
 
+html{
+    height: 100%;
+}
+
+/*All section areas*/
+section{
+    width: 100%;
+    height: 150px;
+} 
+
 /*Website title*/
 h1{
     height: 50px;
@@ -131,12 +141,6 @@ footer i.fab{
 }
 
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
-/*section area*/
-section{
-    height: 500px;
-    width: 100%;
-} 
-
 /*homepage heading*/
 h2{
     font-size: 30px;
@@ -205,9 +209,40 @@ section.people{
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
-/*space between sign up button and icons */
-section.schedule{
-    margin-bottom: 20px;
+/*space between sign up button and icons*/
+.schedule{
+    margin-bottom: 360px;
+}
+
+/*schedule title*/
+.schedule h2{
+    margin: 30px 0px;
+    font-size: 8vw;
+}
+
+/*days of the week*/
+.times h3{
+    font-weight: bolder;
+    font-size: 7vw;
+}
+
+/*times of the week*/
+.times ul li{
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+/*decorates background of schedule times*/
+.schedule div.times{
+    background-color: GoldenRod;
+    margin: 0px 70px 50px;
+    border: 5px solid DarkGoldenRod;
+    border-radius: 9px;
+}
+
+/*removes bullet points from schedule times*/
+.schedule ul{
+    list-style: none;
 }
 
 /*---------------------------------------------------------------SignUpPage---------------------------------------------------------------*/
@@ -329,8 +364,6 @@ button.form_button{
     section.form_container{
                            margin-left: 30px;
                           }
-
-/*-----------------------------------------------------Footer*/ 
 }
 /*end*/
 
@@ -425,6 +458,7 @@ button.form_button{
 
 /*big Laptop*/
 @media (min-width: 800px){
+/*-----------------------------------------------------Sign Up*/ 
     /*form sign up button put in the middle*/
     .centered_form_button{
                           margin-left: 300px;
@@ -435,11 +469,13 @@ button.form_button{
 
 /* bigger Laptop*/
 @media (min-width: 991px){
+/*-----------------------------------------------------Homepage*/
     /*Website title*/
     h1{
     font-size: 70px;
       }
 
+/*-----------------------------------------------------Navbar*/
     /*navbar placement*/
     nav.navbar.navbar-expand-lg.navbar-light{
                                              margin-top: 80px;
@@ -479,6 +515,7 @@ button.form_button{
                             background-color: GoldenRod;
                             }
 
+/*-----------------------------------------------------Sign Up*/ 
     /*form sign up button put in the middle*/
     .centered_form_button{
                           margin-left: 360px;
@@ -489,27 +526,49 @@ button.form_button{
 
 /* bigger-er Laptop*/
 @media (min-width: 1024px){
+/*-----------------------------------------------------Sign Up*/ 
     /*form sign up button put in the middle*/
     .centered_form_button{
                           margin-left: 380px;
                          }
 
+/*-----------------------------------------------------Navbar*/
     /*navbar tab dividers*/
     .vertical_line{
                    border-right: solid 5px white;
                    padding:0px 20px;
                   } 
+
+/*-----------------------------------------------------Schedule*/  
+    /*schedule title*/
+    .schedule h2{
+                font-size: 6vw;
+                }
+
+    /*days of the week*/
+    .times h3{
+             font-weight: bolder;
+             font-size: 5vw;
+             }
+
+    /*times of the week*/
+    .times ul li{
+                font-weight: bold;
+                font-size: 3vw;
+                }
 }
 /*end*/
 
 
 /* bigger-er-er Laptop*/
 @media (min-width: 1440px){
+/*-----------------------------------------------------Sign Up*/
     /*form sign up button put in the middle*/
     .centered_form_button{
                           margin-left: 540px;
                          }
 
+/*-----------------------------------------------------Navbar*/
     /*navbar tab dividers*/
     .vertical_line{
                    border-right: solid 5px white;
