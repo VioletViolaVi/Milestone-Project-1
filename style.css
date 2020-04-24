@@ -1,4 +1,5 @@
 /*-------------------------------------------------------------AllPages-------------------------------------------------------------*/
+
 /*univesal settings*/
 *{
     padding: 0px;
@@ -10,7 +11,7 @@
 }
 
 html{
-    height: 100%;
+    border: green solid 3px;
 }
 
 /*website's background image and space provided after section-ends to help keep footers at the bottom*/
@@ -24,89 +25,77 @@ body{
     background-image: url(images/scene.jpg);
     background-size: cover;
     background-attachment: fixed;
+
+    border: red solid 3px;
 }
 
 /*Website title*/
 h1{
-    height: 50px;
+    height: 35px;
     width: 100%;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 25px;
     margin-top: 30px;
     font-weight: bold;
 }
 
 /*-----------------------------------------------------Navbar*/
-/*navbar background colour*/
-.navbar.navbar-expand-lg.navbar-light{
+/*navbar bar*/
+.my-nav{
     background-color: rgba(218, 165, 32, 0.582);
-}
-
-/*navbar text */
-a{ 
-    color: white;
+    border: solid 2px Goldenrod;
+    border-radius: 5px;
 }
 
 /*navbar logo*/
-a.navbar_logo{
+.my-nav .navbar-brand{
+    color: white;
     font-size: 20px;
-    font-weight: bolder;
 }
 
-/*hamburger outline*/
-button.navbar-toggler{
-    border:none;
-    background-color: rgba(184, 135, 11, 0.582);
-    border-radius: 15px;
-    padding: 0px 9px;
-}
-
-/*removes clicked hamburger outline*/
-button:focus { 
-    outline: none; 
-}
-
-/*navbar links design*/
-li.nav-item{
-    margin-bottom: 30px;
-    font-weight: bolder;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-/*spacing above navbar home link*/
-li.home_link{
-    margin-top: 5px;
-}
-
-/*spacing below navbar sign up link*/
-li.sign_up_link{
-    margin-bottom: 0px;
-}
-
-/*nav links background when clicked*/
-li.nav-item:active{
+/*navbar logo hovered state*/
+.my-nav .navbar-brand:hover{
     background-color: DarkGoldenRod;
-    border-radius: 15px;
+    border-radius: 3px;
 }
 
-/*nav links when clicked*/
-a:active{
+/*navbar links*/
+.my-nav .nav-link{
+    color: white;
+    font-size: 20px;
+}
+
+/*navbar link's hovered state */
+.my-nav .nav-link:hover{
+    background-color: DarkGoldenRod;
+    border-radius: 9pc;
+}
+
+/*removed border around burger icon */
+.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/*-----------------------------------------------------SignUp Button*/
+/*sign up button for home, schedule & testimonials*/
+a.button{
+    color: white;
+    background-color: GoldenRod;
+    border: 2px solid DarkGoldenRod;
     text-decoration: none;
-    color: white;
-}
-
-/*nav links after being clicked*/
-a:visited{
-    color: white;
+    padding: 0px 5px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0px;
 }
 
 /*-----------------------------------------------------Footers*/
 /*to help keep footers at the bottom of the page*/
 section{
     width: 100%;
-    padding-bottom: 94px;
-    height: 465px;
+    /* padding-bottom: 94px; */
+    /* height: 465px; */
 }
 
 /*keeps all footers at the bottom of the page*/
@@ -150,7 +139,6 @@ h2{
     font-size: 30px;
     text-transform: uppercase;
     margin-top: 30px;
-    font-weight: bold;
 }
 
 /*homepage paragraph*/
@@ -171,46 +159,41 @@ section.homepage p{
     font-style: italic;
 }
 
-/*homepage sign up button*/
-a.button{
-    background-color: GoldenRod;
-    border: 2px solid DarkGoldenRod;
-    text-decoration: none;
-    padding: 0px 5px 5px;
-    border-radius: 10px;
-    font-size: 25px;
-    margin: 0px;
-    font-weight: bold;
-}
-
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
 /*people pictures*/
-img{
+/* div.people img{
+    position: relative;
     border: 5px solid DarkGoldenRod;
-    border-radius: 900px;
-    margin-top: 20px; 
-    width: 60%; 
-    height: auto;
-    max-height: 300px;
-    max-width: 300px;
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px;
+}
+  */
+
+.people{
+  width: 10%;
+  border:2px solid blue;
+  border-radius: 50px;
 }
 
-/*people pictures opinions*/
+/*people opinions*/
 .people p{
+    position: absolute;
     background-color: GoldenRod;
     border: solid 5px DarkGoldenRod;
-    border-radius: 20px;
-}
+    border-radius: 30px 30px 1px;
+    font-size: 20px;
+} 
 
 /*last person's comment to lift up sign up button*/
-p.last_comment{
+/* p.last_comment{
     margin-bottom: 30px;
-}
+} */
 
 /*keeps footers at the bottom for testimonials*/
-section.people{
-    padding-bottom: 1430px;
-}
+/* section.people.opinions{
+    padding-bottom: 1100px;
+} */
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
 /*space between sign up button and icons*/
@@ -446,8 +429,13 @@ button.form_button{
            margin-top: 100px; 
            }
 
+/*-----------------------------------------------------Testimonials*/ 
+    /*testimonials images*/
+    /* .people{
+           width: 33.33%;
+           } */
+
 /*-----------------------------------------------------Sign Up*/    
-    
     /*form background & border colour*/
     section.form_container{
         margin-left: 60px;
