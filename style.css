@@ -160,6 +160,30 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
+img{
+    height: 200px;
+    width: 200px;
+    border: solid 2px GoldenRod;
+    border-radius: 100px;
+}
+
+.people p{
+    font-size: 20px;
+    display: inline;
+    background-color: GoldenRod;
+    border: solid 2px GoldenRod;
+}
+
+.person1, .person3{
+    float: right;
+    margin-bottom: 20px;
+}
+
+.person2{
+    float: left;
+    margin-bottom: 20px;
+}
+
 /*people pictures*/
 /* div.people img{
     position: relative;
@@ -167,23 +191,20 @@ section.homepage p{
     border-radius: 50%;
     width: 200px; 
     height: 200px;
-}
-  */
+}*/
 
-.people{
+/* .people{
   width: 10%;
-  border:2px solid blue;
-  border-radius: 50px;
-}
+} */
 
 /*people opinions*/
-.people p{
+/* .people p{
     position: absolute;
     background-color: GoldenRod;
     border: solid 5px DarkGoldenRod;
     border-radius: 30px 30px 1px;
     font-size: 20px;
-} 
+}  */
 
 /*last person's comment to lift up sign up button*/
 /* p.last_comment{

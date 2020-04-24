@@ -62,3 +62,9 @@ a:active{
 a:visited{
     color: white;
 }
+
+div#carouselExampleCaptions.carousel.slide.pointer-event img{
+    border: 2px solid yellow;
+    height: 500px;
+    width: 100px;
+} */
