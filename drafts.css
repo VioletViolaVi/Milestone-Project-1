@@ -1,0 +1,257 @@
+/*medium mobile*/
+@media (min-width: 375px){
+/*-----------------------------------------------------Footer*/
+    /*on schedule page keeps footer at the bottom*/
+    section.schedule{
+                  height: 550px;
+                  }
+
+/*-----------------------------------------------------Sign Up*/    
+    /*form background & border colour*/
+    section.form_container{
+                           margin-left: 30px;
+                          }
+}
+/*end*/
+
+
+/*large mobile*/
+@media (min-width: 425px){
+/*-----------------------------------------------------Footer*/
+    /*on schedule page keeps footer at the bottom*/
+    section.schedule{
+                    height: 620px;
+                    }        
+
+/*-----------------------------------------------------Sign Up*/    
+    /*form background & border colour*/
+    section.form_container{
+                           margin-left: 34px;
+                          }
+
+}
+/*end*/
+
+
+/*Tablet*/
+@media (min-width: 768px){
+/*-----------------------------------------------------Navbar*/
+    /*navbar logo */
+    a.navbar_logo{
+                  font-size: 33px;
+                 }
+    
+    /*navbar links design*/
+    li.nav-item{
+               font-size: 30px;
+               }
+
+/*-----------------------------------------------------Footer*/
+    /*on schedule page keeps footer at the bottom*/
+    section.schedule{
+                    height: 1060px;
+                    }
+    
+    /*on testimonials page keeps footer at the bottom*/
+    section.people{
+                  height: 1470px;
+                  }
+
+    /*footer icons*/
+    footer i.fab{
+                height: 65px;
+                }
+
+    /*footer contacts*/
+    .contacts{
+             height: 33px;
+             }
+
+    /*footer copyright*/
+    .copyright{
+              height: 23px;
+              }      
+
+/*-----------------------------------------------------Homepage*/
+    /*homepage heading*/
+    .homepage h2{
+        margin-top: 90px;
+        font-size: 33px;
+      }  
+    
+    /*homepage paragraph*/
+    section.homepage p{
+             margin: 40px 40px 70px;
+             font-size: 30px;
+             }
+
+    /*homepage sign up button*/
+    .button{
+           margin-top: 100px; 
+           }
+
+/*-----------------------------------------------------Testimonials*/ 
+    /*testimonials images*/
+    /* .people{
+           width: 33.33%;
+           } */
+
+/*-----------------------------------------------------Sign Up*/    
+    /*form background & border colour*/
+    section.form_container{
+        margin-left: 60px;
+                          }
+    
+    
+    
+    /*stretched out select box*/
+    select#choosen_schedule{
+                           width: 40%;
+                           height: 130px;
+                           }
+
+    /*form sign up button*/
+    button.form_button{
+                       display: block;
+                       margin-top: 60px;
+                      }   
+
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 267px;
+                         }                  
+}
+/*end*/
+
+
+/*Laptop*/
+@media (min-width: 800px){
+/*-----------------------------------------------------Sign Up*/ 
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 300px;
+                         }     
+}
+/*end*/
+
+
+/* big Laptop*/
+@media (min-width: 991px){
+/*-----------------------------------------------------Homepage*/
+    /*Website title*/
+    h1{
+    font-size: 70px;
+      }
+
+/*-----------------------------------------------------Navbar*/
+    /*navbar placement*/
+    nav.navbar.navbar-expand-lg.navbar-light{
+                                             margin-top: 80px;
+                                           }               
+
+    /*navbar logo*/
+    a.navbar_logo{
+    font-size: 40px;
+    margin-bottom: 30px;
+                 } 
+
+    /*navbar links*/
+    ul.navbar-nav{
+                 margin-left: 40px;
+                 } 
+
+    /*sign up link*/
+    .sign_up_link a{
+                   padding-left:20px;
+                   }
+
+    /*navbar tab dividers*/
+    .vertical_line{
+                   border-right: solid 5px white;
+                   padding:0px 20px;
+                  }
+
+    /*navbar link text size*/
+    ul.navbar-nav li a{
+                      font-size: 35px;
+                      }
+
+    /*navbar link text hover*/
+    ul.navbar-nav li a:hover{
+                            text-decoration: none;
+                            border-radius: 4px;
+                            background-color: GoldenRod;
+                            }
+
+/*-----------------------------------------------------Sign Up*/ 
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 360px;
+                         } 
+}
+/*end*/
+
+
+/* bigger Laptop*/
+@media (min-width: 1024px){
+/*-----------------------------------------------------Footer*/
+    /*on schedule page keeps footer at the bottom*/
+    section.schedule{
+                    margin-bottom: 215px;
+                    }
+
+/*-----------------------------------------------------Sign Up*/ 
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 380px;
+                         }
+
+/*-----------------------------------------------------Navbar*/
+    /*navbar tab dividers*/
+    .vertical_line{
+                   border-right: solid 5px white;
+                   padding:0px 20px;
+                  } 
+
+/*-----------------------------------------------------Schedule*/  
+    /*schedule title*/
+    .schedule h2{
+                font-size: 6vw;
+                }
+
+    /*days of the week*/
+    .times h3{
+             font-weight: bolder;
+             font-size: 5vw;
+             }
+
+    /*times of the week*/
+    .times ul li{
+                font-weight: bold;
+                font-size: 3vw;
+                }
+}
+/*end*/
+
+
+/* bigger-er Laptop*/
+@media (min-width: 1440px){
+/*-----------------------------------------------------Footer*/
+    /*on schedule page keeps footer at the bottom*/
+    section.schedule{
+                    height: 1420px;
+                    }
+/*-----------------------------------------------------Sign Up*/
+    /*form sign up button put in the middle*/
+    .centered_form_button{
+                          margin-left: 540px;
+                         }
+
+/*-----------------------------------------------------Navbar*/
+    /*navbar tab dividers*/
+    .vertical_line{
+                   border-right: solid 5px white;
+                   padding:0px 20px;
+                  }            
+}
+/*end*/

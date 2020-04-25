@@ -18,7 +18,7 @@ body{
     min-height: 100vh;
     height: 100%;
 /*for the background image*/
-    background-image: url(images/scene.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -51,7 +51,7 @@ h2{
 /*navbar logo*/
 .my-nav .navbar-brand{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*navbar logo hovered state*/
@@ -64,6 +64,7 @@ h2{
 .my-nav .nav-link{
     color: white;
     font-size: 20px;
+    margin: 3px 0px;
 }
 
 /*navbar link's hovered state */
@@ -96,6 +97,24 @@ a.button{
     border-radius: 10px;
     font-size: 20px;
     margin: 0px;
+}
+
+/*-----------------------------------------------------Images*/
+/*decorates ALL photos individually*/
+#food_photos img,#people_photos img,.baker img{
+    width: 90%;
+    height: 350px; 
+    border: 5px solid DarkGoldenRod;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/*arranges food & people photos underneath each other*/
+#food_photos,#people_photos{
+    clear: both;
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0px;
 }
 
 /*-----------------------------------------------------Footers*/
@@ -158,23 +177,6 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
-/*arranges photos underneath each other*/
-#people_photos{
-    clear: both;
-    line-height: 0;
-    column-count: 1;
-    column-gap: 0px;
-}
-
-/*decorates photos individually*/
-#people_photos img{
-    width: 90%;
-    border: 5px solid DarkGoldenRod;
-    border-radius: 50%;
-    height: 350px; 
-    margin: 5px;
-}
-
 /*decorates people opinions*/
 #people_photos p{
     font-style: italic;
@@ -216,15 +218,6 @@ section.homepage p{
     list-style: none;
 }
 /*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
-/*decorates baker*/
-.baker img{
-    width: 90%;
-    border: 5px solid DarkGoldenRod;
-    border-radius: 50%;
-    height: 350px; 
-    margin: 5px;
-}
-
 /*decorates background paragraphs*/
 .about_us_paras{
     background-color: rgba(218, 165, 32, 0.87);
@@ -276,8 +269,8 @@ margin-top: 10px;
 font-size: 150%;
 }
 
-/*inside space of first name, last name & address boxes*/
-input[type=text]{
+/*inside space of ALL text boxes*/
+input[type=text],input[type=email],input[type=tel]{
     padding-bottom: 5px;
     color: black;
     border: 2px solid DarkGoldenRod;
@@ -286,24 +279,9 @@ input[type=text]{
     width: 100%;
 }
 
-/*inside space of email box*/
-input[type=email]{
-    padding-bottom: 5px;
-    color: black;
-    border: 2px solid DarkGoldenRod;
-    border-radius: 4px;
-    background-color: GoldenRod;
-    width: 100%;
-}
-
-/*inside space of phone box*/
-input[type=tel]{
-    padding-bottom: 5px;
-    color: black;
-    border: 2px solid DarkGoldenRod;
-    border-radius: 4px;
-    background-color: GoldenRod;
-    width: 100%;
+/*outside outline colour for clicked on form boxes*/
+input[type=text],input[type=email],input[type=tel],select#choosen_schedule:focus{
+    outline-color:DarkGoldenRod;
 }
 
 /*inside space of preferred times box*/
@@ -315,20 +293,14 @@ select{
     background-color: GoldenRod;
 }
 
-/*stretched out select box*/
+/*stretches out select box*/
 select#choosen_schedule{
     width: 80%;
     margin: 0px;
 }
 
-/*preferred times box DAY pushed to the left*/
-select#choosen_schedule optgroup{
-    text-align: left;
-    width: 100%;
-}
-
-/*preferred times box TIME pushed to the left*/
-select#choosen_schedule optgroup option{
+/*content in preference box pushed to the left*/
+select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
     text-align: left;
     width: 100%;
 }
@@ -346,319 +318,3 @@ button.form_button{
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*medium mobile*/
-@media (min-width: 375px){
-/*-----------------------------------------------------Footer*/
-    /*on schedule page keeps footer at the bottom*/
-    section.schedule{
-                  height: 550px;
-                  }
-
-/*-----------------------------------------------------Sign Up*/    
-    /*form background & border colour*/
-    section.form_container{
-                           margin-left: 30px;
-                          }
-}
-/*end*/
-
-
-/*large mobile*/
-@media (min-width: 425px){
-/*-----------------------------------------------------Footer*/
-    /*on schedule page keeps footer at the bottom*/
-    section.schedule{
-                    height: 620px;
-                    }        
-
-/*-----------------------------------------------------Sign Up*/    
-    /*form background & border colour*/
-    section.form_container{
-                           margin-left: 34px;
-                          }
-
-}
-/*end*/
-
-
-/*Tablet*/
-@media (min-width: 768px){
-/*-----------------------------------------------------Navbar*/
-    /*navbar logo */
-    a.navbar_logo{
-                  font-size: 33px;
-                 }
-    
-    /*navbar links design*/
-    li.nav-item{
-               font-size: 30px;
-               }
-
-/*-----------------------------------------------------Footer*/
-    /*on schedule page keeps footer at the bottom*/
-    section.schedule{
-                    height: 1060px;
-                    }
-    
-    /*on testimonials page keeps footer at the bottom*/
-    section.people{
-                  height: 1470px;
-                  }
-
-    /*footer icons*/
-    footer i.fab{
-                height: 65px;
-                }
-
-    /*footer contacts*/
-    .contacts{
-             height: 33px;
-             }
-
-    /*footer copyright*/
-    .copyright{
-              height: 23px;
-              }      
-
-/*-----------------------------------------------------Homepage*/
-    /*homepage heading*/
-    .homepage h2{
-        margin-top: 90px;
-        font-size: 33px;
-      }  
-    
-    /*homepage paragraph*/
-    section.homepage p{
-             margin: 40px 40px 70px;
-             font-size: 30px;
-             }
-
-    /*homepage sign up button*/
-    .button{
-           margin-top: 100px; 
-           }
-
-/*-----------------------------------------------------Testimonials*/ 
-    /*testimonials images*/
-    /* .people{
-           width: 33.33%;
-           } */
-
-/*-----------------------------------------------------Sign Up*/    
-    /*form background & border colour*/
-    section.form_container{
-        margin-left: 60px;
-                          }
-    
-    
-    
-    /*stretched out select box*/
-    select#choosen_schedule{
-                           width: 40%;
-                           height: 130px;
-                           }
-
-    /*form sign up button*/
-    button.form_button{
-                       display: block;
-                       margin-top: 60px;
-                      }   
-
-    /*form sign up button put in the middle*/
-    .centered_form_button{
-                          margin-left: 267px;
-                         }                  
-}
-/*end*/
-
-
-/*Laptop*/
-@media (min-width: 800px){
-/*-----------------------------------------------------Sign Up*/ 
-    /*form sign up button put in the middle*/
-    .centered_form_button{
-                          margin-left: 300px;
-                         }     
-}
-/*end*/
-
-
-/* big Laptop*/
-@media (min-width: 991px){
-/*-----------------------------------------------------Homepage*/
-    /*Website title*/
-    h1{
-    font-size: 70px;
-      }
-
-/*-----------------------------------------------------Navbar*/
-    /*navbar placement*/
-    nav.navbar.navbar-expand-lg.navbar-light{
-                                             margin-top: 80px;
-                                           }               
-
-    /*navbar logo*/
-    a.navbar_logo{
-    font-size: 40px;
-    margin-bottom: 30px;
-                 } 
-
-    /*navbar links*/
-    ul.navbar-nav{
-                 margin-left: 40px;
-                 } 
-
-    /*sign up link*/
-    .sign_up_link a{
-                   padding-left:20px;
-                   }
-
-    /*navbar tab dividers*/
-    .vertical_line{
-                   border-right: solid 5px white;
-                   padding:0px 20px;
-                  }
-
-    /*navbar link text size*/
-    ul.navbar-nav li a{
-                      font-size: 35px;
-                      }
-
-    /*navbar link text hover*/
-    ul.navbar-nav li a:hover{
-                            text-decoration: none;
-                            border-radius: 4px;
-                            background-color: GoldenRod;
-                            }
-
-/*-----------------------------------------------------Sign Up*/ 
-    /*form sign up button put in the middle*/
-    .centered_form_button{
-                          margin-left: 360px;
-                         } 
-}
-/*end*/
-
-
-/* bigger Laptop*/
-@media (min-width: 1024px){
-/*-----------------------------------------------------Footer*/
-    /*on schedule page keeps footer at the bottom*/
-    section.schedule{
-                    margin-bottom: 215px;
-                    }
-
-/*-----------------------------------------------------Sign Up*/ 
-    /*form sign up button put in the middle*/
-    .centered_form_button{
-                          margin-left: 380px;
-                         }
-
-/*-----------------------------------------------------Navbar*/
-    /*navbar tab dividers*/
-    .vertical_line{
-                   border-right: solid 5px white;
-                   padding:0px 20px;
-                  } 
-
-/*-----------------------------------------------------Schedule*/  
-    /*schedule title*/
-    .schedule h2{
-                font-size: 6vw;
-                }
-
-    /*days of the week*/
-    .times h3{
-             font-weight: bolder;
-             font-size: 5vw;
-             }
-
-    /*times of the week*/
-    .times ul li{
-                font-weight: bold;
-                font-size: 3vw;
-                }
-}
-/*end*/
-
-
-/* bigger-er Laptop*/
-@media (min-width: 1440px){
-/*-----------------------------------------------------Footer*/
-    /*on schedule page keeps footer at the bottom*/
-    section.schedule{
-                    height: 1420px;
-                    }
-/*-----------------------------------------------------Sign Up*/
-    /*form sign up button put in the middle*/
-    .centered_form_button{
-                          margin-left: 540px;
-                         }
-
-/*-----------------------------------------------------Navbar*/
-    /*navbar tab dividers*/
-    .vertical_line{
-                   border-right: solid 5px white;
-                   padding:0px 20px;
-                  }            
-}
-/*end*/
