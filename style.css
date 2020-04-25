@@ -70,6 +70,7 @@ h2{
 .my-nav .nav-link:hover{
     background-color: DarkGoldenRod;
     border-radius: 9pc;
+    padding: 0px;
 }
 
 /*removed border around burger icon */
@@ -81,6 +82,7 @@ h2{
 .active{
     background-color: DarkGoldenRod;
     border-radius: 9pc;
+    padding: 0px;
 }
 
 /*-----------------------------------------------------SignUp Button*/
@@ -100,8 +102,6 @@ a.button{
 /*to help keep footers at the bottom of the page*/
 section{
     width: 100%;
-    /* padding-bottom: 94px; */
-    /* height: 465px; */
 }
 
 /*keeps all footers at the bottom of the page*/
@@ -171,7 +171,7 @@ section.homepage p{
     width: 90%;
     border: 5px solid DarkGoldenRod;
     border-radius: 50%;
-    height: 200px; 
+    height: 350px; 
     margin: 5px;
 }
 
@@ -185,17 +185,6 @@ section.homepage p{
     padding: 5px;
     margin: 5px;
 }
-
-
-/*last person's comment to lift up sign up button*/
-/* p.last_comment{
-    margin-bottom: 30px;
-} */
-
-/*keeps footers at the bottom for testimonials*/
-/* section.people.opinions{
-    padding-bottom: 1100px;
-} */
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
 /*days of the week*/
