@@ -10,10 +10,6 @@
     text-align: center;
 }
 
-html{
-    border: green solid 3px;
-}
-
 /*website's background image and space provided after section-ends to help keep footers at the bottom*/
 body{
 /*for the footer*/
@@ -25,11 +21,9 @@ body{
     background-image: url(images/scene.jpg);
     background-size: cover;
     background-attachment: fixed;
-
-    border: red solid 3px;
 }
 
-/*Website title*/
+/*Company website title*/
 h1{
     height: 35px;
     width: 100%;
@@ -37,6 +31,13 @@ h1{
     margin-bottom: 25px;
     margin-top: 30px;
     font-weight: bold;
+}
+
+/*Company sub-titles*/
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 30px;
 }
 
 /*-----------------------------------------------------Navbar*/
@@ -77,6 +78,11 @@ h1{
     box-shadow: none;
 }
 
+.active{
+    background-color: DarkGoldenRod;
+    border-radius: 9pc;
+}
+
 /*-----------------------------------------------------SignUp Button*/
 /*sign up button for home, schedule & testimonials*/
 a.button{
@@ -104,7 +110,6 @@ footer{
     min-height: 0%;
     bottom: 0;
     width: 100%;
-    border: purple solid 3px;
 }
 
 /*footer paragraphs*/
@@ -134,13 +139,6 @@ footer i.fab{
 }
 
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
-/*homepage heading*/
-h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
-
 /*homepage paragraph*/
 section.homepage p{
     font-size: 20px;
@@ -160,51 +158,34 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
-img{
-    height: 200px;
-    width: 200px;
-    border: solid 2px GoldenRod;
-    border-radius: 100px;
+/*arranges photos underneath each other*/
+#people_photos{
+    clear: both;
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0px;
 }
 
-.people p{
-    font-size: 20px;
-    display: inline;
-    background-color: GoldenRod;
-    border: solid 2px GoldenRod;
-}
-
-.person1, .person3{
-    float: right;
-    margin-bottom: 20px;
-}
-
-.person2{
-    float: left;
-    margin-bottom: 20px;
-}
-
-/*people pictures*/
-/* div.people img{
-    position: relative;
+/*decorates photos individually*/
+#people_photos img{
+    width: 90%;
     border: 5px solid DarkGoldenRod;
     border-radius: 50%;
-    width: 200px; 
-    height: 200px;
-}*/
+    height: 200px; 
+    margin: 5px;
+}
 
-/* .people{
-  width: 10%;
-} */
-
-/*people opinions*/
-/* .people p{
-    position: absolute;
-    background-color: GoldenRod;
-    border: solid 5px DarkGoldenRod;
-    border-radius: 30px 30px 1px;
+/*decorates people opinions*/
+#people_photos p{
+    font-style: italic;
     font-size: 20px;
-}  */
+    background-color: GoldenRod;
+    border: solid 2px DarkGoldenRod; 
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
 
 /*last person's comment to lift up sign up button*/
 /* p.last_comment{
@@ -217,33 +198,26 @@ img{
 } */
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
-/*space between sign up button and icons*/
-.schedule{
-    margin-bottom: 360px;
-}
-
-/*schedule title*/
-.schedule h2{
-    margin: 30px 0px;
-    font-size: 8vw;
-}
-
 /*days of the week*/
 .times h3{
     font-weight: bolder;
-    font-size: 7vw;
+    font-size: 28px;
+}
+
+/*space under evening times*/
+.times ul{
+    margin-bottom: 5px;
 }
 
 /*times of the week*/
 .times ul li{
-    font-weight: bold;
-    font-size: 5vw;
+    font-size: 20px;
 }
 
 /*decorates background of schedule times*/
 .schedule div.times{
     background-color: GoldenRod;
-    margin: 0px 70px 50px;
+    margin: 0px 40px 50px;
     border: 5px solid DarkGoldenRod;
     border-radius: 9px;
 }
@@ -252,6 +226,24 @@ img{
 .schedule ul{
     list-style: none;
 }
+/*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
+/*decorates background paragraphs*/
+.about_us_paras{
+    background-color: rgba(218, 165, 32, 0.87);
+    border: 2px solid DarkGoldenRod;
+    border-radius: 10px;
+}
+
+/*decorates paragraphs*/
+.about_us_paras p{
+    font-size: 20px;
+}
+
+/*controls border around paragraphs*/
+.about_us_paras{
+    margin: 10px;
+}
+
 
 /*---------------------------------------------------------------SignUp---------------------------------------------------------------*/
 /*whole form*/
@@ -351,13 +343,71 @@ button.form_button{
     padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
-    font-weight: bold;
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*medium mobile*/
 @media (min-width: 375px){
 /*-----------------------------------------------------Footer*/
@@ -434,7 +484,7 @@ button.form_button{
 
 /*-----------------------------------------------------Homepage*/
     /*homepage heading*/
-    h2{
+    .homepage h2{
         margin-top: 90px;
         font-size: 33px;
       }  
