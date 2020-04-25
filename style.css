@@ -227,6 +227,15 @@ section.homepage p{
     list-style: none;
 }
 /*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
+/*decorates baker*/
+.baker img{
+    width: 90%;
+    border: 5px solid DarkGoldenRod;
+    border-radius: 50%;
+    height: 350px; 
+    margin: 5px;
+}
+
 /*decorates background paragraphs*/
 .about_us_paras{
     background-color: rgba(218, 165, 32, 0.87);
@@ -243,7 +252,6 @@ section.homepage p{
 .about_us_paras{
     margin: 10px;
 }
-
 
 /*---------------------------------------------------------------SignUp---------------------------------------------------------------*/
 /*whole form*/
