@@ -28,8 +28,7 @@ h1{
     height: 35px;
     width: 100%;
     font-size: 35px;
-    margin-bottom: 25px;
-    margin-top: 30px;
+    margin: 30px 0px;
     font-weight: bold;
 }
 
@@ -322,11 +321,6 @@ button.form_button{
 
 /*-----------------------------------------------------HomePage*/
 @media (min-width: 418px) {
-       /*Company website title*/
-       h1{
-         margin-bottom: 30px;
-         }
-      
         /*homepage paragraph*/
         section.homepage p{
                           margin-bottom: 40px;
@@ -339,6 +333,7 @@ button.form_button{
        /*Company website title*/
        h1{
          font-size: 40px;
+         margin-bottom: 40px;        
          }
       
         /*homepage paragraph*/
@@ -349,20 +344,20 @@ button.form_button{
 /*end*/
 
 @media (min-width: 579px) {
-       /*footer paragraphs*/
-       footer p{
-               font-size: 16px;
-               }
-
         /*footer icons*/
         footer i.fab{
                     letter-spacing: 7px;
-                    height: 100px;
+                    height: 70px;
                     }
+
+        /*footer contacts*/
+        .contacts{
+                 height: 30px;
+                 }
 
         /*footer copyright*/
         .copyright{
-                  padding-bottom: 26px;
+                  height: 23px;
                   }
 }
 /*end*/
@@ -371,7 +366,7 @@ button.form_button{
         /*Company website title*/
         h1{
           font-size: 50px;
-          margin-bottom: 70px;
+          margin-bottom: 60px;
           }
 
          /*navbar logo*/
@@ -394,34 +389,14 @@ button.form_button{
            font-size: 40px;
            }
 
-        /*footer paragraphs*/
-        footer p{
-                font-size: 20px;
-                }
+        /*homepage paragraph*/
+        section.homepage p{
+                          font-size: 37px;
+                          }
 
-        /*footer icons*/
-        footer i.fab{
-                    height: 140px;
-                    }
-
-        /*footer contacts*/
-        .contacts{
-                 height: 85px;
-                 }
-
-        /*footer copyright*/
-        .copyright{
-                  height: 23px;
-                  padding-bottom: 35px;
-                  }
-
-       /*homepage sign up button*/
-       .homepage_sign_up_button{
-                               margin-bottom: 60px;
-                               }
         /*sign up button for ALL BUT sign up page*/
         a.button{
-                font-size: 27px;
+                font-size: 40px;
                 } 
 }
 /*end*/
@@ -430,6 +405,7 @@ button.form_button{
        /*Company website title*/
        h1{
          font-size: 70px;
+         margin-bottom: 90px;   
          }
 
        /*navbar logo*/
@@ -442,92 +418,58 @@ button.form_button{
           font-size: 50px;
           }
 
-       /*homepage paragraph*/
-       section.homepage p{
-                         font-size: 40px;
-                         }
+        /*arranges food & people photos underneath each other*/
+        #food_photos,#people_photos{
+                                   /* display: inline-block; */
+                                   /* column-count: 2;
+                                   clear: initial; */
+                                   display: grid;
+                                   }
+     
+        /*border round pics*/
+        .GalleryBorder{ 
+                      border: solid blue 5px;
+                      }
 
-        /*homepage sign up button*/
-        .homepage_sign_up_button{
-                                margin-bottom: 90px;
-                                }
 
-        /*sign up button for ALL BUT sign up page*/
-        a.button{
-                font-size: 29px;
-                } 
-                                 
-        /*footer paragraphs*/
-        footer p{
-                font-size: 25px;
-                }
-    
-        /*footer icons*/
-        footer i.fab{
-                    height: 170px;
-                    }
-  
-        /*footer contacts*/
-        .contacts{
-                 height: 105px;
-                 }
- 
-        /*footer copyright*/
-        .copyright{
-                  height: 24px;
-                  padding-bottom: 40px;
-                  } 
-}
-/*end*/
+                                   
 
-@media (min-width: 953px) {
-        /*homepage sign up button*/
-        .homepage_sign_up_button{
-                                margin-bottom: 130px;
-                                }
 
-        /*footer paragraphs*/
-        footer p{
-                font-size: 30px;
-                }
 
-        /*footer icons*/
-        footer i.fab{
-                    height: 215px;
-                    }
-  
-        /*footer contacts*/
-        .contacts{
-                 height: 130px;
-                 }
 
-        /*footer copyright*/
-        .copyright{
-                  height: 30px;
-                  padding-bottom: 50px;
-                  }                                  
+
 
 }
 /*end*/
 
 @media (min-width: 992px) {
-        /*navbar logo*/
+        /*gets rid of navbar logo*/
        .my-nav .navbar-brand{
-                            font-size: 0px;
-                            visibility: hidden;
-                            margin: 0px;
-                            padding: 0px;
+                            display: none;
                             } 
 
        /*navbar links*/
        a.nav-item.nav-link{
                           font-size: 35px;
+                          padding: 0px;
                           }
 
-        /*centers navbar links on bigger screens*/
-        div.navbar-nav{
-                      margin-left: 30px;
-                      }
+        /*navbar hovering links*/
+        a.nav-item.nav-link:hover, a.nav-item.nav-link.active{
+                                 border-radius: 9px;
+                                 margin: 0px 5px;
+                                 }
+
+        /*canters navbar links*/
+        div#navbarNavAltMarkup.collapse.navbar-collapse{
+                                                       justify-content: center;
+                                                       }
+
+        /*lines between navbar links*/
+        .vertical_line{
+                      border: solid white 1px;
+                      padding-left: 2px;
+                      }                                                                                         
 }
 /*end*/
 
@@ -536,41 +478,5 @@ button.form_button{
        a.nav-item.nav-link{
                           font-size: 40px;
                           }
-
-        /*centers navbar links on bigger screens*/
-        div.navbar-nav{
-                      margin-left: 25px;
-                      }
-                      
-        /*sign up button for ALL BUT sign up page*/
-        a.button{
-                font-size: 40px;
-                }
-
-        /*homepage sign up button*/
-        .homepage_sign_up_button{
-                                margin-bottom: 170px;
-                                }
-
-       /*footer paragraphs*/
-       footer p{
-               font-size: 35px;
-               }
-
-        /*footer icons*/
-        footer i.fab{
-                    height: 250px;
-                    }
-
-        /*footer contacts*/
-        .contacts{
-                 height: 155px;
-                 }
-
-        /*footer copyright*/
-        .copyright{
-                  height: 35px;
-                  padding-bottom: 60px;
-                  }
 }
 /*end*/
