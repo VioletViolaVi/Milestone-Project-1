@@ -27,7 +27,7 @@ body{
 h1{
     height: 35px;
     width: 100%;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 25px;
     margin-top: 30px;
     font-weight: bold;
@@ -51,7 +51,7 @@ h2{
 /*navbar logo*/
 .my-nav .navbar-brand{
     color: white;
-    font-size: 25px;
+    font-size: 26px;
 }
 
 /*navbar logo hovered state*/
@@ -63,7 +63,7 @@ h2{
 /*navbar links*/
 .my-nav .nav-link{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     margin: 3px 0px;
 }
 
@@ -80,6 +80,7 @@ h2{
     box-shadow: none;
 }
 
+/*navbar links when on its page*/
 .active{
     background-color: DarkGoldenRod;
     border-radius: 9pc;
@@ -87,7 +88,7 @@ h2{
 }
 
 /*-----------------------------------------------------SignUp Button*/
-/*sign up button for home, schedule & testimonials*/
+/*sign up button for ALL BUT sign up page*/
 a.button{
     color: white;
     background-color: GoldenRod;
@@ -102,7 +103,7 @@ a.button{
 /*-----------------------------------------------------Images*/
 /*decorates ALL photos individually*/
 #food_photos img,#people_photos img,.baker img{
-    width: 90%;
+    width: 270px;
     height: 350px; 
     border: 5px solid DarkGoldenRod;
     border-radius: 50%;
@@ -138,7 +139,7 @@ footer p{
 
 /*footer icons*/
 footer i.fab{
-    font-size: xx-large;
+    font-size: 250%;
     letter-spacing: 5px;
     height: 94px;
 }
@@ -318,3 +319,258 @@ button.form_button{
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
+
+/*-----------------------------------------------------HomePage*/
+@media (min-width: 418px) {
+       /*Company website title*/
+       h1{
+         margin-bottom: 30px;
+         }
+      
+        /*homepage paragraph*/
+        section.homepage p{
+                          margin-bottom: 40px;
+                          font-size: 22px;
+                          }
+}
+/*end*/
+
+@media (min-width: 445px) {
+       /*Company website title*/
+       h1{
+         font-size: 40px;
+         }
+      
+        /*homepage paragraph*/
+        section.homepage p{
+                          font-size: 25px;
+                          }
+}
+/*end*/
+
+@media (min-width: 579px) {
+       /*footer paragraphs*/
+       footer p{
+               font-size: 16px;
+               }
+
+        /*footer icons*/
+        footer i.fab{
+                    letter-spacing: 7px;
+                    height: 100px;
+                    }
+
+        /*footer copyright*/
+        .copyright{
+                  padding-bottom: 26px;
+                  }
+}
+/*end*/
+
+@media (min-width: 616px) {
+        /*Company website title*/
+        h1{
+          font-size: 50px;
+          margin-bottom: 70px;
+          }
+
+         /*navbar logo*/
+         .my-nav .navbar-brand{
+                              font-size: 45px;
+                              }
+
+        /*burger icon */
+        button.navbar-toggler{
+                              font-size: 45px;
+                              }
+
+        /*navbar links*/
+        .my-nav .nav-link{
+                         font-size: 40px;
+                         }
+
+         /*Company sub-titles*/
+         h2{
+           font-size: 40px;
+           }
+
+        /*footer paragraphs*/
+        footer p{
+                font-size: 20px;
+                }
+
+        /*footer icons*/
+        footer i.fab{
+                    height: 140px;
+                    }
+
+        /*footer contacts*/
+        .contacts{
+                 height: 85px;
+                 }
+
+        /*footer copyright*/
+        .copyright{
+                  height: 23px;
+                  padding-bottom: 35px;
+                  }
+
+       /*homepage sign up button*/
+       .homepage_sign_up_button{
+                               margin-bottom: 60px;
+                               }
+        /*sign up button for ALL BUT sign up page*/
+        a.button{
+                font-size: 27px;
+                } 
+}
+/*end*/
+
+@media (min-width: 766px) {
+       /*Company website title*/
+       h1{
+         font-size: 70px;
+         }
+
+       /*navbar logo*/
+       .my-nav .navbar-brand{
+                            font-size: 60px;
+                            } 
+
+        /*Company sub-titles*/
+        h2{
+          font-size: 50px;
+          }
+
+       /*homepage paragraph*/
+       section.homepage p{
+                         font-size: 40px;
+                         }
+
+        /*homepage sign up button*/
+        .homepage_sign_up_button{
+                                margin-bottom: 90px;
+                                }
+
+        /*sign up button for ALL BUT sign up page*/
+        a.button{
+                font-size: 29px;
+                } 
+                                 
+        /*footer paragraphs*/
+        footer p{
+                font-size: 25px;
+                }
+    
+        /*footer icons*/
+        footer i.fab{
+                    height: 170px;
+                    }
+  
+        /*footer contacts*/
+        .contacts{
+                 height: 105px;
+                 }
+ 
+        /*footer copyright*/
+        .copyright{
+                  height: 24px;
+                  padding-bottom: 40px;
+                  } 
+}
+/*end*/
+
+@media (min-width: 953px) {
+        /*homepage sign up button*/
+        .homepage_sign_up_button{
+                                margin-bottom: 130px;
+                                }
+
+        /*footer paragraphs*/
+        footer p{
+                font-size: 30px;
+                }
+
+        /*footer icons*/
+        footer i.fab{
+                    height: 215px;
+                    }
+  
+        /*footer contacts*/
+        .contacts{
+                 height: 130px;
+                 }
+
+        /*footer copyright*/
+        .copyright{
+                  height: 30px;
+                  padding-bottom: 50px;
+                  }                                  
+
+}
+/*end*/
+
+@media (min-width: 992px) {
+        /*navbar logo*/
+       .my-nav .navbar-brand{
+                            font-size: 0px;
+                            visibility: hidden;
+                            margin: 0px;
+                            padding: 0px;
+                            } 
+
+       /*navbar links*/
+       a.nav-item.nav-link{
+                          font-size: 35px;
+                          }
+
+        /*centers navbar links on bigger screens*/
+        div.navbar-nav{
+                      margin-left: 30px;
+                      }
+}
+/*end*/
+
+@media (min-width: 1125px) {
+       /*navbar links*/
+       a.nav-item.nav-link{
+                          font-size: 40px;
+                          }
+
+        /*centers navbar links on bigger screens*/
+        div.navbar-nav{
+                      margin-left: 25px;
+                      }
+                      
+        /*sign up button for ALL BUT sign up page*/
+        a.button{
+                font-size: 40px;
+                }
+
+        /*homepage sign up button*/
+        .homepage_sign_up_button{
+                                margin-bottom: 170px;
+                                }
+
+       /*footer paragraphs*/
+       footer p{
+               font-size: 35px;
+               }
+
+        /*footer icons*/
+        footer i.fab{
+                    height: 250px;
+                    }
+
+        /*footer contacts*/
+        .contacts{
+                 height: 155px;
+                 }
+
+        /*footer copyright*/
+        .copyright{
+                  height: 35px;
+                  padding-bottom: 60px;
+                  }
+}
+/*end*/
