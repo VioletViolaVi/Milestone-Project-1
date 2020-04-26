@@ -106,7 +106,7 @@ a.button{
     height: 350px; 
     border: 5px solid DarkGoldenRod;
     border-radius: 50%;
-    margin: 5px;
+    margin: 5px 5px 45px;
 }
 
 /*arranges food & people photos underneath each other*/
@@ -180,12 +180,17 @@ section.homepage p{
 /*decorates people opinions*/
 #people_photos p{
     font-style: italic;
-    font-size: 20px;
+    font-size: 25px;
     background-color: GoldenRod;
     border: solid 2px DarkGoldenRod; 
     border-radius: 30px;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5px 45px;
+}
+
+/*names of people*/
+#people_photos span{
+    display: block;
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
@@ -417,28 +422,6 @@ button.form_button{
         h2{
           font-size: 50px;
           }
-
-        /*arranges food & people photos underneath each other*/
-        #food_photos,#people_photos{
-                                   /* display: inline-block; */
-                                   /* column-count: 2;
-                                   clear: initial; */
-                                   display: grid;
-                                   }
-     
-        /*border round pics*/
-        .GalleryBorder{ 
-                      border: solid blue 5px;
-                      }
-
-
-                                   
-
-
-
-
-
-
 }
 /*end*/
 
