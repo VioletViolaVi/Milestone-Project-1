@@ -44,7 +44,7 @@
     <h2>Sign Up</h2>
 
     <br>
-      <div id="centering_form">
+      <div id="sign_up_form">
         <form method="post" action="#">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="fname" size="30" required />
@@ -56,7 +56,7 @@
           <input type="email" id="email" name="email" size="30" required />
 
           <label for="phone">Phone Number</label>
-          <small>Format: 012-3456-7890</small>
+          <small>Example: 012-3456-7890</small>
           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" size="30" required/>
 
           <br />
@@ -67,19 +67,19 @@
           <label for="choosen_schedule">Select all preferred times:</label>
           <select name="choosen_schedule" id="choosen_schedule" required multiple>
             
-            <optgroup label="Tuesday" class="text">
+            <optgroup label="Monday" class="text">
               <option value="morning" class="text">Morning 08:00-09:00</option>
               <option value="afternoon" class="text">Afternoon 14:00-15:00</option>              
               <option value="evening" class="text">Evening 21:00-22:00</option>
             </optgroup>
 
-            <optgroup label="Friday" class="text">
+            <optgroup label="Thursday" class="text">
               <option value="morning" class="text">Morning 08:00-09:00</option>
               <option value="afternoon" class="text">Afternoon 14:00-15:00</option>
               <option value="evening" class="text">Evening 21:00-22:00</option>
             </optgroup>
 
-            <optgroup label="Saturday" class="text">
+            <optgroup label="Friday" class="text">
               <option value="morning" class="text">Morning 10:00-11:00</option>
               <option value="afternoon" class="text">Afternoon 15:00-16:00</option>
               <option value="evening" class="text">Evening 20:00-21:00</option>
@@ -91,13 +91,14 @@
               <option value="evening" class="text">Evening 20:00-21:00</option>
             </optgroup>
           </select>
-
-          <br />
-          <button
-            class="form_button centered_form_button" onclick="alert('Form sent')" type="submit" value="Sign Up">Sign Up
-          </button>
         </form>
       </div>
+
+        <br />
+        <button
+            class="form_button" onclick="alert('Form sent')" type="submit" value="Sign Up">Sign Up
+        </button>
+
     </section>
 
     <footer>

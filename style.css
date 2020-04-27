@@ -249,7 +249,7 @@ section.homepage p{
 
 /*---------------------------------------------------------------SignUp---------------------------------------------------------------*/
 /*whole form*/
-#centering_form{
+#sign_up_form{
     background-color: rgba(218, 165, 32, 0.582);
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
@@ -308,10 +308,10 @@ select{
 /*stretches out select box*/
 select#choosen_schedule{
     width: 80%;
-    margin: 0px;
+    margin-bottom: 20px;
 }
 
-/*content in preference box pushed to the left*/
+/*content in preference box*/
 select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
     text-align: left;
     width: 100%;
@@ -324,9 +324,7 @@ button.form_button{
     padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
-    display: inline-block;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
@@ -348,6 +346,12 @@ button.form_button{
         .times ul li{
                     font-size: 28px;
                     }
+
+        /*content in preference box*/
+        select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
+                                                                                text-align: center;
+                                                                                font-size: 22px;
+                                                                                }                                                             
 }
 /*end*/
 
@@ -433,6 +437,22 @@ button.form_button{
         a.button{
                 font-size: 40px;
                 } 
+
+        /*form labels*/
+        label,small{
+                   font-size: 30px;
+                   }
+
+        /*content in preference box*/
+        select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
+                                                                                font-size: 25px;
+                                                                                }
+
+        /*form sign up button*/
+        button.form_button{
+                          font-size: 40px;
+                          margin-top: 20px;
+                          }
 }
 /*end*/
 
@@ -452,6 +472,11 @@ button.form_button{
         h2{
           font-size: 50px;
           }
+
+        /*content in preference box*/
+        select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
+                                                                                font-size: 28px;
+                                                                                }
 }
 /*end*/
 
