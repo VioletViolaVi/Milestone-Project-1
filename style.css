@@ -88,7 +88,7 @@ h2{
 
 /*-----------------------------------------------------Images*/
 /*decorates ALL photos individually*/
-#food_photos img,#people_photos img,.baker img{
+#food_photos img,#people_photos img,.founder img{
     width: 270px;
     height: 350px; 
     border: 5px solid DarkGoldenRod;
@@ -232,9 +232,14 @@ section.homepage p{
     border-radius: 10px;
 }
 
+/*decorates paragraphs titles*/
+.about_us_paras h3{
+    font-size: 30px;
+}
+
 /*decorates paragraphs*/
 .about_us_paras p{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*controls border around paragraphs*/
