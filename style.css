@@ -96,14 +96,6 @@ h2{
     margin: 5px 5px 45px;
 }
 
-/*arranges food & people photos underneath each other*/
-#food_photos,#people_photos{
-    clear: both;
-    line-height: 0;
-    column-count: 1;
-    column-gap: 0px;
-}
-
 /*-----------------------------------------------------Opinions & ScheduleContents*/
 /*names of people & schedule contents*/
 #people_photos span,.schedule span{
@@ -213,10 +205,11 @@ section.homepage p{
 
 /*decorates background of schedule times*/
 .schedule div.times{
-    background-color: GoldenRod;
-    margin: 10px 40px 50px;
+    background-color: rgba(218, 165, 32, 0.822);
+    /* margin: 10px 0px 50px 0px; */
     border: 5px solid DarkGoldenRod;
     border-radius: 9px;
+    width: 83%;
 }
 
 /*removes bullet points from schedule times*/
@@ -268,7 +261,8 @@ label,small{
 /*all form boxes, labels & sign up button*/
 form, label, input{
     display: block;
-}
+    text-align: center;
+} 
 
 /*text typed in from left hand-side in boxes*/
 input{
@@ -307,13 +301,14 @@ select{
 
 /*stretches out select box*/
 select#choosen_schedule{
-    width: 80%;
+    width: 225px;
     margin-bottom: 20px;
 }
 
 /*content in preference box*/
 select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
     text-align: left;
+    font-size: 18px;
     width: 100%;
 }
 
@@ -328,207 +323,261 @@ button.form_button{
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
+@media (min-width: 355px) {
+        /*content in preference box*/
+        select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
+            font-size: 20px;
+            }       
+                                                                                
+        /*controls select box growth*/
+        select#choosen_schedule{
+            width: 250px;
+            }
 
-/*-----------------------------------------------------HomePage*/
+}
+/*end*/
+
+
 @media (min-width: 418px) {
         /*homepage paragraph*/
         section.homepage p{
-                          margin-bottom: 40px;
-                          font-size: 22px;
-                          }
+            margin-bottom: 40px;
+            font-size: 22px;
+            }
 
         /*days of the week*/
         .times h3{
-                 font-size: 33px;
-                 }
+            font-size: 33px;
+            }
                  
         /*times of the week*/
         .times ul li{
-                    font-size: 28px;
-                    }
+            font-size: 28px;
+            }
+
+        /*controls select box growth*/
+        select#choosen_schedule{
+            width: 275px;
+            }
 
         /*content in preference box*/
         select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
-                                                                                text-align: center;
-                                                                                font-size: 22px;
-                                                                                }                                                             
+            font-size: 22px;
+            }                                                             
 }
 /*end*/
+
 
 @media (min-width: 445px) {
        /*Company website title*/
        h1{
-         font-size: 40px;
-         margin-bottom: 40px;        
-         }
+           font-size: 40px;
+           margin-bottom: 40px;
+           }
       
         /*homepage paragraph*/
         section.homepage p{
-                          font-size: 25px;
-                          }
+            font-size: 25px;
+            }
 }
 /*end*/
+
 
 @media (min-width: 470px) {
         /*days of the week*/
         .times h3{
-                 font-size: 38px;
-                 }
+            font-size: 38px;
+            }
                  
         /*times of the week*/
         .times ul li{
-                    font-size: 33px;
-                    }
+            font-size: 33px;
+            }
 }
 /*end*/
+
 
 @media (min-width: 579px) {
         /*footer icons*/
         footer i.fab{
-                    letter-spacing: 7px;
-                    height: 70px;
-                    }
+            letter-spacing: 7px;
+            height: 70px;
+            }
 
         /*footer contacts*/
         .contacts{
-                 height: 30px;
-                 }
+            height: 30px;
+            }
 
         /*footer copyright*/
         .copyright{
-                  height: 23px;
-                  }
+            height: 23px;
+            }
+
+        /*controls select box growth*/
+        select#choosen_schedule{
+            width: 290px;
+            }
 }
 /*end*/
+
 
 @media (min-width: 616px) {
         /*Company website title*/
         h1{
-          font-size: 50px;
-          margin-bottom: 60px;
-          }
+            font-size: 50px;
+            margin-bottom: 60px;
+            }
 
-         /*navbar logo*/
-         .my-nav .navbar-brand{
-                              font-size: 45px;
-                              }
-
-        /*burger icon */
-        button.navbar-toggler{
-                              font-size: 45px;
-                              }
+         /*navbar logo & burger icon*/
+         .my-nav .navbar-brand,button.navbar-toggler{
+             font-size: 45px;
+             }
 
         /*navbar links*/
         .my-nav .nav-link{
-                         font-size: 40px;
-                         }
+            font-size: 40px;
+            }
 
          /*Company sub-titles*/
          h2{
-           font-size: 40px;
-           }
+             font-size: 40px;
+             }
 
         /*homepage paragraph*/
         section.homepage p{
-                          font-size: 37px;
-                          }
+            font-size: 37px;
+            }
 
         /*sign up button for ALL BUT sign up page*/
         a.button{
-                font-size: 40px;
-                } 
+            font-size: 40px;
+            } 
 
         /*form labels*/
         label,small{
-                   font-size: 30px;
-                   }
+            font-size: 30px;
+            }
 
+        /*controls select box growth*/
+        select#choosen_schedule{
+            width: 315px;
+            }
+        
         /*content in preference box*/
         select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
-                                                                                font-size: 25px;
-                                                                                }
+            font-size: 25px;
+            }
 
         /*form sign up button*/
         button.form_button{
-                          font-size: 40px;
-                          margin-top: 20px;
-                          }
+            font-size: 40px;
+            margin-top: 20px;
+            }
 }
 /*end*/
+
 
 @media (min-width: 766px) {
        /*Company website title*/
        h1{
-         font-size: 70px;
-         margin-bottom: 90px;   
-         }
+           font-size: 70px;
+           margin-bottom: 90px;   
+           }
 
        /*navbar logo*/
        .my-nav .navbar-brand{
-                            font-size: 60px;
-                            } 
+           font-size: 60px;
+           } 
 
         /*Company sub-titles*/
         h2{
-          font-size: 50px;
-          }
+            font-size: 50px;
+            }
 
         /*content in preference box*/
         select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
-                                                                                font-size: 28px;
-                                                                                }
+            font-size: 28px;
+            }
+
+        /*inside space of ALL text boxes*/
+        input[type=text],input[type=email],input[type=tel]{
+            padding: 10px;
+            }
+
+       /*controls sign up box growth*/
+       #sign_up_form{
+           width: 650px;
+           }
+
+       /*controls select box growth*/
+       select#choosen_schedule{
+           width: 350px;
+           }
 }
 /*end*/
+
 
 @media (min-width: 992px) {
         /*gets rid of navbar logo*/
        .my-nav .navbar-brand{
-                            display: none;
-                            } 
+           display: none;
+           } 
 
        /*navbar links*/
        a.nav-item.nav-link{
-                          font-size: 35px;
-                          padding: 0px;
-                          }
+           font-size: 35px;
+           padding: 0px;
+           }
 
         /*navbar hovering links*/
         a.nav-item.nav-link:hover, a.nav-item.nav-link.active{
-                                 border-radius: 9px;
-                                 margin: 0px 5px;
-                                 }
+            border-radius: 9px;
+            margin: 0px 5px;
+            }
 
         /*canters navbar links*/
         div#navbarNavAltMarkup.collapse.navbar-collapse{
-                                                       justify-content: center;
-                                                       }
+            justify-content: center;
+            }
 
         /*lines between navbar links*/
         .vertical_line{
-                      border: solid white 1px;
-                      padding-left: 2px;
-                      }   
+            border: solid white 1px;
+            padding-left: 2px;
+            }   
         
         /*days of the week*/
         .times h3{
-                 font-size: 45px;
-                 }
+            font-size: 45px;
+            }
         /*space under evening times*/
         .times ul{
-                 margin-bottom: 15px;
-                 }
+            margin-bottom: 15px;
+            }
                  
         /*times of the week*/
         .times ul li{
-                    font-size: 40px;
-                    }
+            font-size: 40px;
+            }     
+
+        /*content in preference box*/
+        select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
+            font-size: 30px;
+            }       
+                                                                                
+       /*controls select box growth*/
+       select#choosen_schedule{
+           width: 370px;
+           }
 }
 /*end*/
 
+
 @media (min-width: 1125px) {
-       /*navbar links*/
-       a.nav-item.nav-link{
-                          font-size: 40px;
-                          }
+        /*navbar links*/
+        a.nav-item.nav-link{
+            font-size: 40px;
+            }
 }
 /*end*/
