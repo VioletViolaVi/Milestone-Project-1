@@ -5,45 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sign Up | BusyBakes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/bfcbb8f6a3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bfcbb8f6a3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
+    <header>
+      <h1>BusyBakes</h1>
+    </header>
 
-       <header>
-		  <h1>BusyBakes</h1>
-	   </header>
-
-       <header>
-
-          <nav class="navbar navbar-expand-lg my-nav">
-            <a class="navbar-brand" href="index.html">BusyBakes</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a><span class="vertical_line"></span>
-                    <a class="nav-item nav-link" href="gallery.html">Gallery</a><span class="vertical_line"></span>
-                    <a class="nav-item nav-link" href="testimonials.html">Testimonials</a><span class="vertical_line"></span>
-                    <a class="nav-item nav-link" href="schedule.html">Schedule</a><span class="vertical_line"></span>
-                    <a class="nav-item nav-link" href="about_us.html">About Us</a><span class="vertical_line"></span>
-                    <a class="nav-item nav-link active" href="sign_up.html">Sign Up</a>
-                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true" hidden>Disabled</a>
-                </div>
-            </div>
-          </nav>
-
-	   </header>
+    <header>
+      <nav class="navbar navbar-expand-lg my-nav">
+        <a class="navbar-brand" href="index.html">BusyBakes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            ><span class="vertical_line"></span>
+            <a class="nav-item nav-link" href="gallery.html">Gallery</a
+            ><span class="vertical_line"></span>
+            <a class="nav-item nav-link" href="testimonials.html"
+              >Testimonials</a
+            ><span class="vertical_line"></span>
+            <a class="nav-item nav-link" href="schedule.html">Schedule</a
+            ><span class="vertical_line"></span>
+            <a class="nav-item nav-link" href="about_us.html">About Us</a
+            ><span class="vertical_line"></span>
+            <a class="nav-item nav-link active" href="sign_up.html">Sign Up</a>
+            <a
+              class="nav-item nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              hidden
+              >Disabled</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <section>
-    
-    <h2>Sign Up</h2>
+      <h2>Sign Up</h2>
 
-    <br>
+      <br />
       <div id="sign_up_form">
         <form method="post" action="#">
           <label for="fname">First Name</label>
@@ -57,7 +82,14 @@
 
           <label for="phone">Phone Number</label>
           <small>Example: 012-3456-7890</small>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" size="30" required/>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            size="30"
+            required
+          />
 
           <br />
 
@@ -65,40 +97,56 @@
           <input type="text" id="address" name="address" size="30" required />
 
           <label for="choosen_schedule">Select all preferred times:</label>
-          <select name="choosen_schedule" id="choosen_schedule" required multiple>
-            
+          <select
+            name="choosen_schedule"
+            id="choosen_schedule"
+            required
+            multiple
+          >
             <optgroup label="Monday" class="text">
               <option value="morning" class="text">Morning 08:00-09:00</option>
-              <option value="afternoon" class="text">Afternoon 14:00-15:00</option>              
+              <option value="afternoon" class="text"
+                >Afternoon 14:00-15:00</option
+              >
               <option value="evening" class="text">Evening 21:00-22:00</option>
             </optgroup>
 
             <optgroup label="Thursday" class="text">
               <option value="morning" class="text">Morning 08:00-09:00</option>
-              <option value="afternoon" class="text">Afternoon 14:00-15:00</option>
+              <option value="afternoon" class="text"
+                >Afternoon 14:00-15:00</option
+              >
               <option value="evening" class="text">Evening 21:00-22:00</option>
             </optgroup>
 
             <optgroup label="Friday" class="text">
               <option value="morning" class="text">Morning 10:00-11:00</option>
-              <option value="afternoon" class="text">Afternoon 15:00-16:00</option>
+              <option value="afternoon" class="text"
+                >Afternoon 15:00-16:00</option
+              >
               <option value="evening" class="text">Evening 20:00-21:00</option>
             </optgroup>
 
             <optgroup label="Sunday" class="text">
               <option value="morning" class="text">Morning 10:00-11:00</option>
-              <option value="afternoon" class="text">Afternoon 15:00-16:00</option>
+              <option value="afternoon" class="text"
+                >Afternoon 15:00-16:00</option
+              >
               <option value="evening" class="text">Evening 20:00-21:00</option>
             </optgroup>
           </select>
         </form>
       </div>
 
-        <br />
-        <button
-            class="form_button" onclick="alert('Form sent')" type="submit" value="Sign Up">Sign Up
-        </button>
-
+      <br />
+      <button
+        class="form_button"
+        onclick="alert('Form sent')"
+        type="submit"
+        value="Sign Up"
+      >
+        Sign Up
+      </button>
     </section>
 
     <footer>
@@ -140,20 +188,19 @@
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous">
-    </script>
-    
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous">
-    </script>
-    
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous">
-    </script>
-    
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
