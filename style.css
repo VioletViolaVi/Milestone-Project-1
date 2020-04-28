@@ -43,6 +43,7 @@ body{
 /*para titles*/
 .heading3{
     font-size: 30px;
+    font-style: italic;
 }
 
 /*-----------------------------------------------------Navbar*/
@@ -102,7 +103,7 @@ div.row{
     margin: 0px;
 }
 
-/*-----------------------------------------------------Opinions & ScheduleContents*/
+/*-----------------------------------------------------Opinions & Schedule Contents*/
 /*names of people & schedule contents*/
 #people_photos span,.schedule span{
     display: block;
@@ -193,9 +194,13 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
-/*slants all lesons text*/
-.schedule .lessons{
-    font-style: italic;
+/*decorates background of schedule times*/
+.schedule div.times{
+    background-color: rgba(218, 165, 32, 0.822);
+    margin-bottom: 50px;
+    border: 5px solid DarkGoldenRod;
+    border-radius: 9px;
+    width: 83%;
 }
 
 /*lesson level titles*/
@@ -212,13 +217,9 @@ section.homepage p{
     font-size: 20px;
 }
 
-/*decorates background of schedule times*/
-.schedule div.times{
-    background-color: rgba(218, 165, 32, 0.822);
-    margin-bottom: 50px;
-    border: 5px solid DarkGoldenRod;
-    border-radius: 9px;
-    width: 83%;
+/*slants all lesons text*/
+.heading4,.schedule p{
+    font-style: italic;
 }
 
 /*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
@@ -232,6 +233,7 @@ section.homepage p{
 /*decorates paragraphs*/
 .about_us_paras p{
     font-size: 25px;
+    font-style: italic;
 }
 
 /*controls border around paragraphs*/
