@@ -70,7 +70,7 @@
 
       <br />
       <div id="sign_up_form">
-        <form method="post" action="#">
+        <form method="post" action="#" onsubmit="alert('Form sent')" >
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="fname" size="30" required />
 
@@ -127,11 +127,12 @@
               <option value="intermediate" class="text">Intermediate 8pm-9pm</option>
             </optgroup>
           </select>
+          <button class="form_button" type="submit" value="Sign Up"> Sign Up </button>
         </form>
       </div>
 
       <br />
-      <button class="form_button" onclick="alert('Form sent')" type="submit" value="Sign Up"> Sign Up </button>
+      
       
     </section>
 

@@ -24,15 +24,6 @@ body{
     background-position: center;
 }
 
-/*Company website title*/
-.heading1{
-    height: 35px;
-    width: 100%;
-    font-size: 40px;
-    margin: 30px 0px;
-    font-weight: bold;
-}
-
 /*Company sub-titles*/
 .heading2{
     font-size: 35px;
@@ -51,7 +42,6 @@ body{
 .my-nav{
     background-color: rgba(218, 165, 32, 0.582);
     border: solid 2px Goldenrod;
-    border-radius: 5px;
 }
 
 /*navbar logo*/
@@ -200,7 +190,7 @@ section.homepage p{
     margin-bottom: 50px;
     border: 5px solid DarkGoldenRod;
     border-radius: 9px;
-    width: 83%;
+    width: 99%;
 }
 
 /*lesson level titles*/
@@ -359,13 +349,7 @@ button.form_button{
 /*end*/
 
 
-@media (min-width: 445px) {
-       /*Company website title*/
-       .heading1{
-           font-size: 40px;
-           margin-bottom: 40px;
-           }
-      
+@media (min-width: 445px) {      
         /*homepage paragraph*/
         section.homepage p{
             font-size: 25px;
@@ -394,12 +378,6 @@ button.form_button{
 
 
 @media (min-width: 616px) {
-        /*Company website title*/
-        .heading1{
-            font-size: 50px;
-            margin-bottom: 60px;
-            }
-
          /*navbar logo & burger icon*/
          .my-nav .navbar-brand,button.navbar-toggler{
              font-size: 45px;
@@ -465,12 +443,6 @@ button.form_button{
 
 
 @media (min-width: 766px) {
-       /*Company website title*/
-       .heading1{
-           font-size: 70px;
-           margin-bottom: 90px;   
-           }
-
        /*navbar logo*/
        .my-nav .navbar-brand{
            font-size: 60px;
@@ -505,6 +477,19 @@ button.form_button{
 
 
 @media (min-width: 992px) {
+        /*Company website title*/
+        h1.heading1{
+        height: 35px;
+        width: 100%;
+        font-size: 70px;
+        font-weight: bold;
+        }
+
+        /*navbar bar*/
+        .my-nav{
+            margin-top: 80px;
+            }
+
         /*gets rid of navbar logo*/
        .my-nav .navbar-brand{
            display: none;
