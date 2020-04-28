@@ -17,25 +17,31 @@ body{
     min-height: 100vh;
     height: 100%;
 /*for the background image*/
+    background-color: rgba(218, 165, 32, 0.753);
     background-image: url(images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 /*Company website title*/
-h1{
+.heading1{
     height: 35px;
     width: 100%;
-    font-size: 35px;
+    font-size: 40px;
     margin: 30px 0px;
     font-weight: bold;
 }
 
 /*Company sub-titles*/
-h2{
-    font-size: 30px;
+.heading2{
+    font-size: 35px;
     text-transform: uppercase;
     margin: 30px;
+}
+
+/*para titles*/
+.heading3{
+    font-size: 30px;
 }
 
 /*-----------------------------------------------------Navbar*/
@@ -180,20 +186,23 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
-/*days of the week*/
-.times h3{
-    font-weight: bolder;
-    font-size: 33px;
+/*slants all lesons text*/
+.schedule .lessons{
+    font-style: italic;
 }
 
-/*space under evening times*/
-.times ul{
-    margin-bottom: 5px;
+/*lesson level titles*/
+.heading4{
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 2px;
+    margin-top: 15px;
 }
 
-/*times of the week*/
-.times ul li{
-    font-size: 25px;
+/*para content*/
+.schedule p{
+    margin-bottom: 8px;
+    font-size: 20px;
 }
 
 /*decorates background of schedule times*/
@@ -205,22 +214,12 @@ section.homepage p{
     width: 83%;
 }
 
-/*removes bullet points from schedule times*/
-.schedule ul{
-    list-style: none;
-}
-
 /*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
 /*decorates background paragraphs*/
 .about_us_paras{
     background-color: rgba(218, 165, 32, 0.87);
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
-}
-
-/*decorates paragraphs titles*/
-.about_us_paras h3{
-    font-size: 30px;
 }
 
 /*decorates paragraphs*/
@@ -239,7 +238,7 @@ section.homepage p{
     background-color: rgba(218, 165, 32, 0.582);
     border: 2px solid DarkGoldenRod;
     border-radius: 10px;
-    width: 83%; 
+    width: 95%; 
     padding: 0px 10px;
     margin: auto;
     min-height: 100%;
@@ -294,7 +293,7 @@ select{
 
 /*stretches out select box*/
 select#choosen_schedule{
-    width: 225px;
+    width: 250px;
     margin-bottom: 20px;
 }
 
@@ -324,7 +323,7 @@ button.form_button{
                                                                                 
         /*controls select box growth*/
         select#choosen_schedule{
-            width: 250px;
+            width: 285px;
             }
 
 }
@@ -338,19 +337,9 @@ button.form_button{
             font-size: 22px;
             }
 
-        /*days of the week*/
-        .times h3{
-            font-size: 33px;
-            }
-                 
-        /*times of the week*/
-        .times ul li{
-            font-size: 28px;
-            }
-
         /*controls select box growth*/
         select#choosen_schedule{
-            width: 275px;
+            width: 310px;
             }
 
         /*content in preference box*/
@@ -363,7 +352,7 @@ button.form_button{
 
 @media (min-width: 445px) {
        /*Company website title*/
-       h1{
+       .heading1{
            font-size: 40px;
            margin-bottom: 40px;
            }
@@ -374,21 +363,6 @@ button.form_button{
             }
 }
 /*end*/
-
-
-@media (min-width: 470px) {
-        /*days of the week*/
-        .times h3{
-            font-size: 38px;
-            }
-                 
-        /*times of the week*/
-        .times ul li{
-            font-size: 33px;
-            }
-}
-/*end*/
-
 
 @media (min-width: 579px) {
         /*footer icons*/
@@ -406,18 +380,13 @@ button.form_button{
         .copyright{
             height: 23px;
             }
-
-        /*controls select box growth*/
-        select#choosen_schedule{
-            width: 290px;
-            }
 }
 /*end*/
 
 
 @media (min-width: 616px) {
         /*Company website title*/
-        h1{
+        .heading1{
             font-size: 50px;
             margin-bottom: 60px;
             }
@@ -433,13 +402,28 @@ button.form_button{
             }
 
          /*Company sub-titles*/
-         h2{
+         .heading2{
              font-size: 40px;
              }
 
         /*homepage paragraph*/
         section.homepage p{
             font-size: 37px;
+            }
+
+        /*para titles*/
+        .heading3{
+            font-size: 35px;
+            }
+
+        /*lesson level titles*/
+        .heading4{
+            font-size: 30px;
+            }
+            
+        /*para content*/
+        .schedule p{
+            font-size: 25px;
             }
 
         /*sign up button for ALL BUT sign up page*/
@@ -454,7 +438,7 @@ button.form_button{
 
         /*controls select box growth*/
         select#choosen_schedule{
-            width: 315px;
+            width: 350px;
             }
         
         /*content in preference box*/
@@ -473,7 +457,7 @@ button.form_button{
 
 @media (min-width: 766px) {
        /*Company website title*/
-       h1{
+       .heading1{
            font-size: 70px;
            margin-bottom: 90px;   
            }
@@ -484,7 +468,7 @@ button.form_button{
            } 
 
         /*Company sub-titles*/
-        h2{
+        .heading2{
             font-size: 50px;
             }
 
@@ -505,7 +489,7 @@ button.form_button{
 
        /*controls select box growth*/
        select#choosen_schedule{
-           width: 350px;
+           width: 390px;
            }
 }
 /*end*/
@@ -539,20 +523,21 @@ button.form_button{
             border: solid white 1px;
             padding-left: 2px;
             }   
-        
-        /*days of the week*/
-        .times h3{
+
+        /*para titles*/
+        .heading3{
             font-size: 45px;
             }
-        /*space under evening times*/
-        .times ul{
-            margin-bottom: 15px;
+
+        /*lesson level titles*/
+        .heading4{
+            font-size: 35px;
             }
-                 
-        /*times of the week*/
-        .times ul li{
-            font-size: 40px;
-            }     
+            
+        /*para content*/
+        .schedule p{
+            font-size: 30px;
+            } 
 
         /*content in preference box*/
         select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
@@ -561,7 +546,7 @@ button.form_button{
                                                                                 
        /*controls select box growth*/
        select#choosen_schedule{
-           width: 370px;
+           width: 425px;
            }
 }
 /*end*/

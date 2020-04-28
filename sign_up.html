@@ -20,7 +20,7 @@
 
   <body>
     <header>
-      <h1>BusyBakes</h1>
+      <h1 class="heading1">BusyBakes</h1>
     </header>
 
     <header>
@@ -66,7 +66,7 @@
     </header>
 
     <section>
-      <h2>Sign Up</h2>
+      <h2 class="heading2">Sign Up</h2>
 
       <br />
       <div id="sign_up_form">
@@ -96,7 +96,7 @@
           <label for="address">Address</label>
           <input type="text" id="address" name="address" size="30" required />
 
-          <label for="choosen_schedule">Select all preferred times:</label>
+          <label for="choosen_schedule">Select all preferred classes</label>
           <select
             name="choosen_schedule"
             id="choosen_schedule"
@@ -104,49 +104,35 @@
             multiple
           >
             <optgroup label="Monday" class="text">
-              <option value="morning" class="text">Morning 08:00-09:00</option>
-              <option value="afternoon" class="text"
-                >Afternoon 14:00-15:00</option
-              >
-              <option value="evening" class="text">Evening 21:00-22:00</option>
+              <option value="beginner" class="text">Beginner 9am-10am</option>
+              <option value="intermediate" class="text">Intermediate 2pm-3pm</option>
+              <option value="expert" class="text">Expert 7pm-8pm</option>
             </optgroup>
 
             <optgroup label="Thursday" class="text">
-              <option value="morning" class="text">Morning 08:00-09:00</option>
-              <option value="afternoon" class="text"
-                >Afternoon 14:00-15:00</option
-              >
-              <option value="evening" class="text">Evening 21:00-22:00</option>
+              <option value="expert" class="text">Expert 9am-10am</option>
+              <option value="beginner" class="text">Beginner 2pm-3pm</option>
+              <option value="intermediate" class="text">Intermediate 7pm-8pm</option>
             </optgroup>
 
             <optgroup label="Friday" class="text">
-              <option value="morning" class="text">Morning 10:00-11:00</option>
-              <option value="afternoon" class="text"
-                >Afternoon 15:00-16:00</option
-              >
-              <option value="evening" class="text">Evening 20:00-21:00</option>
+              <option value="intermediate" class="text">Intermediate 10am-11am</option>
+              <option value="expert" class="text">Expert 3pm-4pm</option>
+              <option value="beginner" class="text">Beginner 8pm-9pm</option>
             </optgroup>
 
             <optgroup label="Sunday" class="text">
-              <option value="morning" class="text">Morning 10:00-11:00</option>
-              <option value="afternoon" class="text"
-                >Afternoon 15:00-16:00</option
-              >
-              <option value="evening" class="text">Evening 20:00-21:00</option>
+              <option value="beginner" class="text">Beginner 10am-11am</option>
+              <option value="expert" class="text">Expert 3pm-4pm</option>
+              <option value="intermediate" class="text">Intermediate 8pm-9pm</option>
             </optgroup>
           </select>
         </form>
       </div>
 
       <br />
-      <button
-        class="form_button"
-        onclick="alert('Form sent')"
-        type="submit"
-        value="Sign Up"
-      >
-        Sign Up
-      </button>
+      <button class="form_button" onclick="alert('Form sent')" type="submit" value="Sign Up"> Sign Up </button>
+      
     </section>
 
     <footer>
