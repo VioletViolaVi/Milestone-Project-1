@@ -84,7 +84,8 @@ body{
 
 /*-----------------------------------------------------Images*/
 /*decorates ALL photos individually*/
-#food_photos img,#people_photos img,.founder img,.buns img,.sieve img{
+/* .food_photos img,#people_photos  */
+.wrapping img{
     width: 270px;
     height: 350px; 
     border: 5px solid DarkGoldenRod;
@@ -178,7 +179,7 @@ section.homepage p{
 
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
 /*decorates people opinions*/
-#people_photos p{
+/* #people_photos p{
     font-style: italic;
     font-size: 25px;
     background-color: GoldenRod;
@@ -186,6 +187,20 @@ section.homepage p{
     border-radius: 30px;
     padding: 5px;
     margin: 5px 5px 45px;
+} */
+
+/*background*/
+.overall_box{
+    border: red solid 3px;
+    height: 400px;
+    
+}
+
+/*pictures*/
+.overall_box img{
+    border: green solid 3px;
+    width: 270px;
+    height: 310px;
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
