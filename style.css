@@ -24,6 +24,11 @@ body{
     background-position: center;
 }
 
+/*Company website title*/
+.heading1{
+    display: none;
+}
+
 /*Company sub-titles*/
 .heading2{
     font-size: 35px;
@@ -79,7 +84,7 @@ body{
 
 /*-----------------------------------------------------Images*/
 /*decorates ALL photos individually*/
-#food_photos img,#people_photos img,.founder img{
+#food_photos img,#people_photos img,.founder img,.buns img,.sieve img{
     width: 270px;
     height: 350px; 
     border: 5px solid DarkGoldenRod;
@@ -213,11 +218,22 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
-/*decorates background paragraphs*/
+/*founder & sieve photo arrangement*/
+.wrapping .founder img,.sieve img{
+    float: left;
+    margin: 20px;
+}
+
+/*buns photo arrangement*/
+.wrapping .buns img{
+    float: right;
+    margin: 20px;
+}
+
+/*decorates paragraph background */
 .about_us_paras{
     background-color: rgba(218, 165, 32, 0.87);
     border: 2px solid DarkGoldenRod;
-    border-radius: 10px;
 }
 
 /*decorates paragraphs*/
@@ -310,7 +326,7 @@ button.form_button{
     padding: 0px 5px 5px;
     border-radius: 10px;
     font-size: 20px;
-    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
@@ -478,7 +494,8 @@ button.form_button{
 
 @media (min-width: 992px) {
         /*Company website title*/
-        h1.heading1{
+        .heading1{
+        display: block;
         height: 35px;
         width: 100%;
         font-size: 70px;
@@ -550,6 +567,11 @@ button.form_button{
         /*navbar links*/
         a.nav-item.nav-link{
             font-size: 40px;
+            }
+
+        /*decorates paragraph background */
+        .about_us_paras{
+            padding-bottom: 60px;
             }
 }
 /*end*/
