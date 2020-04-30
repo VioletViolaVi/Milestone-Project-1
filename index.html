@@ -13,32 +13,37 @@
 </head>
 
 <body>
-	<header>
-		<h1 class="heading1">BusyBakes</h1>
-	</header>
 
+<!-- navbar -->
 	<header>
-		<nav class="navbar navbar-expand-lg my-nav">
+		<nav class="navbar navbar-expand-lg my-nav fixed-top">
 			<a class="navbar-brand" href="index.html">BusyBakes</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a><span class="vertical_line"></span>				
-					<a class="nav-item nav-link" href="testimonials.html">Testimonials</a><span class="vertical_line"></span>
-					<a class="nav-item nav-link" href="schedule.html">Schedule</a><span class="vertical_line"></span>
-					<a class="nav-item nav-link" href="about_us.html">About Us</a>
+					<a class="nav-item nav-link active" href="#homepage">Home<span class="sr-only">(current)</span></a><span class="vertical_line"></span>				
+					<a class="nav-item nav-link" href="#testimonials">Testimonials</a><span class="vertical_line"></span>
+					<a class="nav-item nav-link" href="#schedule">Schedule</a><span class="vertical_line"></span>
+					<a class="nav-item nav-link" href="#about-us">About Us</a>
 					<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true" hidden>Disabled</a>		
 				</div>
 			</div>
 		</nav>
 	</header>
 
+<!-- company name -->
+	<div id="homepage">
+       <header>
+	       <h1 class="heading1">BusyBakes</h1>
+	   </header>
+    </div>
+
 <!-- homepage -->
 	<section class="homepage">
 
-		<h2 class="heading2">let's get busy baking!</h2>
+        <h2 class="heading2">Let's get busy baking!</h2>
         
 		<p>
 			Want to master a new skill? Have a desire for baking? You’ve found the
@@ -48,10 +53,18 @@
 			today!
 		</p>
 
+		<a href="#sign-up" class="button">
+            Sign Up
+        </a>        
+
 	</section>
 
 <!-- sign up -->
     <section>
+      
+		<div id="sign-up">
+           <h2 class="heading2">Sign Up</h2>
+        </div>
 
       <br>
       <div id="sign_up_form">
@@ -122,7 +135,9 @@
     <section>
        
         <br>
-        <h2 class="heading2">Testimonials</h2>
+        <div id="testimonials">
+           <h2 class="heading2">Testimonials</h2>
+        </div>
 
             <div class="all_testimonials">
 
@@ -186,7 +201,7 @@
             </div>
 
            <div class="col-sm-12">
-              <a href="index.html" class="button">Sign Up</a>
+              <a href="#sign-up" class="button">Sign Up</a>
            </div>
 
     </section>
@@ -195,7 +210,9 @@
     <section class="schedule">
 
 		<br>
-        <h2 class="heading2">Schedule</h2>
+        <div id="schedule">
+           <h2 class="heading2">Schedule</h2>
+        </div>
 
 		<div class="container">
 			<div class="row">
@@ -282,7 +299,7 @@
 				<div class="col-sm-12">
 					<br>
 					<div>
-						<a href="index.html" class="button">Sign Up</a>
+						<a href="#sign-up" class="button">Sign Up</a>
 					</div>
 				</div>
 			</div>
@@ -293,7 +310,9 @@
 	<section>
 
 		<br>
-        <h2 class="heading2">About Us</h2>
+        <div id="about-us">
+           <h2 class="heading2">About Us</h2>
+        </div>
            
 			<br>    
             <div class="wrapping">
@@ -369,7 +388,7 @@
 	        </div>
             
             <br>           
-			   <a href="index.html" class="button">
+			   <a href="#sign-up" class="button">
                   Sign Up
                </a>
 						

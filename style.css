@@ -45,8 +45,7 @@ body{
 /*-----------------------------------------------------Navbar*/
 /*navbar bar*/
 .my-nav{
-    background-color: rgba(218, 165, 32, 0.582);
-    border: solid 2px GoldenRod;
+    background-color: GoldenRod;
 }
 
 /*navbar logo*/
@@ -159,6 +158,11 @@ footer i.fab{
 }
 
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
+/*pushes homepage down from navbar*/
+.homepage .heading2{
+    margin-top: 80px;
+}
+
 /*homepage paragraph*/
 section.homepage p{
     font-size: 20px;
@@ -347,7 +351,6 @@ button.form_button{
         select#choosen_schedule{
             width: 285px;
             }
-
 }
 /*end*/
 
@@ -401,6 +404,11 @@ button.form_button{
 
 
 @media (min-width: 616px) {
+        /*pushes homepage down from navbar*/
+        .homepage .heading2{
+            margin-top: 130px;
+            }
+
          /*navbar logo & burger icon*/
          .my-nav .navbar-brand,button.navbar-toggler{
              font-size: 45px;
@@ -470,6 +478,11 @@ button.form_button{
 
 
 @media (min-width: 766px) {
+        /*pushes homepage down from navbar*/
+        .homepage .heading2{
+            margin-top: 180px;
+            } 
+
        /*navbar logo*/
        .my-nav .navbar-brand{
            font-size: 60px;
@@ -504,24 +517,21 @@ button.form_button{
 
 
 @media (min-width: 992px) {
-        /*Company website title*/
-        .heading1{
-        display: block;
-        height: 35px;
-        width: 100%;
-        font-size: 70px;
-        font-weight: bold;
-        }
-
-        /*navbar bar*/
-        .my-nav{
-            margin-top: 80px;
-            }
-
         /*gets rid of navbar logo*/
        .my-nav .navbar-brand{
            display: none;
            } 
+
+        /*navbar bar*/
+        .my-nav{
+            border: 0px;
+            top: 0;
+            }
+
+        /*canters navbar links*/
+        div#navbarNavAltMarkup.collapse.navbar-collapse{
+            justify-content: center;
+            }
 
        /*navbar links*/
        a.nav-item.nav-link{
@@ -535,16 +545,40 @@ button.form_button{
             margin: 0px 5px;
             }
 
-        /*canters navbar links*/
-        div#navbarNavAltMarkup.collapse.navbar-collapse{
-            justify-content: center;
-            }
-
         /*lines between navbar links*/
         .vertical_line{
             border: solid white 1px;
             padding-left: 2px;
             }   
+
+        /*Company website title*/
+        .heading1{
+            display: block;
+            height: 35px;
+            width: 100%;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 100px 0px 0px;
+            padding-top: 110px;
+            }
+
+        /*pulls company title up towards navbar*/
+        .heading1{
+            margin-top: 0px;
+            padding-top: 95px;
+            }     
+
+        /*enables headings to be seen under navbar*/
+        .heading2{
+            padding-top: 110px;
+
+        }   
+
+        /*pulls homepage up to navbar*/
+        .homepage .heading2{
+            margin-top: 0px;
+            padding-top: 120px;
+            } 
 
         /*para titles*/
         .heading3{
