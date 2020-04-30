@@ -28,16 +28,18 @@
 					<a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a><span class="vertical_line"></span>				
 					<a class="nav-item nav-link" href="testimonials.html">Testimonials</a><span class="vertical_line"></span>
 					<a class="nav-item nav-link" href="schedule.html">Schedule</a><span class="vertical_line"></span>
-					<a class="nav-item nav-link" href="about_us.html">About Us</a><span class="vertical_line"></span>
-					<a class="nav-item nav-link" href="sign_up.html">Sign Up</a>
+					<a class="nav-item nav-link" href="about_us.html">About Us</a>
 					<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true" hidden>Disabled</a>		
 				</div>
 			</div>
 		</nav>
 	</header>
 
+<!-- homepage -->
 	<section class="homepage">
+
 		<h2 class="heading2">let's get busy baking!</h2>
+        
 		<p>
 			Want to master a new skill? Have a desire for baking? You’ve found the
 			right place. Learn how to bake with us! It's easy and lots of fun.
@@ -46,9 +48,331 @@
 			today!
 		</p>
 
-		<div>
-			<a href="sign_up.html" class="button">Sign Up</a>
+	</section>
+
+<!-- sign up -->
+    <section>
+
+      <br>
+      <div id="sign_up_form">
+
+        <form method="post" action="#" onsubmit="alert('Form sent')">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" size="30" required>
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" size="30" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" size="30" required>
+
+          <label for="phone">Phone Number</label>
+          <small>Example: 012-3456-7890</small>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" size="30" required>
+              
+          <br> 
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" size="30" required>
+
+          <label for="choosen_schedule">Select all preferred classes</label>
+          <select name="choosen_schedule" id="choosen_schedule" required multiple>
+
+            <optgroup label="Monday" class="text">
+              <option value="beginner" class="text">Beginner 9am-10am</option>
+              <option value="intermediate" class="text">Intermediate 2pm-3pm</option>
+              <option value="expert" class="text">Expert 7pm-8pm</option>
+            </optgroup>
+
+            <optgroup label="Thursday" class="text">
+              <option value="expert" class="text">Expert 9am-10am</option>
+              <option value="beginner" class="text">Beginner 2pm-3pm</option>
+              <option value="intermediate" class="text">Intermediate 7pm-8pm</option>
+            </optgroup>
+
+            <optgroup label="Friday" class="text">
+              <option value="intermediate" class="text">Intermediate 10am-11am</option>
+              <option value="expert" class="text">Expert 3pm-4pm</option>
+              <option value="beginner" class="text">Beginner 8pm-9pm</option>
+            </optgroup>
+
+            <optgroup label="Sunday" class="text">
+              <option value="beginner" class="text">Beginner 10am-11am</option>
+              <option value="expert" class="text">Expert 3pm-4pm</option>
+              <option value="intermediate" class="text">Intermediate 8pm-9pm</option>
+            </optgroup>
+          
+          </select>
+
+          <div class="col-sm-12">
+             <button class="form_button" type="submit" value="Sign Up"> 
+                Sign Up 
+             </button>
+          </div>
+
+        </form>
+
+      </div>
+
+      <br>
+      
+    </section>
+
+<!-- testimonials -->
+    <section>
+       
+        <br>
+        <h2 class="heading2">Testimonials</h2>
+
+            <div class="all_testimonials">
+
+                <div class="row">
+                   
+                      <div class="col-12 col-md-4">                     
+                       <img src="/images/food/cake.jpg" alt="A picture of cake, with fruit on top, on a cake stand.">
+                      </div>
+                      <div class="col-12 col-md-4">
+                       <img src="/images/people/person1.jpg" alt="Headshot of a smiling woman with curly black hair.">
+                      </div> 
+                      <div class="col-12 col-md-4">
+                       <img src="/images/food/donuts.jpg" alt="A picture of a tower of donuts with chocolate icing and sprinkles on top.">
+                      </div>              
+                      <div class="col-12">
+                        <p>So much fun! I learnt a lot of new baking skills.
+                            <span>
+                                ~ Tiana Moore
+                            </span>
+                        </p> 
+                      </div>              
+
+
+                      <div class="col-12 col-md-4">
+                       <img src="/images/food/brownies.jpg" alt="A picture of baked brownies on baking paper.">
+                      </div>
+                      <div class="col-12 col-md-4">
+                       <img src="/images/people/person2.jpg" alt="Headshot of a smiling man in a white shirt.">
+                      </div> 
+                      <div class="col-12 col-md-4">
+                       <img src="/images/food/bread.jpg" alt="A picture of a loaf of bread with white icing, lemon and strawberries on top.">
+                      </div>              
+                      <div class="col-12">
+                        <p>Quality lessons at a quality price. Couldn't ask for anything more. EXCELLENT!
+                            <span>
+                                ~ Marshall Baxton
+                            </span>
+                        </p> 
+                      </div> 
+                   
+                   
+                      <div class="col-12 col-md-4">
+                       <img src="/images/food/cookies.jpg" alt="A picture of a batch of cookies on a plastic tray.">
+                      </div>                  
+                      <div class="col-12 col-md-4">
+                       <img src="/images/people/person3.jpg" alt="Headshot of a smiling woman with ginger hair and freckles.">
+                      </div> 
+                      <div class="col-12 col-md-4">
+                       <img src="/images/food/pies.jpg" alt="A picture of multiple pies with berries on top.">
+                      </div>              
+                      <div class="col-12">
+                        <p>Staff members are very helpful and nice.
+                            <span>
+                                ~ Megara Young
+                            </span>
+                        </p> 
+                      </div>                                                       
+
+                </div>
+
+            </div>
+
+           <div class="col-sm-12">
+              <a href="index.html" class="button">Sign Up</a>
+           </div>
+
+    </section>
+
+<!-- schedule -->
+    <section class="schedule">
+
+		<br>
+        <h2 class="heading2">Schedule</h2>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+					<div class="times mx-auto">
+
+						<div class="lessons">
+							<h3 class="heading3">Our Classes</h3>
+							<h4 class="heading4">Beginner</h4>
+							<p>Introduction to baking basics: tools and ingredients.</p>
+							<p>Strawberry, apple and banana cake.</p>
+							<p>Chocolate mint and coconut cookies.</p>
+
+							<h4 class="heading4">Intermediate</h4>
+							<p>Cream cheese and vanilla flapjacks.</p>
+							<p>Sweet almond and lemon tarts with butter cream icing.</p>
+							<p>Sourdough and whole wheat bread with raisins.</p>
+
+							<h4 class="heading4">Expert</h4>
+							<p>Grape and honey meringue pie.</p>
+							<p>Custard and caramelised walnut stuffed chocolate eclairs.</p>
+							<p>Breaded egg white lychee flavoured souffle with fermented truffles.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="times mx-auto">
+						<div class="lessons">
+							<h3 class="heading3">Monday</h3>
+							<h4 class="heading4">Beginner</h4>
+							<p>9am-10am</p>
+							<h4 class="heading4">Intermediate</h4>
+							<p>2pm-3pm</p>
+							<h4 class="heading4">Expert</h4>
+							<p>7pm-8pm</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="times mx-auto">
+						<div class="lessons">
+							<h3 class="heading3">Thursday</h3>
+							<h4 class="heading4">Expert</h4>
+							<p>9am-10am</p>
+							<h4 class="heading4">Beginner</h4>
+							<p>2pm-3pm</p>
+							<h4 class="heading4">Intermediate</h4>
+							<p>7pm-8pm</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="times mx-auto">
+						<div class="lessons">
+							<h3 class="heading3">Friday</h3>
+							<h4 class="heading4">Intermediate</h4>
+							<p>10am-11am</p>
+							<h4 class="heading4">Expert</h4>
+							<p>3pm-4pm</p>
+							<h4 class="heading4">Beginner</h4>
+							<p>8pm-9pm</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="times mx-auto">
+						<div class="lessons">
+							<h3 class="heading3">Sunday</h3>
+							<h4 class="heading4">Beginner</h4>
+							<p>10am-11am</p>
+							<h4 class="heading4">Expert</h4>
+							<p>3pm-4pm</p>
+							<h4 class="heading4">Intermediate</h4>
+							<p>8pm-9pm</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<br>
+					<div>
+						<a href="index.html" class="button">Sign Up</a>
+					</div>
+				</div>
+			</div>
 		</div>
+	</section>
+
+<!-- about us -->
+	<section>
+
+		<br>
+        <h2 class="heading2">About Us</h2>
+           
+			<br>    
+            <div class="wrapping">
+
+				<div class="founder">
+					<img src="/images/people/founder.jpg" alt="A picture of a smiling elderly woman.">
+                </div>
+
+				<div class="about_us_paras">
+
+					<h3 class="heading3">Our Founder</h3>
+
+						<p class="para1">
+							BusyBakes was founded by Mrs. Annalise W. Keating in a little
+							cottage located in the middle of Hopestone Valley. Mrs Keating’s
+							humble beginnings originate from her love of baking the likes of
+							scones and cupcakes, with her grandchildren on cold rainy days.
+							She enjoyed teaching her grandchildren all the tricks of the trade
+							regarding how to bake exceptionally well. This blossomed into a
+							deep passion for sharing her baking knowledge with others. So she
+							started her business by holding classes in her kitchen, teaching
+							her neighbours and their kids how to bake, before expanding it to
+							a multi-million pound business. Thus, BusyBakes was born.
+						</p>
+				</div>
+
+			</div>
+
+			<br>    
+            <div class="wrapping">
+
+				<div class="buns">
+					<img src="/images/food/buns.jpg" alt="A picture of a batch of buns in the oven.">
+                </div>
+
+				<div class="about_us_paras">
+					<h3 class="heading3">What makes us unique?</h3>
+
+						<p>
+							We pride ourselves as a leading in-class baking company that continuously receives positive 
+                            feedback from our members and holds high customer retention. Not to mention our first place prized
+							position in the National Online Baking Awards; clearly outcompeting our competitors. We offer 
+                            exciting classes to both individuals and groups. We also succeed in being able to teach a
+							wide range of people regardless of level. From beginners to experts. And are always rated first 
+                            choice, by our beginner level members, who routinely express that BusyBakes is the best to sign
+							up with if one wishes to master a new skill.
+						</p>
+				</div>
+
+			</div>
+            
+            <br>    
+            <div class="wrapping">
+
+				<div class="sieve">
+					<img src="/images/food/sieve.jpg" alt="A picture of a cake being dusted with a sieve.">
+                </div>
+
+				<div class="about_us_paras">
+					<h3 class="heading3">Why choose us?</h3>
+                        
+						<p>
+							We focus on providing an educational, fun and enriching experience for all our members. 
+                            Our desire to share our love for baking with others makes us stand out from the crowd. 
+                            We don’t just offer a class to teach you how to bake. It’s about more than baking. We
+							build up a relationship with our members and help increase their confidence to think 
+                            differently and try out new things. We relight an inner passion that had always been 
+                            buried deep down inside and provide them the permission to explore it. We inspire. We 
+                            empower. We accomplish.
+						</p>
+				</div>
+
+	        </div>
+            
+            <br>           
+			   <a href="index.html" class="button">
+                  Sign Up
+               </a>
+						
 	</section>
 
 	<footer>

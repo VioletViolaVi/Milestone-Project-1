@@ -46,7 +46,7 @@ body{
 /*navbar bar*/
 .my-nav{
     background-color: rgba(218, 165, 32, 0.582);
-    border: solid 2px Goldenrod;
+    border: solid 2px GoldenRod;
 }
 
 /*navbar logo*/
@@ -240,6 +240,7 @@ section.homepage p{
 .about_us_paras{
     background-color: rgba(218, 165, 32, 0.87);
     border: 2px solid DarkGoldenRod;
+    border-radius: 30px;
 }
 
 /*decorates paragraphs*/
