@@ -34,6 +34,7 @@ body{
     font-size: 35px;
     text-transform: uppercase;
     margin: 30px;
+    padding-top: 100px;
 }
 
 /*para titles*/
@@ -74,34 +75,37 @@ body{
     box-shadow: none;
 }
 
-/*navbar links when on its page*/
-.active{
-    background-color: DarkGoldenRod;
-    border-radius: 9pc;
-    padding: 0px;
-}
-
 /*-----------------------------------------------------Images*/
 /*decorates ALL photos individually*/
-/* .food_photos img,#people_photos  */
 .all_testimonials img,.wrapping img{
     width: 270px;
     height: 350px; 
     border: 5px solid DarkGoldenRod;
     border-radius: 50%;
-    margin: 5px 5px 45px;
     background-color: rgba(218, 165, 32, 0.753);
 }
 
-/*centers all rows/columns*/
+/*centers all rows & columns*/
 div.row{
     margin: 0px;
 }
 
-/*-----------------------------------------------------Opinions & Schedule Contents*/
-/*names of people & schedule contents*/
-#people_photos span,.schedule span{
-    display: block;
+/*-----------------------------------------------------Common: Testimonials, Schedule, About Us*/
+/*all boxes*/
+.schedule div.times,.all_testimonials div.testimonial,.about_us_paras{
+    background-color: rgba(218, 165, 32, 0.87);
+    border: 5px solid DarkGoldenRod;
+    border-radius: 9px;
+    width: 100%;
+}
+/*removes spaces around to centre */
+div.container, div.col-12{
+    padding: 0px;
+}
+
+/*decorates paragraph background */
+ .about_us_paras, .all_testimonials div.testimonial{   
+    margin: 0px;
 }
 
 /*-----------------------------------------------------SignUp Button*/
@@ -160,13 +164,13 @@ footer i.fab{
 /*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
 /*pushes homepage down from navbar*/
 .homepage .heading2{
-    margin-top: 80px;
+    padding-top: 90px;
 }
 
 /*homepage paragraph*/
 section.homepage p{
     font-size: 20px;
-    margin: 40px 20px 30px 20px;
+    margin: 30px 20px 30px 20px;
 }
 
 /*homepage paragraph expensive price*/
@@ -182,15 +186,19 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
+/*inner box space*/
+.all_testimonials div.testimonial{
+    padding-top: 15px;
+    width: 100%;    
+}
+
 /*decorates people opinions*/
 .all_testimonials p{
     font-style: italic;
     font-size: 25px;
-    background-color: rgba(218, 165, 32, 0.822);
-    border: solid 5px DarkGoldenRod; 
     border-radius: 30px;
     padding: 5px;
-    margin: 5px 5px 45px;
+    margin: 5px;
 }
 
 /*people's names*/
@@ -199,13 +207,9 @@ section.homepage p{
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
-/*decorates background of schedule times*/
+/*boxes for schedule*/
 .schedule div.times{
-    background-color: rgba(218, 165, 32, 0.822);
     margin-bottom: 50px;
-    border: 5px solid DarkGoldenRod;
-    border-radius: 9px;
-    width: 99%;
 }
 
 /*lesson level titles*/
@@ -240,31 +244,19 @@ section.homepage p{
     margin: 20px;
 }
 
-/*decorates paragraph background */
-.about_us_paras{
-    background-color: rgba(218, 165, 32, 0.87);
-    border: 2px solid DarkGoldenRod;
-    border-radius: 30px;
-}
-
 /*decorates paragraphs*/
 .about_us_paras p{
     font-size: 25px;
     font-style: italic;
 }
 
-/*controls border around paragraphs*/
-.about_us_paras{
-    margin: 10px;
-}
-
 /*---------------------------------------------------------------SignUp---------------------------------------------------------------*/
 /*whole form*/
 #sign_up_form{
     background-color: rgba(218, 165, 32, 0.582);
-    border: 2px solid DarkGoldenRod;
-    border-radius: 10px;
-    width: 95%; 
+    border: 5px solid DarkGoldenRod;
+    border-radius: 9px;
+    width: 98%; 
     padding: 0px 10px;
     margin: auto;
     min-height: 100%;
@@ -540,10 +532,10 @@ button.form_button{
            }
 
         /*navbar hovering links*/
-        a.nav-item.nav-link:hover, a.nav-item.nav-link.active{
+        a.nav-item.nav-link:hover{
             border-radius: 9px;
             margin: 0px 5px;
-            }
+            }         
 
         /*lines between navbar links*/
         .vertical_line{
