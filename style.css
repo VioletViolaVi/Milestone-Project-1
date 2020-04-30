@@ -3,7 +3,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:  cursive;
     color: white;
     line-height: 1.6;
     text-align: center;
@@ -46,7 +46,7 @@ body{
 /*-----------------------------------------------------Navbar*/
 /*navbar bar*/
 .my-nav{
-    background-color: GoldenRod;
+    background-color: DarkGoldenRod;
 }
 
 /*navbar logo*/
@@ -64,7 +64,7 @@ body{
 
 /*navbar link's hovered state */
 .my-nav .nav-link:hover{
-    background-color: DarkGoldenRod;
+    background-color: GoldenRod;
     border-radius: 9pc;
     padding: 0px;
 }
@@ -170,7 +170,7 @@ footer i.fab{
 /*homepage paragraph*/
 section.homepage p{
     font-size: 20px;
-    margin: 30px 20px 30px 20px;
+    margin: 40px 20px 40px 20px;
 }
 
 /*homepage paragraph expensive price*/
@@ -209,7 +209,7 @@ section.homepage p{
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
 /*boxes for schedule*/
 .schedule div.times{
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 /*lesson level titles*/
@@ -235,13 +235,13 @@ section.homepage p{
 /*founder & sieve photo arrangement*/
 .wrapping .founder img,.sieve img{
     float: left;
-    margin: 20px;
+    margin: 40px 2px 5px 20px;
 }
 
 /*buns photo arrangement*/
 .wrapping .buns img{
     float: right;
-    margin: 20px;
+    margin: 40px 20px 5px 2px;
 }
 
 /*decorates paragraphs*/
@@ -256,7 +256,7 @@ section.homepage p{
     background-color: rgba(218, 165, 32, 0.582);
     border: 5px solid DarkGoldenRod;
     border-radius: 9px;
-    width: 98%; 
+    width: 100%; 
     padding: 0px 10px;
     margin: auto;
     min-height: 100%;
@@ -334,6 +334,12 @@ button.form_button{
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
 @media (min-width: 355px) {
+         /*homepage paragraph*/
+         section.homepage p{
+             margin: 50px 20px 50px 20px;
+             font-size: 22px;
+             }
+
         /*content in preference box*/
         select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
             font-size: 20px;
@@ -351,7 +357,7 @@ button.form_button{
         /*homepage paragraph*/
         section.homepage p{
             margin-bottom: 40px;
-            font-size: 22px;
+            font-size: 25px;
             }
 
         /*controls select box growth*/
@@ -370,12 +376,27 @@ button.form_button{
 @media (min-width: 445px) {      
         /*homepage paragraph*/
         section.homepage p{
-            font-size: 25px;
+            font-size: 27px;
             }
 }
 /*end*/
 
+
+@media (min-width: 576px) {
+       /*whole form*/
+       #sign_up_form{
+           width: 90%;
+           }
+}
+/*end*/
+
+
 @media (min-width: 579px) {
+        /*homepage paragraph*/
+        section.homepage p{
+            font-size: 27px;
+            }
+
         /*footer icons*/
         footer i.fab{
             letter-spacing: 7px;
@@ -396,14 +417,9 @@ button.form_button{
 
 
 @media (min-width: 616px) {
-        /*pushes homepage down from navbar*/
-        .homepage .heading2{
-            margin-top: 130px;
-            }
-
          /*navbar logo & burger icon*/
          .my-nav .navbar-brand,button.navbar-toggler{
-             font-size: 45px;
+             font-size: 35px;
              }
 
         /*navbar links*/
@@ -415,6 +431,11 @@ button.form_button{
          .heading2{
              font-size: 40px;
              }
+
+        /*pushes homepage down from navbar*/
+        .homepage .heading2{
+            margin-top: 70px;
+            }
 
         /*homepage paragraph*/
         section.homepage p{
@@ -470,14 +491,9 @@ button.form_button{
 
 
 @media (min-width: 766px) {
-        /*pushes homepage down from navbar*/
-        .homepage .heading2{
-            margin-top: 180px;
-            } 
-
        /*navbar logo*/
        .my-nav .navbar-brand{
-           font-size: 60px;
+           font-size: 40px;
            } 
 
         /*Company sub-titles*/
@@ -485,6 +501,10 @@ button.form_button{
             font-size: 50px;
             }
 
+        /*pushes homepage down from navbar*/
+        .homepage .heading2{
+            margin-top: 80px;
+            } 
         /*content in preference box*/
         select#choosen_schedule optgroup,select#choosen_schedule optgroup option{
             font-size: 28px;
@@ -504,6 +524,9 @@ button.form_button{
        select#choosen_schedule{
            width: 390px;
            }
+
+        /*provides space on box sides*/
+        .schedule .times.mx-auto{width: 95%;}
 }
 /*end*/
 
@@ -608,7 +631,7 @@ button.form_button{
 
         /*decorates paragraph background */
         .about_us_paras{
-            padding-bottom: 60px;
+            padding-bottom: 0px;
             }
 }
 /*end*/
