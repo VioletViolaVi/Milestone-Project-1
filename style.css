@@ -85,7 +85,7 @@ body{
 /*-----------------------------------------------------Images*/
 /*decorates ALL photos individually*/
 /* .food_photos img,#people_photos  */
-.wrapping img{
+.all_testimonials img,.wrapping img{
     width: 270px;
     height: 350px; 
     border: 5px solid DarkGoldenRod;
@@ -179,28 +179,19 @@ section.homepage p{
 
 /*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
 /*decorates people opinions*/
-/* #people_photos p{
+.all_testimonials p{
     font-style: italic;
     font-size: 25px;
-    background-color: GoldenRod;
-    border: solid 2px DarkGoldenRod; 
+    background-color: rgba(218, 165, 32, 0.822);
+    border: solid 5px DarkGoldenRod; 
     border-radius: 30px;
     padding: 5px;
     margin: 5px 5px 45px;
-} */
-
-/*background*/
-.overall_box{
-    border: red solid 3px;
-    height: 400px;
-    
 }
 
-/*pictures*/
-.overall_box img{
-    border: green solid 3px;
-    width: 270px;
-    height: 310px;
+/*people's names*/
+.all_testimonials span{
+    display: block;
 }
 
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
@@ -428,6 +419,10 @@ button.form_button{
         section.homepage p{
             font-size: 37px;
             }
+
+        /*decorates people opinions*/
+        .all_testimonials p{
+            font-size: 30px;}
 
         /*para titles*/
         .heading3{
