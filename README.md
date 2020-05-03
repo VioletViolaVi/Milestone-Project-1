@@ -59,7 +59,7 @@ This project is the best way to help these users achieve this because this proje
 ### Wireframe and Website Differences
 #### Whole website
 - A single background image was used for the whole website instead of using multiple in a carousel, as originally intended. This change was made because the change of images caused by the carousel was deemed to be too distracting for the user when trying to read the text placed on it.
-#### Homepage
+#### Navigation Bar
 - The original idea involving the website changing pages when a different navigation bar link was clicked, was abandoned because clicking links takes more time than scrolling down the webpage. So a single HTML page was used and the navigation bar was changed so that when clicked, the website jumped down to the respective section. Or the user could just scroll up and down the screen.
 - The navigation bar was placed at the top instead of the company name so the user would have an easier time navigating up and down the website.
 #### Sign Up Page
