@@ -45,34 +45,34 @@ The footer area has details which includes: BusyBakes’ social links, their con
 
 <!-- 4)Technology -->
 # Technologies Used
-- <a href="#">HTML</a>  
+- HTML  
   - The project used HTML to create the basic structure of the website.
 
-- <a href="#">CSS</a>
+- CSS
   - The project used CSS to add the design to the basic HTML structure.
 
-- <a href="#">Bootstrap</a>
+- <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap</a>
   - The project used Bootstrap to create a responsive navigation bar that collapses on smaller devices and opens up on larger devices. 
 
-- <a href="#">Font Awesome</a>
+- <a href="https://fontawesome.com/">Font Awesome</a>
   - The project used Font Awesome to provide the icons of the social links and the three bars used in the collapsed navigation bar.
 
-- <a href="#">Balsamiq Wireframes</a>
+- <a href="https://balsamiq.com/">Balsamiq Wireframes</a>
   - The project used Balsamiq Wireframes to create mockups on how the website aimed to look across different sized devices, to the user, on completion.
 
-- <a href="#">W3C Markup Validation Service</a>
+- <a href="https://validator.w3.org/">W3C Markup Validation Service</a>
   - The project used W3C Markup Validation Service to help check for coding errors that required correction.
 
-- <a href="#">Chrome Development Tools</a>
+- Chrome Development Tools
   - The project used Chrome Development Tools to see how the website looked on different screen sizes and to help identify areas of the code that required editing.
 
-- <a href="#">Gitpod</a>
+- <a href="https://gitpod.io/">Gitpod</a>
   - The project used Gitpod to write out the HTML and CSS code in its editor, as well as the README.file.
 
-- <a href="#">GitHub</a> 
+- <a href="https://github.com/">GitHub</a> 
   - The project used GitHub to store and save coded work from Gitpod as repositories.
 
-- <a href="#">Unsplash</a> 
+- <a href="https://unsplash.com/">Unsplash</a> 
   - The project used Unsplash to provide free to use images for the background, testimonials and about us page.
 
 
@@ -83,42 +83,52 @@ The footer area has details which includes: BusyBakes’ social links, their con
   2. If on a mobile or tablet screen, click the bars icon in the top right hand corner, for the dropdown menu of the website's different sections. If on a laptop or desktop monitor, access the menu on the navigation bar located across the top of the screen.
   3. Click on each menu link one by one. 
   4. Check that clicking on the link sends the user to the respective section of the website without leaving the BusyBakes website.
+  5. Use the W3C Markup Validation Service to check that there are no other coding issues with the navigation bar.
 - Price tag:
   1. Open the BusyBakes website homepage and scroll down to the part of the paragraph that shows the cost of the membership.
-  2. Ensure both the crossed out and more expensive price and the reduced price of the membership are clearly visible to the user. 
+  2. Ensure both the crossed out and more expensive price and the reduced price of the membership are clearly visible to the user.
+  3. Use the W3C Markup Validation Service to check that there are no other coding issues with the homepage. 
 - Sign up button:
    1. Scroll down the whole website and click on each sign up button that appears, one by one. Omit clicking on the form’s sign up button in the process.
-   2. Check that every sign up button, except the form’s, sends the user to the sign up form section of the website. 
+   2. Check that every sign up button, except the form’s, sends the user to the sign up form section of the website.
+   3. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up button.  
 - Sign up form:
    1. In the email form box, enter an invalid email address without an “@” to elicit an alert informing the user to enter a valid email address with an “@”. 
    2. In the phone number form box, enter an invalid phone number that doesn’t follow the format: “012-3456-7890” so the alert, explaining that the phone number entered is invalid and needs to follow the provided example’s structure, can be displayed to the user.
    3. In the select box for the user to choose which option or options they want, hold down the ctrl button and click on more than one provided option to ensure it is possible for the user to select more than one option. 
    4. Reclick the selected options again, to ensure they can be removed and therefore changed.
+   5. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up form.
 - Sign up form button:
    1. Click the form’s sign up button without entering any details, to ensure an alert shows up informing the user that completing all parts of the form is mandatory before submission. 
    2. Complete all boxes in the form correctly, following its instructions and click on the sign up button at the end. Ensure an alert message appears telling the user that their information has been submitted.
+   3. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up form button. 
 - Testimonials:
    1. Open the BusyBakes website.
    2. Click on the testimonials link in the navigation bar to jump down to the respective part of the website or scroll down to the testimonials section.
    3.Make sure that the images of the people, their baked items and their opinions are showcased clearly across the user’s screen.
+   4. Use the W3C Markup Validation Service to check that there are no other coding issues with the testimonials page. 
 - Level of difficulty:
    1. Open the BusyBakes website.
    2. Click on the schedule link in the navigation bar to jump down to the respective part of the website or scroll down to the schedule section.
    3. Ensure all the text can be easily read and the different levels of difficulty can be easily located.
+   4. Use the W3C Markup Validation Service to check that there are no other coding issues with the schedule page. 
 - Company values:
    1. Open the BusyBakes website.
    2. Click on the about us link in the navigation bar to jump down to the respective part of the website or scroll down to the about us section.
    3. Make certain that the information provided in the about us page is easy to read with both the “What makes us unique?” and “Why choose us?” titles, clearly stated for the user to identify the company’s values and uniqueness. 
+   4. Use the W3C Markup Validation Service to check that there are no other coding issues with the about us page. 
 - Social media icons:
    1. Open the BusyBakes website. 
    2. Scroll down to the end of the page.
    3. Click on each social media icon one by one.
    4. Verify that clicking on each of these icons, opens up a new tab to the homepage of their respective website.
    5. Ensure the current BusyBakes website isn’t lost or changed during this process so the user can find their way back to it. 
+   6. Use the W3C Markup Validation Service to check that there are no other coding issues with the social media icons. 
 - Location:
    1. Open the BusyBakes website. 
    2. Scroll down to the end of the page.
    3. Check to see if the footer contains details of the company’s address clearly.
+   4. Use the W3C Markup Validation Service to check that there are no other coding issues with the footer area containing BusyBakes’ location details. 
 - Responsiveness:
    1. Using chrome development tools, display the website at different screen sizes starting at 320px and slowly drag the side of the screen to the right to gradually increase the size of the display screen.
    2. When gradually increasing the size of the display screen using chrome development tools, check that the whole website across all its pages, is still legible to the user in terms of the: font size of the text, images and the sign up buttons, being adequate enough for the user to see and read.
@@ -127,6 +137,7 @@ The footer area has details which includes: BusyBakes’ social links, their con
    5. When gradually increasing the size of the display screen using chrome development tools, ensure that once the laptop screen size has been reached, the collapsed navigation bar opens out so all the website links can be viewed across the top to the screen. The name BusyBakes, should be presented under the opened out navigation bar. 
    6. Using chrome development tools, increase the size of the display screen on the testimonials' page to ensure that from 320px - 767px, the images are displayed in a single column. Once the screen size reaches 768px, the images should display with two at the top and one at the bottom; per testimonial. Also check the screen at 992px to ensure the images line up next to each other, in a single row, per testimonial. 
    7. Using chrome development tools, increase the size of the display screen on the schedule page to ensure that from 320px - 767px, all the schedule boxes are shown in a single column. Once the screen size reaches 768px, check that the first schedule box detailing the different types of classes, remains on top by itself on a single row and the four boxes containing the days and times line up with two on the next row down and the other two on the next row below that. 
+   8. Use the W3C Markup Validation Service to check that there are no other coding issues with the website when ensuring responsiveness. 
 
 
 <!-- 6)Deployment -->
