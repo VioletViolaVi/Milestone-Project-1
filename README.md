@@ -1,5 +1,5 @@
 <!-- 1)Overview -->
-# Project Name: My First Project
+# My First Project: BusyBakes
 <!-- para1 -->
 This project is about creating a website for a company that specialises in providing baking classes to people. It is focused on advertising baking lessons to users of the site, who are interested in either learning how to bake or improving on their current baking skills. The website aims to persuade as many users as possible, to sign up with the company and join their baking classes. The name used for the company was BusyBakes. The BusyBakes website consists of four different sections: home, testimonials, schedule and about us. All sections are accessible via the navigation bar at the top of the screen and are placed on a single HTML page. Each section details relevant information required to convince users to join BusyBakes. 
 <!-- para2 -->
@@ -26,20 +26,21 @@ This project is the best way to help these users achieve this because this proje
 
 <!-- 3)Features -->
 # Features
-## Existing Features
-### Navigation Bar
-
-### Home
-
-### Sign Up
-
-### Testimonials
-
-### Schedule
-
-### About Us
-
-### Footer
+### Existing Features
+#### Navigation Bar 
+The basic structure of the navigation bar was taken from Bootstrap. The navigation bar is visible throughout the webpage and contains links to all sections of the website. When the user clicks on each link, the website jumps down to its respective part of the webpage. On smaller devices the navigation bar appears collapsed and its links hidden, with the bars icon shown at one end and the company logo at the other end. The bars icon was taken from Font Awesome. When the bars icon is clicked on, the links are shown as a dropdown menu. On bigger devices it opens out with all the links viewable at first glance.
+#### Home
+The homepage includes introductory information about what BusyBakes offers, such as how much lessons cost. It also has a sign up button that when clicked directs the user to the sign up form.
+#### Sign Up
+The sign up page holds the sign up form. The user is to input their details following the guidance provided. On completion, there is a sign up button underneath to be clicked on in order to send the data so the user can join the membership.
+#### Testimonials
+The testimonials page consists of positive feedback from people who joined BusyBakes to learn how to bake or improve on current baking skills.The page has photos of them as well as the baked items they created. This page provides users with proof that BusyBakes is a good company to learn from. It also has a sign up button that when clicked directs the user to the sign up form.
+#### Schedule
+The schedule page has details explaining the class’s different levels of difficulty offered by BusyBakes. It shows the variety of lessons taught by them as well as the time and days that they are taught. Enabling the user to decide which lesson they would like to participate in. It also has a sign up button that when clicked directs the user to the sign up form.
+#### About Us
+The about us page is made up of information on the history of BusyBakes, their values and what makes them unique. It also includes photos of the founder and baking scenarios. This page allows users to learn more about BusyBakes regarding their intention with the service the company provides to prospective customers. It also has a sign up button that when clicked directs the user to the sign up form.  
+#### Footer
+The footer area has details which includes: BusyBakes’ social links, their contact details and copyright information. The social links when clicked on, opens out a new tab to the company’s respective social page e.g. their youtube page. These links are displayed as icons that were taken from Font Awesome.
 
 
 <!-- 4)Technology -->
@@ -79,7 +80,7 @@ This project is the best way to help these users achieve this because this proje
 ## Testing
 - Navigation bar links:
   1. Launch the BusyBakes website to display its homepage on screen.
-  2. If on a mobile or tablet screen, click the bars icon in the top right hand corner, for the drop down menu of the website's different sections. If on a laptop or desktop monitor, access the menu on the navigation bar located across the top of the screen.
+  2. If on a mobile or tablet screen, click the bars icon in the top right hand corner, for the dropdown menu of the website's different sections. If on a laptop or desktop monitor, access the menu on the navigation bar located across the top of the screen.
   3. Click on each menu link one by one. 
   4. Check that clicking on the link sends the user to the respective section of the website without leaving the BusyBakes website.
 - Price tag:
@@ -122,23 +123,40 @@ This project is the best way to help these users achieve this because this proje
    1. Using chrome development tools, display the website at different screen sizes starting at 320px and slowly drag the side of the screen to the right to gradually increase the size of the display screen.
    2. When gradually increasing the size of the display screen using chrome development tools, check that the whole website across all its pages, is still legible to the user in terms of the: font size of the text, images and the sign up buttons, being adequate enough for the user to see and read.
    3. When gradually increasing the size of the display screen using chrome development tools, ensure that on smaller device screen sizes, such as mobiles and tablets, the navigation bar is shown to be collapsed with only the company name and the bars icon at opposite ends to each other, on it.
-   4. Click on the bars icon to see if a drop down menu appears with all the different website links, when on smaller screen sizes.
+   4. Click on the bars icon to see if a dropdown menu appears with all the different website links, when on smaller screen sizes.
    5. When gradually increasing the size of the display screen using chrome development tools, ensure that once the laptop screen size has been reached, the collapsed navigation bar opens out so all the website links can be viewed across the top to the screen. The name BusyBakes, should be presented under the opened out navigation bar. 
    6. Using chrome development tools, increase the size of the display screen on the testimonials' page to ensure that from 320px - 767px, the images are displayed in a single column. Once the screen size reaches 768px, the images should display with two at the top and one at the bottom; per testimonial. Also check the screen at 992px to ensure the images line up next to each other, in a single row, per testimonial. 
    7. Using chrome development tools, increase the size of the display screen on the schedule page to ensure that from 320px - 767px, all the schedule boxes are shown in a single column. Once the screen size reaches 768px, check that the first schedule box detailing the different types of classes, remains on top by itself on a single row and the four boxes containing the days and times line up with two on the next row down and the other two on the next row below that. 
 
 
-
-
 <!-- 6)Deployment -->
 # Deployment
+On completion in creating this project, the following procedures were taken in order to deploy the website:
+1. First, the repository section on GitHub was entered and the project link containing the website and wireframes to be deployed, was clicked on.
+2. Then, the settings tab underneath the “Milestone-Project-1” heading, was clicked on to enter its settings.
+3. Next, the settings page was then scrolled down until the sub-title “GitHub Pages” was found.
+4. Later, under “GitHub Pages” a sub-title called “Source” was located. Under the “Source” sub-title was a button labelled “None”. This “None” button was clicked on to reveal a dropdown menu.
+5. In the dropdown menu the option called “master branch” was selected.
+6. After selecting the “master branch”, the webpage refreshed automatically and deployed the website.
+7. Finally, the link to this newly deployed website, was taken from the “GitHub Pages” section.
+
+### Running the code locally
+In order to locally run this code, this project was cloned from GitHub using the following steps:
+1. First enter the list of repositories section of GitHub.
+2. Then, under the repository name of the project, click on the “clone or download” button.
+3. Next, when in the dropdown “Clone with HTTPS” section click the clipboard button next to the URL to copy the repository's clone URL.
+4. Afterwards, enter into the local IDE and open Git Bash.
+5. Then, change the current working directory into the location of where the cloned directory is to be made.
+6. Next, type in “git clone” and paste in the URL that was copied earlier from the “Clone with HTTPS” section. i.e.: 
+   - *git clone https://github.com/VioletViolaVi/Milestone-Project-1.git*
+7. Lastly, tap the enter button on the keyboard to create the local clone.
 
 
 <!-- 7)Credits -->
 # Credits
-## Content
+### Content
 - The code used for responsive and collapsing navigation bar was copied from Bootstrap.
-## Media
+### Media
 - The photos used on this website were taken from Unsplash.
-## Acknowledgements
+### Acknowledgements
 - I received inspiration for this project from the navigation bars presented on the Bootstrap website.
