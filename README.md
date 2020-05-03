@@ -29,7 +29,7 @@ This project is the best way to help these users achieve this because this proje
 - As the designer of the BusyBakes website, I want to produce a website that is fully responsive across different screen sizes so users will be able to use this website on a range of devices.
 
 
-### BusyBakes' Wireframes
+## BusyBakes' Wireframes
 <!-- <a href="/Milestone-Project-1/BusyBakesWireframes.pdf">My Wireframes</a>  -->
 ![alt text](images/wireframes/wireframe1.PNG)
 ![alt text](images/wireframes/wireframe2.PNG)
@@ -56,26 +56,26 @@ This project is the best way to help these users achieve this because this proje
 ![alt text](images/wireframes/wireframe23.PNG)
 ![alt text](images/wireframes/wireframe24.PNG)
 
-### Wireframe and Website Differences
-#### Whole website
+## Wireframe and Website Differences
+### Whole website
 - A single background image was used for the whole website instead of using multiple in a carousel, as originally intended. This change was made because the change of images caused by the carousel was deemed to be too distracting for the user when trying to read the text placed on it.
-#### Navigation Bar
+### Navigation Bar
 - The original idea involving the website changing pages when a different navigation bar link was clicked, was abandoned because clicking links takes more time than scrolling down the webpage. So a single HTML page was used and the navigation bar was changed so that when clicked, the website jumped down to the respective section. Or the user could just scroll up and down the screen.
 - The navigation bar was placed at the top instead of the company name so the user would have an easier time navigating up and down the website.
-#### Sign Up Page
+### Sign Up Page
 - Instead of appearing as a modal, the sign up form was placed after the homepage. This was done so the user would quickly see the form and immediately be enticed to sign up.
 - The username and the confirm email and password parts of the sign up form were exchanged with a phone number input to reduce the number of inputs requested and ensure only necessary information was being collected by the user. 
 - A select box was added because it was important to document the level of difficulty they wanted and what time the user wanted to have their classes.
-#### Testimonials Page
+### Testimonials Page
 - The testimonial page originally was going to display photos of people and baked foods separately. However, this was changed by grouping together the images of people with the food items to illustrate that the shown food was made by the respective people they were grouped with.
 - The sign up button was moved to the bottom of its section to match the rest of the website.
-#### Schedule Page
+### Schedule Page
 - The schedule page had a list of classes added to it so the user could see what lessons were offered if they were to sign up. 
 - The “morning”, “afternoon” and “evening” headings were removed as they were seen as irrelevant due to the times underneath them. Instead levels of difficulty were introduced  i.e. beginner, intermediate and expert to attract a range of different people with different baking abilities. 
 - The times available were also arranged in columns on laptop and desktop screens, instead of rows.
-#### About Us Page
+### About Us Page
 - A total of three images were used for the about us page. One image was placed in each paragraph.
-#### Footer
+### Footer
 - The footer was arranged in three rows instead of three columns to make the footer area look more organised. Also, the map was removed as the address was already provided and therefore made it redundant.
 
 
@@ -194,11 +194,11 @@ The footer area has details which includes: BusyBakes’ social links, their con
 - Responsiveness:
    1. Using chrome development tools, display the website at different screen sizes starting at 320px and slowly drag the side of the screen to the right to gradually increase the size of the display screen.
    2. When gradually increasing the size of the display screen using chrome development tools, check that the whole website across all its pages, is still legible to the user in terms of the: font size of the text, images and the sign up buttons, being adequate enough for the user to see and read.
-   3. When gradually increasing the size of the display screen using chrome development tools, ensure that on smaller device screen sizes, such as mobiles and tablets, the navigation bar is shown to be collapsed with only the company name and the bars icon at opposite ends to each other, on it.
+   3. When gradually increasing the size of the display screen using chrome development tools, ensure that on smaller device screen sizes, such as mobiles and tablets, the Bootstrap navigation bar is shown to be collapsed with only the company name and the Font Awesome bars icon at opposite ends to each other, on it.
    4. Click on the bars icon to see if a dropdown menu appears with all the different website links, when on smaller screen sizes.
    5. When gradually increasing the size of the display screen using chrome development tools, ensure that once the laptop screen size has been reached, the collapsed navigation bar opens out so all the website links can be viewed across the top to the screen. The name BusyBakes, should be presented under the opened out navigation bar. 
-   6. Using chrome development tools, increase the size of the display screen on the testimonials' page to ensure that from 320px - 767px, the images are displayed in a single column. Once the screen size reaches 768px, the images should display with two at the top and one at the bottom; per testimonial. Also check the screen at 992px to ensure the images line up next to each other, in a single row, per testimonial. 
-   7. Using chrome development tools, increase the size of the display screen on the schedule page to ensure that from 320px - 767px, all the schedule boxes are shown in a single column. Once the screen size reaches 768px, check that the first schedule box detailing the different types of classes, remains on top by itself on a single row and the four boxes containing the days and times line up with two on the next row down and the other two on the next row below that. 
+   6. Using chrome development tools, increase the size of the display screen on the testimonials page to ensure that from 320px - 767px, the images are displayed in a single column, using Bootstrap's column attribute. Once the screen size reaches 768px, the images should display with two at the top and one at the bottom; per testimonial. Also check the screen at 992px to ensure the images line up next to each other, in a single row, per testimonial. 
+   7. Using chrome development tools, increase the size of the display screen on the schedule page to ensure that from 320px - 767px, all the schedule boxes are shown in a single column, using Bootstrap's column attribute. Once the screen size reaches 768px, check that the first schedule box detailing the different types of classes, remains on top by itself on a single row and the four boxes containing the days and times line up with two on the next row down and the other two on the next row below that. 
    8. Use the W3C Markup Validation Service to check that there are no other coding issues with the website when ensuring responsiveness. 
 
 
@@ -229,6 +229,7 @@ In order to locally run this code, this project was cloned from GitHub using the
 # Credits
 ### Content
 - The code used for responsive and collapsing navigation bar was copied from Bootstrap.
+- The code used to create columns in the sign up, testimonials, schedule and about us sections were copied from Bootstrap.
 ### Media
 - The photos used on this website were taken from Unsplash.
 ### Acknowledgements
