@@ -13,20 +13,59 @@ Users who use this site will want to achieve the ability to sign up with BusyBak
 This project is the best way to help these users achieve this because this project provides a sign up form for the user to join BusyBakes as well as information convincing the user that BusyBakes is a great option for people who want to learn how to bake or improve their baking skills.
 
 ## User Stories 
-- As a user of BusyBakes, I want to know the cost of their classes so I can decide whether or not to join.
-- As a user of BusyBakes, I want to access their sign up form in order to register my interest with the company. 
-- As a user of BusyBakes, I want to learn the location of the company so I can attend their baking classes.
-- As a user of BusyBakes, I want to find out about other people’s experience with them in an effort to know if BusyBakes is a good company to learn baking skills from.
-- As a user of BusyBakes, I want to know if they offer classes at an intermediate level because I want to improve on the baking skills that I have now.
-- As a user of BusyBakes, I want to be aware of their values and what makes them unique for the purpose of deciding if they are the best to teach me how to bake.  
+- As a user of the BusyBakes website, I want to know the cost of their classes so I can decide whether or not to join.
+- As a user of the BusyBakes website, I want to access their sign up form in order to register my interest with the company. 
+- As a user of the BusyBakes website, I want to learn the location of the company so I can attend their baking classes.
+- As a user of the BusyBakes website, I want to find out about other people’s experience with them in an effort to know if BusyBakes is a good company to learn baking skills from.
+- As a user of the BusyBakes website, I want to know if they offer classes at an intermediate level because I want to improve on the baking skills that I have now.
+- As a user of the BusyBakes website, I want to be aware of their values and what makes them unique for the purpose of deciding if they are the best to teach me how to bake.  
+
+## Designer Goals
+- As the designer of the BusyBakes website, I want to create a navigation bar that will link its button tabs to the respective section of the website.
+- As the designer of the BusyBakes website, I want the homepage to clearly display a crossed out and expensive price tag with a highlighted and reduced price tag placed next to it, to attract more customers.
+- As the designer of the BusyBakes website, I want to ensure the user has easy access to the sign up form by putting a sign up button at the end of every website section and having them link back to the sign up form.
+- As the designer of the BusyBakes website, I want to make the sign up form impossible to submit without completing all parts of it, by using the “required” attribute. 
+- As the designer of the BusyBakes website, I want the social media icon links to open up a separate page so the user doesn’t lose its original starting place with the BusyBakes website.
+- As the designer of the BusyBakes website, I want to produce a website that is fully responsive across different screen sizes so users will be able to use this website on a range of devices.
+
 
 ### BusyBakes' Wireframes
-<a href="/Milestone-Project-1/BusyBakesWireframes.pdf">My Wireframes</a> 
+<!-- <a href="/Milestone-Project-1/BusyBakesWireframes.pdf">My Wireframes</a>  -->
+![alt text](images/wireframes/wireframe1.PNG)
+![alt text](images/wireframes/wireframe2.PNG)
+![alt text](images/wireframes/wireframe3.PNG)
+![alt text](images/wireframes/wireframe4.PNG)
+![alt text](images/wireframes/wireframe5.PNG)
+![alt text](images/wireframes/wireframe6.PNG)
+![alt text](images/wireframes/wireframe7.PNG)
+![alt text](images/wireframes/wireframe8.PNG)
+![alt text](images/wireframes/wireframe9.PNG)
+![alt text](images/wireframes/wireframe10.PNG)
+![alt text](images/wireframes/wireframe11.PNG)
+![alt text](images/wireframes/wireframe12.PNG)
+![alt text](images/wireframes/wireframe13.PNG)
+![alt text](images/wireframes/wireframe14.PNG)
+![alt text](images/wireframes/wireframe15.PNG)
+![alt text](images/wireframes/wireframe16.PNG)
+![alt text](images/wireframes/wireframe17.PNG)
+![alt text](images/wireframes/wireframe18.PNG)
+![alt text](images/wireframes/wireframe19.PNG)
+![alt text](images/wireframes/wireframe20.PNG)
+![alt text](images/wireframes/wireframe21.PNG)
+![alt text](images/wireframes/wireframe22.PNG)
+![alt text](images/wireframes/wireframe23.PNG)
+![alt text](images/wireframes/wireframe24.PNG)
 
 
 <!-- 3)Features -->
 # Features
 ### Existing Features
+#### Font Type
+Cursive was the font type used for the BusyBakes website. This font was chosen because it is easy for users to read, which is imperative as the user needs to be able to read the guidance on the sign up form to join BusyBakes. This font type also contributes style to the website.
+#### Background Image
+A single background image was used to cover the whole website. This image consisted of a baking scene with baking equipment spread around. It was selected to be the background in order to help the user quickly understand that the BusyBakes website involved baking.
+#### Colours
+The colours used in the BusyBakes website were: DarkGoldenRod, GoldenRod and White. Both the DarkGoldenRod and GoldenRod colours were used as the text boxes colours because these colours matched and blended well with the background image. White was used to colour the text of the website so it could be read on the background image and the text boxes they were placed in.
 #### Navigation Bar 
 The basic structure of the navigation bar was taken from Bootstrap. The navigation bar is visible throughout the webpage and contains links to all sections of the website. When the user clicks on each link, the website jumps down to its respective part of the webpage. On smaller devices the navigation bar appears collapsed and its links hidden, with the bars icon shown at one end and the company logo at the other end. The bars icon was taken from Font Awesome. When the bars icon is clicked on, the links are shown as a dropdown menu. On bigger devices it opens out with all the links viewable at first glance.
 #### Home
