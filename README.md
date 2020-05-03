@@ -3,7 +3,7 @@
 <!-- para1 -->
 This project is about creating a website for a company that specialises in providing baking classes to people. It is focused on advertising baking lessons to users of the site, who are interested in either learning how to bake or improving on their current baking skills. The website aims to persuade as many users as possible, to sign up with the company and join their baking classes. The name used for the company was BusyBakes. The BusyBakes website consists of four different sections: home, testimonials, schedule and about us. All sections are accessible via the navigation bar at the top of the screen and are placed on a single HTML page. Each section details relevant information required to convince users to join BusyBakes. 
 <!-- para2 -->
-As the first thing a user sees, the home page informs people upfront that BusyBakes is about teaching individuals how to bake and provides a sign up form, for joining up shortly afterwards. The testimonials page displays photos of people and the baked items they made during their lessons. In addition to their positively expressed opinions on their experience with BusyBakes. The schedule page notifies users on all classes BusyBakes offers as well as their level of difficulty. It also informs them on what day and time these classes are held. Lastly, the about us page provides the user with additional information on BusyBakes’ origins, uniqueness and values. All in an attempt to entice users to join BusyBakes.
+As the first thing a user sees, the homepage informs people upfront that BusyBakes is about teaching individuals how to bake and provides a sign up form, for joining up shortly afterwards. The testimonials page displays photos of people and the baked items they made during their lessons. In addition to their positively expressed opinions on their experience with BusyBakes. The schedule page notifies users on all classes BusyBakes offers as well as their level of difficulty. It also informs them on what day and time these classes are held. Lastly, the about us page provides the user with additional information on BusyBakes’ origins, uniqueness and values. All in an attempt to entice users to join BusyBakes.
 
 
 <!-- 2)UX -->
@@ -55,6 +55,28 @@ This project is the best way to help these users achieve this because this proje
 ![alt text](images/wireframes/wireframe22.PNG)
 ![alt text](images/wireframes/wireframe23.PNG)
 ![alt text](images/wireframes/wireframe24.PNG)
+
+### Wireframe and Website Differences
+#### Whole website
+- A single background image was used for the whole website instead of using multiple in a carousel, as originally intended. This change was made because the change of images caused by the carousel was deemed to be too distracting for the user when trying to read the text placed on it.
+#### Homepage
+- The original idea involving the website changing pages when a different navigation bar link was clicked, was abandoned because clicking links takes more time than scrolling down the webpage. So a single HTML page was used and the navigation bar was changed so that when clicked, the website jumped down to the respective section. Or the user could just scroll up and down the screen.
+- The navigation bar was placed at the top instead of the company name so the user would have an easier time navigating up and down the website.
+#### Sign Up Page
+- Instead of appearing as a modal, the sign up form was placed after the homepage. This was done so the user would quickly see the form and immediately be enticed to sign up.
+- The username and the confirm email and password parts of the sign up form were exchanged with a phone number input to reduce the number of inputs requested and ensure only necessary information was being collected by the user. 
+- A select box was added because it was important to document the level of difficulty they wanted and what time the user wanted to have their classes.
+#### Testimonials Page
+- The testimonial page originally was going to display photos of people and baked foods separately. However, this was changed by grouping together the images of people with the food items to illustrate that the shown food was made by the respective people they were grouped with.
+- The sign up button was moved to the bottom of its section to match the rest of the website.
+#### Schedule Page
+- The schedule page had a list of classes added to it so the user could see what lessons were offered if they were to sign up. 
+- The “morning”, “afternoon” and “evening” headings were removed as they were seen as irrelevant due to the times underneath them. Instead levels of difficulty were introduced  i.e. beginner, intermediate and expert to attract a range of different people with different baking abilities. 
+- The times available were also arranged in columns on laptop and desktop screens, instead of rows.
+#### About Us Page
+- A total of three images were used for the about us page. One image was placed in each paragraph.
+#### Footer
+- The footer was arranged in three rows instead of three columns to make the footer area look more organised. Also, the map was removed as the address was already provided and therefore made it redundant.
 
 
 <!-- 3)Features -->
@@ -119,10 +141,11 @@ The footer area has details which includes: BusyBakes’ social links, their con
 ## Testing
 - Navigation bar links:
   1. Launch the BusyBakes website to display its homepage on screen.
-  2. If on a mobile or tablet screen, click the bars icon in the top right hand corner, for the dropdown menu of the website's different sections. If on a laptop or desktop monitor, access the menu on the navigation bar located across the top of the screen.
-  3. Click on each menu link one by one. 
-  4. Check that clicking on the link sends the user to the respective section of the website without leaving the BusyBakes website.
-  5. Use the W3C Markup Validation Service to check that there are no other coding issues with the navigation bar.
+  2. Ensure the background colour is DarkGoldenRod whilst waiting for the background image, from Unsplash, and the rest of the website to load.
+  3. If on a mobile or tablet screen, click the bars icon in the top right hand corner, for the dropdown menu of the website's different sections. If on a laptop or desktop monitor, access the menu on the navigation bar located across the top of the screen.
+  4. Click on each menu link one by one. 
+  5. Check that clicking on the link sends the user to the respective section of the website without leaving the BusyBakes website.
+  6. Use the W3C Markup Validation Service to check that there are no other coding issues with the navigation bar.
 - Price tag:
   1. Open the BusyBakes website homepage and scroll down to the part of the paragraph that shows the cost of the membership.
   2. Ensure both the crossed out and more expensive price and the reduced price of the membership are clearly visible to the user.
@@ -144,7 +167,7 @@ The footer area has details which includes: BusyBakes’ social links, their con
 - Testimonials:
    1. Open the BusyBakes website.
    2. Click on the testimonials link in the navigation bar to jump down to the respective part of the website or scroll down to the testimonials section.
-   3.Make sure that the images of the people, their baked items and their opinions are showcased clearly across the user’s screen.
+   3. Make sure that the images of the people, their baked items and their opinions are showcased clearly across the user’s screen.
    4. Use the W3C Markup Validation Service to check that there are no other coding issues with the testimonials page. 
 - Level of difficulty:
    1. Open the BusyBakes website.
@@ -197,7 +220,7 @@ In order to locally run this code, this project was cloned from GitHub using the
 3. Next, when in the dropdown “Clone with HTTPS” section click the clipboard button next to the URL to copy the repository's clone URL.
 4. Afterwards, enter into the local IDE and open Git Bash.
 5. Then, change the current working directory into the location of where the cloned directory is to be made.
-6. Next, type in “git clone” and paste in the URL that was copied earlier from the “Clone with HTTPS” section. i.e.: 
+6. Next, type in “git clone” and paste in the URL that was copied earlier from the “Clone with HTTPS” section i.e.: 
    - *git clone https://github.com/VioletViolaVi/Milestone-Project-1.git*
 7. Lastly, tap the enter button on the keyboard to create the local clone.
 
