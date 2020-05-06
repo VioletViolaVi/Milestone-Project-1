@@ -137,6 +137,68 @@ The footer area has details which includes: BusyBakes’ social links, their con
   - The project used Unsplash to provide free to use images for the background, testimonials and about us page.
 
 
+### URL Links to Specific Code Used
+The following specific links, from the third party websites, were used to create this project:
+#### BootStrap
+- Navigation bar
+  - https://getbootstrap.com/docs/4.4/components/navbar/
+#### Font Awesome
+- Bars icon
+  - https://fontawesome.com/icons/bars?style=solid
+- Instagram icon
+  - https://fontawesome.com/icons/instagram?style=brands
+- Twitter icon
+  - https://fontawesome.com/icons/twitter?style=brands
+- YouTube icon
+  - https://fontawesome.com/icons/youtube?style=brands
+- Pinterest icon
+  - https://fontawesome.com/icons/pinterest?style=brands
+- Facebook icon
+  - https://fontawesome.com/icons/facebook-square?style=brands
+- Snapchat icon
+  - https://fontawesome.com/icons/snapchat-ghost?style=brands
+#### Unsplash
+- Background image
+  - https://unsplash.com/photos/0JFveX0c778
+  - Photo by Andy Chilton on Unsplash
+- Founder image
+  - https://unsplash.com/photos/ZPynRLKjp9I
+  - Photo by Todd Cravens on Unsplash
+- Person1 image
+  - https://unsplash.com/photos/QhyzMkkbjZU
+  - Photo by Terricks Noah on Unsplash
+- Person2 image
+  - https://unsplash.com/photos/iFgRcqHznqg
+  - Photo by Joseph Gonzalez on Unsplash
+- Person3 image
+  - https://unsplash.com/photos/u3WmDyKGsrY
+  - Photo by Gabriel Silvério on Unsplash
+- Bread image
+  - https://unsplash.com/photos/-Qe0rpF2ThY
+  - Photo by Alexandra Golovac on Unsplash
+- Brownies image
+  - https://unsplash.com/photos/1rqk6XVnw44
+  - Photo by Michelle Tsang on Unsplash
+- Buns image
+  - https://unsplash.com/photos/qcPVoHjV8EQ
+  - Photo by Henry & Co. on Unsplash
+- Cake image
+  - https://unsplash.com/photos/rotFzR9lX0E
+  - Photo by Karly Gomez on Unsplash
+- Shortbread image
+  - https://unsplash.com/photos/Qe7hVl44e4Q
+  - Photo by Becky Fantham on Unsplash
+- Donuts image
+  - https://unsplash.com/photos/q54Oxq44MZs
+  - Photo by Kobby Mendez on Unsplash
+- Macarons image
+  - https://unsplash.com/photos/9k4wMY3llKY
+  - Photo by Serghei Savchiuc on Unsplash
+- Sieve image
+  - https://unsplash.com/photos/9J7sHieVFi0
+  - Photo by lindsay Cotter on Unsplash
+
+
 <!-- 5)Testing -->
 ## Testing
 - Navigation bar links:
