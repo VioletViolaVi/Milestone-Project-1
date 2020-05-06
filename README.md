@@ -64,7 +64,7 @@ This project is the best way to help these users achieve this because this proje
 - The navigation bar was placed at the top instead of the company name so the user would have an easier time navigating up and down the website.
 ### Sign Up Page
 - Instead of appearing as a modal, the sign up form was placed after the homepage. This was done so the user would quickly see the form and immediately be enticed to sign up.
-- The username and the confirm email and password parts of the sign up form were exchanged with a phone number input to reduce the number of inputs requested and ensure only necessary information was being collected by the user. 
+- The username, address, confirm email and confirm password inputs of the form were removed to reduce the number of inputs required to fill and maintain the user’s interest. It also ensured only necessary information was being collected from the user. 
 - A select box was added because it was important to document the level of difficulty they wanted and what time the user wanted to have their classes.
 ### Testimonials Page
 - The testimonial page originally was going to display photos of people and baked foods separately. However, this was changed by grouping together the images of people with the food items to illustrate that the shown food was made by the respective people they were grouped with.
@@ -93,7 +93,7 @@ The basic structure of the navigation bar was taken from Bootstrap. The navigati
 #### Home
 The homepage includes introductory information about what BusyBakes offers, such as how much lessons cost. It also has a sign up button that when clicked directs the user to the sign up form.
 #### Sign Up
-The sign up page holds the sign up form. The user is to input their details following the guidance provided. On completion, there is a sign up button underneath to be clicked on in order to send the data so the user can join the membership.
+The sign up page holds the sign up form. The user enters their details in the inputs. On completion, there is a sign up button underneath to be clicked so their entered data can be sent to BusyBakes for their membership to be created.
 #### Testimonials
 The testimonials page consists of positive feedback from people who joined BusyBakes to learn how to bake or improve on current baking skills.The page has photos of them as well as the baked items they created. This page provides users with proof that BusyBakes is a good company to learn from. It also has a sign up button that when clicked directs the user to the sign up form.
 #### Schedule
@@ -218,13 +218,12 @@ The following specific links, from the third party websites, were used to create
    3. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up button.  
 - Sign up form:
    1. In the email form box, enter an invalid email address without an “@” to elicit an alert informing the user to enter a valid email address with an “@”. 
-   2. In the phone number form box, enter an invalid phone number that doesn’t follow the format: “012-3456-7890” so the alert, explaining that the phone number entered is invalid and needs to follow the provided example’s structure, can be displayed to the user.
-   3. In the select box for the user to choose which option or options they want, hold down the ctrl button and click on more than one provided option to ensure it is possible for the user to select more than one option. 
-   4. Reclick the selected options again, to ensure they can be removed and therefore changed.
-   5. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up form.
+   2. In the select box for the user to choose which option or options they want, hold down the ctrl button and click on more than one provided option to ensure it is possible for the user to select more than one option. 
+   3. Reclick the selected options again, to ensure they can be removed and therefore changed.
+   4. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up form.
 - Sign up form button:
    1. Click the form’s sign up button without entering any details, to ensure an alert shows up informing the user that completing all parts of the form is mandatory before submission. 
-   2. Complete all boxes in the form correctly, following its instructions and click on the sign up button at the end. Ensure an alert message appears telling the user that their information has been submitted.
+   2. Complete all boxes in the form correctly and click on the sign up button at the end. Ensure an alert message appears telling the user that their information has been submitted.
    3. Use the W3C Markup Validation Service to check that there are no other coding issues with the sign up form button. 
 - Testimonials:
    1. Open the BusyBakes website.
@@ -291,8 +290,9 @@ In order to locally run this code, this project was cloned from GitHub using the
 # Credits
 ### Content
 - The code used for responsive and collapsing navigation bar was copied from Bootstrap.
-- The code used to create columns in the sign up, testimonials, schedule and about us sections were copied from Bootstrap.
+- The code used to create the grid system in the sign up, testimonials, schedule and about us sections were copied from Bootstrap.
+- The code used for the social icons in the footer and the bars icon in the navigation bar were taken from Font Awesome.
 ### Media
-- The photos used on this website were taken from Unsplash.
+- The images used on this website were taken from Unsplash.
 ### Acknowledgements
 - I received inspiration for this project from the navigation bars presented on the Bootstrap website.
