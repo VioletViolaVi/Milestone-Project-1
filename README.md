@@ -181,7 +181,7 @@ The footer area has details which includes: BusyBakes’ social links, their con
 
 - <a href="https://jigsaw.w3.org/css-validator/#validate_by_uri">CSS Validation Service</a>
 
-  - The project used W3C Markup Validation Service to help check for coding errors that required correction in the CSS page.
+  - The project used W3C CSS Validation Service to help check for coding errors that required correction in the CSS page.
 
 - <a href="https://gitpod.io/">Gitpod</a>
 
