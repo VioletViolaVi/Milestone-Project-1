@@ -159,6 +159,10 @@ The footer area has details which includes: BusyBakes’ social links, their con
 
   - The project used CSS to add the design to the basic HTML structure.
 
+- Chrome Development Tools
+
+  - The project used Chrome Development Tools to see how the website looked on different screen sizes and to help identify areas of the code that required editing.
+
 - <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap</a>
 
   - The project used Bootstrap to create a responsive navigation bar that collapses on smaller devices and opens up on larger devices.
@@ -171,13 +175,13 @@ The footer area has details which includes: BusyBakes’ social links, their con
 
   - The project used Balsamiq Wireframes to create mockups on how the website aimed to look across different sized devices, to the user, on completion.
 
-- <a href="https://validator.w3.org/">W3C Markup Validation Service</a>
+- <a href="https://validator.w3.org/">Markup Validation Service</a>
 
-  - The project used W3C Markup Validation Service to help check for coding errors that required correction.
+  - The project used W3C Markup Validation Service to help check for coding errors that required correction in the HTML page.
 
-- Chrome Development Tools
+- <a href="https://jigsaw.w3.org/css-validator/#validate_by_uri">CSS Validation Service</a>
 
-  - The project used Chrome Development Tools to see how the website looked on different screen sizes and to help identify areas of the code that required editing.
+  - The project used W3C Markup Validation Service to help check for coding errors that required correction in the CSS page.
 
 - <a href="https://gitpod.io/">Gitpod</a>
 
