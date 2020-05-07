@@ -41,13 +41,13 @@
             <a class="nav-item nav-link" href="#homepage"
               >Home<span class="sr-only">(current)</span></a
             ><span class="vertical_line"></span>
-            <a class="nav-item nav-link" href="#sign-up">Sign Up</a
-            ><span class="vertical_line"></span>
             <a class="nav-item nav-link" href="#testimonials">Testimonials</a
             ><span class="vertical_line"></span>
             <a class="nav-item nav-link" href="#schedule">Schedule</a
             ><span class="vertical_line"></span>
-            <a class="nav-item nav-link" href="#about-us">About Us</a>
+            <a class="nav-item nav-link" href="#about-us">About Us</a
+            ><span class="vertical_line"></span>
+            <a class="nav-item nav-link" href="#sign-up">Sign Up</a>
             <a
               class="nav-item nav-link disabled"
               href="#"
@@ -85,77 +85,7 @@
       </div>
     </section>
 
-    <!-- sign up -->
-    <section>
-      <div id="sign-up">
-        <h2 class="heading2">Sign Up</h2>
-      </div>
-
-      <br />
-      <div id="sign_up_form">
-        <form method="post" action="#" onsubmit="alert('Form sent')">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" size="30" required />
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" size="30" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" size="30" required />
-
-          <label for="choosen_schedule">Select all preferred classes</label>
-          <select
-            name="choosen_schedule"
-            id="choosen_schedule"
-            required
-            multiple
-          >
-            <optgroup label="Monday" class="text">
-              <option value="beginner" class="text">Beginner 9am-10am</option>
-              <option value="intermediate" class="text"
-                >Intermediate 2pm-3pm</option
-              >
-              <option value="expert" class="text">Expert 7pm-8pm</option>
-            </optgroup>
-
-            <optgroup label="Thursday" class="text">
-              <option value="expert" class="text">Expert 9am-10am</option>
-              <option value="beginner" class="text">Beginner 2pm-3pm</option>
-              <option value="intermediate" class="text"
-                >Intermediate 7pm-8pm</option
-              >
-            </optgroup>
-
-            <optgroup label="Friday" class="text">
-              <option value="intermediate" class="text"
-                >Intermediate 10am-11am</option
-              >
-              <option value="expert" class="text">Expert 3pm-4pm</option>
-              <option value="beginner" class="text">Beginner 8pm-9pm</option>
-            </optgroup>
-
-            <optgroup label="Sunday" class="text">
-              <option value="beginner" class="text">Beginner 10am-11am</option>
-              <option value="expert" class="text">Expert 3pm-4pm</option>
-              <option value="intermediate" class="text"
-                >Intermediate 8pm-9pm</option
-              >
-            </optgroup>
-          </select>
-
-          <div class="col-sm-12">
-            <button class="form_button" type="submit" value="Sign Up">
-              Sign Up
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <br />
-    </section>
-
     <!-- testimonials: images taken from Unsplash & grid system taken from Bootstrap -->
-
     <section>
       <br />
       <div id="testimonials">
@@ -447,6 +377,76 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- sign up -->
+    <section>
+      <div id="sign-up">
+        <h2 class="heading2">Sign Up</h2>
+      </div>
+
+      <br />
+      <div id="sign_up_form">
+        <form
+          method="post"
+          action="#"
+          onsubmit="alert('Form sent'); return false"
+        >
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="fname" size="30" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" size="30" required />
+
+          <label for="choosen_schedule">Select all preferred classes</label>
+          <select
+            name="choosen_schedule"
+            id="choosen_schedule"
+            required
+            multiple
+          >
+            <optgroup label="Monday" class="text">
+              <option value="beginner" class="text">Beginner 9am-10am</option>
+              <option value="intermediate" class="text"
+                >Intermediate 2pm-3pm</option
+              >
+              <option value="expert" class="text">Expert 7pm-8pm</option>
+            </optgroup>
+
+            <optgroup label="Thursday" class="text">
+              <option value="expert" class="text">Expert 9am-10am</option>
+              <option value="beginner" class="text">Beginner 2pm-3pm</option>
+              <option value="intermediate" class="text"
+                >Intermediate 7pm-8pm</option
+              >
+            </optgroup>
+
+            <optgroup label="Friday" class="text">
+              <option value="intermediate" class="text"
+                >Intermediate 10am-11am</option
+              >
+              <option value="expert" class="text">Expert 3pm-4pm</option>
+              <option value="beginner" class="text">Beginner 8pm-9pm</option>
+            </optgroup>
+
+            <optgroup label="Sunday" class="text">
+              <option value="beginner" class="text">Beginner 10am-11am</option>
+              <option value="expert" class="text">Expert 3pm-4pm</option>
+              <option value="intermediate" class="text"
+                >Intermediate 8pm-9pm</option
+              >
+            </optgroup>
+          </select>
+
+          <div class="col-sm-12">
+            <button class="form_button" type="submit" value="Sign Up">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <br />
     </section>
 
     <!-- socials: icons taken from Font Awesome -->
