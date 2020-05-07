@@ -354,6 +354,12 @@ button.form_button {
   margin-bottom: 10px;
 }
 
+/*removes blue outline when clicked*/
+button.form_button:focus {
+    outline: DarkGoldenRod;
+    border-width: 3px;
+}
+
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
 @media (min-width: 355px) {
   /*homepage paragraph*/
