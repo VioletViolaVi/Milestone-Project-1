@@ -74,7 +74,7 @@ body {
 .heading2 {
   font-size: 35px;
   text-transform: uppercase;
-  margin: 30px;
+  margin: 30px 0px;
   padding-top: 100px;
 }
 
@@ -223,7 +223,7 @@ section.homepage p {
 /*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
 /*boxes for schedule*/
 .schedule div.times {
-  margin-bottom: 15px;
+  margin: 30px 29px 15px;
 }
 
 /*lesson level titles*/
@@ -356,8 +356,8 @@ button.form_button {
 
 /*removes blue outline when clicked*/
 button.form_button:focus {
-    outline: DarkGoldenRod;
-    border-width: 3px;
+  outline: DarkGoldenRod;
+  border-width: 3px;
 }
 
 /*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
