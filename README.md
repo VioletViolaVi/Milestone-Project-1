@@ -379,7 +379,7 @@ On completion in creating this project, the following procedures were taken in o
 In order to locally run this code, this project was cloned from GitHub using the following steps:
 
 1. First enter the list of repositories section of GitHub.
-2. Then, under the repository name of the project, click on the “clone or download” button.
+2. Then, under the repository name of the project, click on the “Clone or download” button.
 3. Next, when in the dropdown “Clone with HTTPS” section click the clipboard button next to the URL to copy the repository's clone URL.
 4. Afterwards, enter into the local IDE and open Git Bash.
 5. Then, change the current working directory into the location of where the cloned directory is to be made.
