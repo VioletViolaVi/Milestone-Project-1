@@ -376,7 +376,7 @@ On completion in creating this project, the following procedures were taken in o
 
 ### Running the code locally
 
-In order to locally run this code, this project was cloned from GitHub using the following steps:
+In order to locally run this code, this project would have to be cloned from GitHub using the following steps:
 
 1. First enter the list of repositories section of GitHub.
 2. Then, under the repository name of the project, click on the “Clone or download” button.
