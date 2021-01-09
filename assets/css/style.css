@@ -1,76 +1,62 @@
-/*-------------------------------------------------------------AllPages-------------------------------------------------------------*/
-/*univesal settings*/
 * {
-  padding: 0px;
-  margin: 0px;
   font-family: cursive, Arial, Helvetica, sans-serif;
+  padding: 0em;
+  margin: 0em;
   color: white;
   line-height: 1.6;
   text-align: center;
 }
 
-/*website's background image and space provided after section-ends to help keep footers at the bottom*/
 body {
-  /*for the footer*/
+  /* for footer */
   position: relative;
   padding-bottom: 140px;
   min-height: 100vh;
   height: 100%;
-  /*for the background image*/
+  /* for background img */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 165, 32, 0)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(245, 246, 252, 0))), url(/assets/images/background.jpg);
+  background-image: linear-gradient(to bottom, rgba(218, 165, 32, 0), rgba(0, 0, 0, 0.5), rgba(245, 246, 252, 0)), url(/assets/images/background.jpg);
   background-color: rgba(218, 165, 32, 0.753);
-  background-image: linear-gradient(
-      to bottom,
-      rgba(218, 165, 32, 0),
-      rgba(0, 0, 0, 0.5),
-      rgba(245, 246, 252, 0)
-    ),
-    url(/assets/images/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
-/*-----------------------------------------------------Navbar*/
-/*navbar bar*/
+/****************************************************************************** Navbar */
 .my-nav {
   background-color: DarkGoldenRod;
 }
 
-/*navbar logo*/
 .my-nav .navbar-brand {
   color: white;
   font-size: 26px;
 }
 
-/*navbar links*/
 .my-nav .nav-link {
   color: white;
   font-size: 22px;
   margin: 3px 0px;
 }
 
-/*navbar link's hovered state */
 .my-nav .nav-link:hover {
   background-color: GoldenRod;
   border-radius: 9pc;
   padding: 0px;
 }
 
-/*removed border around burger icon */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-/*-----------------------------------------------------Headings*/
-/*Company website title*/
+/****************************************************************************** Headings */
 .heading1 {
   display: none;
 }
 
-/*Company sub-titles*/
 .heading2 {
   font-size: 35px;
   text-transform: uppercase;
@@ -78,14 +64,12 @@ body {
   padding-top: 100px;
 }
 
-/*para titles*/
 .heading3 {
   font-size: 30px;
   font-style: italic;
 }
 
-/*-----------------------------------------------------Images*/
-/*decorates ALL photos individually*/
+/****************************************************************************** Images */
 .all_testimonials img,
 .wrapping img {
   width: 270px;
@@ -95,13 +79,12 @@ body {
   background-color: rgba(218, 165, 32, 0.753);
 }
 
-/*centers all rows & columns*/
 div.row {
   margin: 0px;
 }
 
-/*-----------------------------------------------------Common: Testimonials, Schedule, About Us*/
-/*all boxes*/
+/****************************************************************************** Common: Testimonials, Schedule, About Us */
+/* all boxes */
 .schedule div.times,
 .all_testimonials div.testimonial,
 .about_us_paras {
@@ -110,20 +93,21 @@ div.row {
   border-radius: 9px;
   width: 100%;
 }
-/*removes spaces around to centre */
+
+/* removes spaces around to centre */
 div.container,
 div.col-12 {
   padding: 0px;
 }
 
-/*decorates paragraph background */
+/* decorates paragraph background */
 .about_us_paras,
 .all_testimonials div.testimonial {
   margin: 0px;
 }
 
-/*-----------------------------------------------------SignUp Button*/
-/*sign up button for ALL BUT sign up page*/
+/****************************************************************************** Sign Up Button */
+/* sign up button for all BUT sign up page */
 a.button {
   color: white;
   background-color: GoldenRod;
@@ -135,39 +119,35 @@ a.button {
   margin: 0px;
 }
 
-/*-----------------------------------------------------Footers*/
-/*to help keep footers at the bottom of the page*/
+/****************************************************************************** Footers */
+/* keeps footers at bottom of page */
 section {
   width: 100%;
 }
 
-/*keeps all footers at the bottom of the page*/
+/* keeps all footers at bottom of page */
 footer {
   position: absolute;
   min-height: 0%;
-  bottom: 0;
+  bottom: 0em;
   width: 100%;
 }
 
-/*footer paragraphs*/
 footer p {
   font-size: 15px;
 }
 
-/*footer icons*/
 footer i.fab {
   font-size: 250%;
   letter-spacing: 5px;
   height: 94px;
 }
 
-/*footer contacts*/
 .contacts {
   background-color: rgba(218, 165, 32, 0.582);
   height: 57px;
 }
 
-/*footer copyright*/
 .copyright {
   background-color: DarkGoldenRod;
   height: 20px;
@@ -175,38 +155,32 @@ footer i.fab {
   margin-bottom: 0px;
 }
 
-/*---------------------------------------------------------------HomePage---------------------------------------------------------------*/
-/*pushes homepage down from navbar*/
+/****************************************************************************** HomePage */
 .homepage .heading2 {
   padding-top: 90px;
 }
 
-/*homepage paragraph*/
 section.homepage p {
   font-size: 20px;
   margin: 40px 20px 40px 20px;
 }
 
-/*homepage paragraph expensive price*/
 .crossed_out {
   text-decoration: line-through;
 }
 
-/*homepage paragraph cheap price*/
 .bold {
   font-weight: bold;
   background-color: GoldenRod;
   font-style: italic;
 }
 
-/*---------------------------------------------------------------Testimonials---------------------------------------------------------------*/
-/*inner box space*/
+/******************************************************************************* Testimonials */
 .all_testimonials div.testimonial {
   padding-top: 15px;
   width: 100%;
 }
 
-/*decorates people opinions*/
 .all_testimonials p {
   font-style: italic;
   font-size: 25px;
@@ -215,18 +189,15 @@ section.homepage p {
   margin: 5px;
 }
 
-/*people's names*/
 .all_testimonials span {
   display: block;
 }
 
-/*---------------------------------------------------------------Schedule---------------------------------------------------------------*/
-/*boxes for schedule*/
+/******************************************************************************* Schedule */
 .schedule div.times {
   margin: 30px 29px 15px;
 }
 
-/*lesson level titles*/
 .heading4 {
   font-weight: bold;
   font-size: 23px;
@@ -234,40 +205,34 @@ section.homepage p {
   margin-top: 15px;
 }
 
-/*para content*/
 .schedule p {
   margin-bottom: 8px;
   font-size: 20px;
 }
 
-/*slants all lesons text*/
 .heading4,
 .schedule p {
   font-style: italic;
 }
 
-/*---------------------------------------------------------------AboutUs---------------------------------------------------------------*/
-/*founder & sieve photo arrangement*/
+/******************************************************************************* About Us */
 .wrapping .founder img,
 .sieve img {
   float: left;
   margin: 40px 2px 5px 20px;
 }
 
-/*buns photo arrangement*/
 .wrapping .buns img {
   float: right;
   margin: 40px 20px 5px 2px;
 }
 
-/*decorates paragraphs*/
 .about_us_paras p {
   font-size: 25px;
   font-style: italic;
 }
 
-/*---------------------------------------------------------------SignUp---------------------------------------------------------------*/
-/*whole form*/
+/******************************************************************************* Sign Up */
 #sign_up_form {
   background-color: rgba(218, 165, 32, 0.582);
   border: 5px solid DarkGoldenRod;
@@ -278,13 +243,12 @@ section.homepage p {
   min-height: 100%;
 }
 
-/*form labels*/
 label {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 150%;
+  margin-top: 10px;
 }
 
-/*all form boxes, labels & sign up button*/
 form,
 label,
 input {
@@ -292,18 +256,10 @@ input {
   text-align: center;
 }
 
-/*text typed in from left hand-side in boxes*/
 input {
   text-align: left;
 }
 
-/*spaces between names of each form*/
-label {
-  margin-top: 10px;
-  font-size: 150%;
-}
-
-/*inside space of ALL text boxes*/
 input[type="text"],
 input[type="email"] {
   padding-bottom: 5px;
@@ -314,14 +270,12 @@ input[type="email"] {
   width: 100%;
 }
 
-/*outside outline colour for clicked on form boxes*/
 input[type="text"],
 input[type="email"],
-select#choosen_schedule:focus {
-  outline-color: DarkGoldenRod;
+select#chosen_schedule:focus {
+  outline-color: GoldenRod;
 }
 
-/*inside space of preferred times box*/
 select {
   padding-bottom: 5px;
   margin: 0px 5px;
@@ -330,272 +284,207 @@ select {
   background-color: GoldenRod;
 }
 
-/*stretches out select box*/
-select#choosen_schedule {
+select#chosen_schedule {
   width: 250px;
   margin-bottom: 20px;
 }
 
-/*content in preference box*/
-select#choosen_schedule optgroup,
-select#choosen_schedule optgroup option {
+select#chosen_schedule optgroup,
+select#chosen_schedule optgroup option {
   text-align: left;
   font-size: 18px;
   width: 100%;
 }
 
-/*form sign up button*/
 button.form_button {
   background-color: GoldenRod;
-  border: 2px solid DarkGoldenRod;
-  padding: 0px 5px 5px;
+  border: px solid DarkGoldenRod;
+  padding: 0px 5px 5p;
   border-radius: 10px;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-/*removes blue outline when clicked*/
 button.form_button:focus {
   outline: DarkGoldenRod;
   border-width: 3px;
 }
 
-/*---------------------------------------------------------------Media Queries---------------------------------------------------------------*/
+/****************************************************************************** Media Queries */
 @media (min-width: 355px) {
-  /*homepage paragraph*/
   section.homepage p {
     margin: 50px 20px 50px 20px;
     font-size: 22px;
   }
-
-  /*content in preference box*/
-  select#choosen_schedule optgroup,
-  select#choosen_schedule optgroup option {
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
     font-size: 20px;
   }
-
   /*controls select box growth*/
-  select#choosen_schedule {
+  select#chosen_schedule {
     width: 285px;
   }
 }
-/*end*/
 
 @media (min-width: 418px) {
-  /*homepage paragraph*/
   section.homepage p {
     margin-bottom: 40px;
     font-size: 25px;
   }
-
-  /*controls select box growth*/
-  select#choosen_schedule {
+  select#chosen_schedule {
     width: 310px;
   }
-
-  /*content in preference box*/
-  select#choosen_schedule optgroup,
-  select#choosen_schedule optgroup option {
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
     font-size: 22px;
   }
 }
-/*end*/
 
 @media (min-width: 445px) {
-  /*homepage paragraph*/
   section.homepage p {
     font-size: 27px;
   }
 }
-/*end*/
 
 @media (min-width: 576px) {
-  /*whole form*/
   #sign_up_form {
     width: 90%;
   }
 }
-/*end*/
 
 @media (min-width: 579px) {
-  /*homepage paragraph*/
   section.homepage p {
     font-size: 27px;
   }
-
-  /*footer icons*/
   footer i.fab {
     letter-spacing: 7px;
     height: 70px;
   }
-
-  /*footer contacts*/
   .contacts {
     height: 30px;
   }
-
-  /*footer copyright*/
   .copyright {
     height: 23px;
   }
 }
-/*end*/
 
 @media (min-width: 616px) {
-  /*navbar logo & burger icon*/
   .my-nav .navbar-brand,
   button.navbar-toggler {
     font-size: 35px;
   }
-
-  /*navbar links*/
   .my-nav .nav-link {
     font-size: 40px;
   }
-
-  /*Company sub-titles*/
   .heading2 {
     font-size: 40px;
   }
-
-  /*pushes homepage down from navbar*/
   .homepage .heading2 {
     margin-top: 70px;
   }
-
-  /*homepage paragraph*/
   section.homepage p {
     font-size: 37px;
   }
-
-  /*decorates people opinions*/
   .all_testimonials p {
     font-size: 30px;
   }
-
-  /*para titles*/
   .heading3 {
     font-size: 35px;
   }
-
-  /*lesson level titles*/
   .heading4 {
     font-size: 30px;
   }
-
-  /*para content*/
   .schedule p {
     font-size: 25px;
   }
-
-  /*sign up button for ALL BUT sign up page*/
   a.button {
     font-size: 40px;
   }
-
-  /*form labels*/
   label {
     font-size: 30px;
   }
-
-  /*controls select box growth*/
-  select#choosen_schedule {
+  select#chosen_schedule {
     width: 350px;
   }
-
-  /*content in preference box*/
-  select#choosen_schedule optgroup,
-  select#choosen_schedule optgroup option {
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
     font-size: 25px;
   }
-
-  /*form sign up button*/
   button.form_button {
     font-size: 40px;
     margin-top: 20px;
   }
 }
-/*end*/
 
 @media (min-width: 766px) {
   /*navbar logo*/
   .my-nav .navbar-brand {
     font-size: 40px;
   }
-
   /*Company sub-titles*/
   .heading2 {
     font-size: 50px;
   }
-
   /*pushes homepage down from navbar*/
   .homepage .heading2 {
     margin-top: 80px;
   }
   /*content in preference box*/
-  select#choosen_schedule optgroup,
-  select#choosen_schedule optgroup option {
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
     font-size: 28px;
   }
-
   /*inside space of ALL text boxes*/
   input[type="text"],
   input[type="email"] {
     padding: 10px;
   }
-
   /*controls sign up box growth*/
   #sign_up_form {
     width: 650px;
   }
-
   /*controls select box growth*/
-  select#choosen_schedule {
+  select#chosen_schedule {
     width: 390px;
   }
-
   /*provides space on box sides*/
   .schedule .times.mx-auto {
     width: 95%;
   }
 }
-/*end*/
 
+/*end*/
 @media (min-width: 992px) {
   /*gets rid of navbar logo*/
   .my-nav .navbar-brand {
     display: none;
   }
-
   /*navbar bar*/
   .my-nav {
     border: 0px;
     top: 0;
   }
-
   /*canters navbar links*/
   div#navbarNavAltMarkup.collapse.navbar-collapse {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   /*navbar links*/
   a.nav-item.nav-link {
     font-size: 35px;
     padding: 0px;
   }
-
   /*navbar hovering links*/
   a.nav-item.nav-link:hover {
     border-radius: 9px;
     margin: 0px 5px;
   }
-
   /*lines between navbar links*/
   .vertical_line {
     border: solid white 1px;
     padding-left: 2px;
   }
-
   /*Company website title*/
   .heading1 {
     display: block;
@@ -606,97 +495,86 @@ button.form_button:focus {
     margin: 100px 0px 0px;
     padding-top: 110px;
   }
-
   /*pulls company title up towards navbar*/
   .heading1 {
     margin-top: 0px;
     padding-top: 95px;
   }
-
   /*enables headings to be seen under navbar*/
   .heading2 {
     padding-top: 110px;
   }
-
   /*pulls homepage up to navbar*/
   .homepage .heading2 {
     margin-top: 0px;
     padding-top: 120px;
   }
-
   /*para titles*/
   .heading3 {
     font-size: 45px;
   }
-
   /*lesson level titles*/
   .heading4 {
     font-size: 35px;
   }
-
   /*para content*/
   .schedule p {
     font-size: 30px;
   }
-
   /*content in preference box*/
-  select#choosen_schedule optgroup,
-  select#choosen_schedule optgroup option {
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
     font-size: 30px;
   }
-
   /*controls select box growth*/
-  select#choosen_schedule {
+  select#chosen_schedule {
     width: 425px;
   }
 }
-/*end*/
 
+/*end*/
 @media (min-width: 1125px) {
   /*navbar links*/
   a.nav-item.nav-link {
     font-size: 40px;
   }
-
   /*decorates paragraph background */
   .about_us_paras {
     padding-bottom: 0px;
   }
 }
-/*end*/
 
+/*end*/
 @media (min-width: 1360px) {
   /*pushes subheading down*/
   h1.heading1 {
     padding-top: 130px;
   }
-
   /*pushes subheading down*/
   .homepage .heading2 {
     margin-top: 35px;
   }
 }
-/*end*/
 
+/*end*/
 @media (min-width: 1440px) {
   /*footer paragraphs*/
   footer p {
     font-size: 20px;
   }
-
   /*footer icons*/
   footer i.fab {
     height: 105px;
   }
-
   /*footer contacts*/
   .contacts {
     height: 50px;
   }
-
   /*footer copyright*/
   .copyright {
     height: 34px;
   }
 }
+
 /*end*/
+/*# sourceMappingURL=style.css.map */

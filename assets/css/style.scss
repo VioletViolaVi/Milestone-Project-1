@@ -1,0 +1,904 @@
+$mainFont: cursive, Arial, Helvetica, sans-serif;
+$universal: (
+  "universalPadding": 0em,
+  "universalMargin": 0em,
+  "universalFontColour": white,
+  "universalLineHeight": 1.6,
+  "universalText": center,
+);
+
+$bodyBgImg: linear-gradient(
+    to bottom,
+    rgba(218, 165, 32, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(245, 246, 252, 0)
+  ),
+  url(/assets/images/background.jpg);
+$body: (
+  "bodyRelativePosition": relative,
+  "bodyPaddingBottom": 140px,
+  "bodyMinHeight": 100vh,
+  "bodyHeight": 100%,
+  "bodyBgColour": rgba(218, 165, 32, 0.753),
+  "bodyBgSize": cover,
+  "bodyBgAttachment": fixed,
+  "bodyBgPosition": center,
+);
+
+$nav: (
+  "navBarBgColour": DarkGoldenRod,
+  "navLogoFontColour": white,
+  "navFontSize": 26px,
+  "navLinksColour": white,
+  "navLinkFontSize": 22px,
+  "navLinkMargins": 3px 0px,
+  "navLinkHoverColor": GoldenRod,
+  "navLinkHoverBorderRadius": 9pc,
+  "navLinkHoverPadding": 0px,
+  "navBurgerOutline": none,
+  "navBurgerBoxShadow": none,
+);
+
+$headings: (
+  "companyHeading": none,
+  "subtitleHeadingFontSize": 35px,
+  "subtitleHeadingUppercase": uppercase,
+  "subtitleHeadingMargins": 30px 0px,
+  "subtitleHeadingParaTop": 100px,
+  "paraHeadingsFontSize": 30px,
+  "paraHeadingsFontStyle": italic,
+);
+
+$imgs: (
+  "imgWidth": 270px,
+  "imgHeight": 350px,
+  "imgBorder": 5px solid DarkGoldenRod,
+  "imgBorderRadius": 50%,
+  "imgBgColour": rgba(218, 165, 32, 0.753),
+  "imgMargins": 0px,
+);
+
+$testimonialsScheduleAboutUs: (
+  "bgColour": rgba(218, 165, 32, 0.87),
+  "border": 5px solid DarkGoldenRod,
+  "borderRadius": 9px,
+  "borderWidth": 100%,
+  "padding": 0px,
+  "margin": 0px,
+);
+
+$signUpBtn: (
+  "signUpBtnColour": white,
+  "signUpBtnBgColour": GoldenRod,
+  "signUpBtnBorder": 2px solid DarkGoldenRod,
+  "signUpBtnTextDec": none,
+  "signUpBtnPadding": 0px 5px 5px,
+  "signUpBtnBorderRadius": 10px,
+  "signUpBtnFontSize": 20px,
+  "signUpBtnMargins": 0px,
+);
+
+$footers: (
+  "sectionWidth": 100%,
+  "position": absolute,
+  "minHeight": 0%,
+  "bottom": 0em,
+  "footerWidth": 100%,
+  "footerFontSize": 15px,
+  "iconsFontSize": 250%,
+  "iconsLetterSpacing": 5px,
+  "iconsHeight": 94px,
+  "contactsBgColour": rgba(218, 165, 32, 0.582),
+  "contactsHeight": 57px,
+  "copyrightBgColour": DarkGoldenRod,
+  "copyrightHeight": 20px,
+  "copyrightPaddingBottom": 23px,
+  "copyrightMarginBottom": 0px,
+);
+
+$homePage: (
+  "homePagePaddingTop": 90px,
+  "homePageFontSize": 20px,
+  "homePageMargin": 40px 20px 40px 20px,
+  "homePageCrossOut": line-through,
+  "homePageFontWeight": bold,
+  "homePageBgColour": GoldenRod,
+  "homePageFonStyle": italic,
+);
+
+$testimonials: (
+  "innerBoxPaddingTop": 15px,
+  "innerBoxWidth": 100%,
+  "paraFontStyle": italic,
+  "paraFontSize": 25px,
+  "paraBorderRadius": 30px,
+  "paraPadding": 5px,
+  "paraMargin": 5px,
+  "pplNames": block,
+);
+
+$schedule: (
+  "scheduleMargin": 30px 29px 15px,
+  "scheduleFontWeight": bold,
+  "scheduleFontSize": 23px,
+  "scheduleMarginBottom": 2px,
+  "scheduleMarginTop": 15px,
+  "scheduleParaMarginBottom": 8px,
+  "scheduleParaFontSize": 20px,
+  "subheading&Para": italic,
+);
+
+$aboutUs: (
+  "founder&SieveImgFloat": left,
+  "founder&SieveImgMargin": 40px 2px 5px 20px,
+  "bunsFloatImg": right,
+  "bunsMarginImg": 40px 20px 5px 2px,
+  "aboutUsParaFontSize": 25px,
+  "aboutUsParaFontStyle": italic,
+);
+
+$signUp: (
+  "formBgColour": rgba(218, 165, 32, 0.582),
+  "formBorder": 5px solid DarkGoldenRod,
+  "formBorderRadius": 9px,
+  "formWidth": 100%,
+  "formPadding": 0px 10px,
+  "formMargin": auto,
+  "formMinHeight": 100%,
+  "labelFontWeight": bold,
+  "labelFontSize": 150%,
+  "labelMarginTop": 10px,
+  "fromLabelInputDisplay": block,
+  "fromLabelInputTextAlign": center,
+  "textInput": left,
+  "textBoxesPaddingBottom": 5px,
+  "textBoxesColour": black,
+  "textBoxesBorder": 2px solid DarkGoldenRod,
+  "textBoxesBorderRadius": 4px,
+  "textBoxesBgColour": GoldenRod,
+  "textBoxesWidth": 100%,
+  "textBoxesOutlineColour": GoldenRod,
+  "timeBoxPaddingBottom": 5px,
+  "timeBoxMargin": 0px 5px,
+  "timeBoxBorder": 2px solid DarkGoldenRod,
+  "timeBoxBorderRadius": 4px,
+  "timeBoxBg": GoldenRod,
+  "selectBoxWidth": 250px,
+  "selectBoxWiMarginBottom": 20px,
+  "preferenceBoxTextAlign": left,
+  "preferenceBoxFontSize": 18px,
+  "preferenceBoxWidth": 100%,
+  "btnBg": GoldenRod,
+  "btnBorder": px solid DarkGoldenRod,
+  "btnPadding": 0px 5px 5p,
+  "btnBorderRadius": 10px,
+  "btnFontSize": 20px,
+  "btnMarginBottom": 10px,
+  "btnOutline": DarkGoldenRod,
+  "btnBorderWidth": 3px,
+);
+
+* {
+  font-family: $mainFont;
+  padding: map-get($universal, "universalPadding");
+  margin: map-get($universal, "universalMargin");
+  color: map-get($universal, "universalFontColour");
+  line-height: map-get($universal, "universalLineHeight");
+  text-align: map-get($universal, "universalText");
+}
+
+body {
+  /* for footer */
+  position: map-get($body, "bodyRelativePosition");
+  padding-bottom: map-get($body, "bodyPaddingBottom");
+  min-height: map-get($body, "bodyMinHeight");
+  height: map-get($body, "bodyHeight");
+  /* for background img */
+  background-image: $bodyBgImg;
+  background-color: map-get($body, "bodyBgColour");
+  background-size: map-get($body, "bodyBgSize");
+  background-attachment: map-get($body, "bodyBgAttachment");
+  background-position: map-get($body, "bodyBgPosition");
+}
+
+/****************************************************************************** Navbar */
+.my-nav {
+  background-color: map-get($nav, "navBarBgColour");
+}
+
+.my-nav .navbar-brand {
+  color: map-get($nav, "navLogoFontColour");
+  font-size: map-get($nav, "navFontSize");
+}
+
+.my-nav .nav-link {
+  color: map-get($nav, "navLinksColour");
+  font-size: map-get($nav, "navLinkFontSize");
+  margin: map-get($nav, "navLinkMargins");
+}
+
+.my-nav .nav-link:hover {
+  background-color: map-get($nav, "navLinkHoverColor");
+  border-radius: map-get($nav, "navLinkHoverBorderRadius");
+  padding: map-get($nav, "navLinkHoverPadding");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: map-get($nav, "navBurgerOutline");
+  box-shadow: map-get($nav, "navBurgerBoxShadow");
+}
+
+/****************************************************************************** Headings */
+
+.heading1 {
+  display: map-get($headings, "companyHeading");
+}
+
+.heading2 {
+  font-size: map-get($headings, "subtitleHeadingFontSize");
+  text-transform: map-get($headings, "subtitleHeadingUppercase");
+  margin: map-get($headings, "subtitleHeadingMargins");
+  padding-top: map-get($headings, "subtitleHeadingParaTop");
+}
+
+.heading3 {
+  font-size: map-get($headings, "paraHeadingsFontSize");
+  font-style: map-get($headings, "paraHeadingsFontStyle");
+}
+
+/****************************************************************************** Images */
+.all_testimonials img,
+.wrapping img {
+  width: map-get($imgs, "imgWidth");
+  height: map-get($imgs, "imgHeight");
+  border: map-get($imgs, "imgBorder");
+  border-radius: map-get($imgs, "imgBorderRadius");
+  background-color: map-get($imgs, "imgBgColour");
+}
+
+div.row {
+  margin: map-get($imgs, "imgMargins");
+}
+
+/****************************************************************************** Common: Testimonials, Schedule, About Us */
+/* all boxes */
+.schedule div.times,
+.all_testimonials div.testimonial,
+.about_us_paras {
+  background-color: map-get($testimonialsScheduleAboutUs, "bgColour");
+  border: map-get($testimonialsScheduleAboutUs, "border");
+  border-radius: map-get($testimonialsScheduleAboutUs, "borderRadius");
+  width: map-get($testimonialsScheduleAboutUs, "borderWidth");
+}
+
+/* removes spaces around to centre */
+div.container,
+div.col-12 {
+  padding: map-get($testimonialsScheduleAboutUs, "padding");
+}
+
+/* decorates paragraph background */
+.about_us_paras,
+.all_testimonials div.testimonial {
+  margin: map-get($testimonialsScheduleAboutUs, "margin");
+}
+
+/****************************************************************************** Sign Up Button */
+/* sign up button for all BUT sign up page */
+a.button {
+  color: map-get($signUpBtn, "signUpBtnColour");
+  background-color: map-get($signUpBtn, "signUpBtnBgColour");
+  border: map-get($signUpBtn, "signUpBtnBorder");
+  text-decoration: map-get($signUpBtn, "signUpBtnTextDec");
+  padding: map-get($signUpBtn, "signUpBtnPadding");
+  border-radius: map-get($signUpBtn, "signUpBtnBorderRadius");
+  font-size: map-get($signUpBtn, "signUpBtnFontSize");
+  margin: map-get($signUpBtn, "signUpBtnMargins");
+}
+
+/****************************************************************************** Footers */
+/* keeps footers at bottom of page */
+section {
+  width: map-get($footers, "sectionWidth");
+}
+
+/* keeps all footers at bottom of page */
+footer {
+  position: map-get($footers, "position");
+  min-height: map-get($footers, "minHeight");
+  bottom: map-get($footers, "bottom");
+  width: map-get($footers, "footerWidth");
+}
+
+footer p {
+  font-size: map-get($footers, "footerFontSize");
+}
+
+footer i.fab {
+  font-size: map-get($footers, "iconsFontSize");
+  letter-spacing: map-get($footers, "iconsLetterSpacing");
+  height: map-get($footers, "iconsHeight");
+}
+
+.contacts {
+  background-color: map-get($footers, "contactsBgColour");
+  height: map-get($footers, "contactsHeight");
+}
+
+.copyright {
+  background-color: map-get($footers, "copyrightBgColour");
+  height: map-get($footers, "copyrightHeight");
+  padding-bottom: map-get($footers, "copyrightPaddingBottom");
+  margin-bottom: map-get($footers, "copyrightMarginBottom");
+}
+
+/****************************************************************************** HomePage */
+.homepage .heading2 {
+  padding-top: map-get($homePage, "homePagePaddingTop");
+}
+
+section.homepage p {
+  font-size: map-get($homePage, "homePageFontSize");
+  margin: map-get($homePage, "homePageMargin");
+}
+
+.crossed_out {
+  text-decoration: map-get($homePage, "homePageCrossOut");
+}
+
+.bold {
+  font-weight: map-get($homePage, "homePageFontWeight");
+  background-color: map-get($homePage, "homePageBgColour");
+  font-style: map-get($homePage, "homePageFonStyle");
+}
+
+/******************************************************************************* Testimonials */
+.all_testimonials div.testimonial {
+  padding-top: map-get($testimonials, "innerBoxPaddingTop");
+  width: map-get($testimonials, "innerBoxWidth");
+}
+
+.all_testimonials p {
+  font-style: map-get($testimonials, "paraFontStyle");
+  font-size: map-get($testimonials, "paraFontSize");
+  border-radius: map-get($testimonials, "paraBorderRadius");
+  padding: map-get($testimonials, "paraPadding");
+  margin: map-get($testimonials, "paraMargin");
+}
+
+.all_testimonials span {
+  display: map-get($testimonials, "pplNames");
+}
+
+/******************************************************************************* Schedule */
+.schedule div.times {
+  margin: map-get($schedule, "scheduleMargin");
+}
+
+.heading4 {
+  font-weight: map-get($schedule, "scheduleFontWeight");
+  font-size: map-get($schedule, "scheduleFontSize");
+  margin-bottom: map-get($schedule, "scheduleMarginBottom");
+  margin-top: map-get($schedule, "scheduleMarginTop");
+}
+
+.schedule p {
+  margin-bottom: map-get($schedule, "scheduleParaMarginBottom");
+  font-size: map-get($schedule, "scheduleParaFontSize");
+}
+
+.heading4,
+.schedule p {
+  font-style: map-get($schedule, "subheading&Para");
+}
+
+/******************************************************************************* About Us */
+.wrapping .founder img,
+.sieve img {
+  float: map-get($aboutUs, "founder&SieveImgFloat");
+  margin: map-get($aboutUs, "founder&SieveImgMargin");
+}
+
+.wrapping .buns img {
+  float: map-get($aboutUs, "bunsFloatImg");
+  margin: map-get($aboutUs, "bunsMarginImg");
+}
+
+.about_us_paras p {
+  font-size: map-get($aboutUs, "aboutUsParaFontSize");
+  font-style: map-get($aboutUs, "aboutUsParaFontStyle");
+}
+
+/******************************************************************************* Sign Up */
+#sign_up_form {
+  background-color: map-get($signUp, "formBgColour");
+  border: map-get($signUp, "formBorder");
+  border-radius: map-get($signUp, "formBorderRadius");
+  width: map-get($signUp, "formWidth");
+  padding: map-get($signUp, "formPadding");
+  margin: map-get($signUp, "formMargin");
+  min-height: map-get($signUp, "formMinHeight");
+}
+
+label {
+  font-weight: map-get($signUp, "labelFontWeight");
+  font-size: map-get($signUp, "labelFontSize");
+  margin-top: map-get($signUp, "labelMarginTop");
+}
+
+form,
+label,
+input {
+  display: map-get($signUp, "fromLabelInputDisplay");
+  text-align: map-get($signUp, "fromLabelInputTextAlign");
+}
+
+input {
+  text-align: map-get($signUp, "textInput");
+}
+
+input[type="text"],
+input[type="email"] {
+  padding-bottom: map-get($signUp, "textBoxesPaddingBottom");
+  color: map-get($signUp, "textBoxesColour");
+  border: map-get($signUp, "textBoxesBorder");
+  border-radius: map-get($signUp, "textBoxesBorderRadius");
+  background-color: map-get($signUp, "textBoxesBgColour");
+  width: map-get($signUp, "textBoxesWidth");
+}
+
+input[type="text"],
+input[type="email"],
+select#chosen_schedule:focus {
+  outline-color: map-get($signUp, "textBoxesOutlineColour");
+}
+
+select {
+  padding-bottom: map-get($signUp, "timeBoxPaddingBottom");
+  margin: map-get($signUp, "timeBoxMargin");
+  border: map-get($signUp, "timeBoxBorder");
+  border-radius: map-get($signUp, "timeBoxBorderRadius");
+  background-color: map-get($signUp, "timeBoxBg");
+}
+
+select#chosen_schedule {
+  width: map-get($signUp, "selectBoxWidth");
+  margin-bottom: map-get($signUp, "selectBoxWiMarginBottom");
+}
+
+select#chosen_schedule optgroup,
+select#chosen_schedule optgroup option {
+  text-align: map-get($signUp, "preferenceBoxTextAlign");
+  font-size: map-get($signUp, "preferenceBoxFontSize");
+  width: map-get($signUp, "preferenceBoxWidth");
+}
+
+button.form_button {
+  background-color: map-get($signUp, "btnBg");
+  border: map-get($signUp, "btnBorder");
+  padding: map-get($signUp, "btnPadding");
+  border-radius: map-get($signUp, "btnBorderRadius");
+  font-size: map-get($signUp, "btnFontSize");
+  margin-bottom: map-get($signUp, "btnMarginBottom");
+}
+
+button.form_button:focus {
+  outline: map-get($signUp, "btnOutline");
+  border-width: map-get($signUp, "btnBorderWidth");
+}
+
+/****************************************************************************** Media Queries */
+@media (min-width: 355px) {
+  @mixin homeParas {
+    margin: 50px 20px 50px 20px;
+    font-size: 22px;
+  }
+
+  @mixin preferenceBox {
+    font-size: 20px;
+  }
+
+  @mixin selectBox {
+    width: 285px;
+  }
+
+  section.homepage p {
+    @include homeParas;
+  }
+
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    @include preferenceBox;
+  }
+
+  /*controls select box growth*/
+  select#chosen_schedule {
+    @include selectBox;
+  }
+}
+
+@media (min-width: 418px) {
+  @mixin homeParas {
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+
+  @mixin selectBox {
+    width: 310px;
+  }
+
+  @mixin preferenceBox {
+    font-size: 22px;
+  }
+
+  section.homepage p {
+    @include homeParas;
+  }
+
+  select#chosen_schedule {
+    @include selectBox;
+  }
+
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    @include preferenceBox;
+  }
+}
+
+@media (min-width: 445px) {
+  @mixin homeParas {
+    font-size: 27px;
+  }
+
+  section.homepage p {
+    @include homeParas;
+  }
+}
+
+@media (min-width: 576px) {
+  @mixin signUpForm {
+    width: 90%;
+  }
+
+  #sign_up_form {
+    @include signUpForm;
+  }
+}
+
+@media (min-width: 579px) {
+  @mixin homeParas {
+    font-size: 27px;
+  }
+
+  @mixin footerIcons {
+    letter-spacing: 7px;
+    height: 70px;
+  }
+
+  @mixin footerContacts {
+    height: 30px;
+  }
+
+  @mixin footerCopyright {
+    height: 23px;
+  }
+
+  section.homepage p {
+    @include homeParas;
+  }
+
+  footer i.fab {
+    @include footerIcons;
+  }
+
+  .contacts {
+    @include footerContacts;
+  }
+
+  .copyright {
+    @include footerCopyright;
+  }
+}
+
+@media (min-width: 616px) {
+  @mixin navBarAndLogo {
+    font-size: 35px;
+  }
+
+  @mixin navbarLinks {
+    font-size: 40px;
+  }
+
+  @mixin subTitles {
+    font-size: 40px;
+  }
+
+  @mixin homepagePusher {
+    margin-top: 70px;
+  }
+
+  @mixin homepageParas {
+    font-size: 37px;
+  }
+
+  @mixin testimonialParas {
+    font-size: 30px;
+  }
+
+  @mixin paraTitles {
+    font-size: 35px;
+  }
+
+  @mixin lessonTitles {
+    font-size: 30px;
+  }
+
+  @mixin paras {
+    font-size: 25px;
+  }
+
+  @mixin signUpLinks {
+    font-size: 40px;
+  }
+
+  @mixin formLabels {
+    font-size: 30px;
+  }
+
+  @mixin selectBox {
+    width: 350px;
+  }
+
+  @mixin preferenceBox {
+    font-size: 25px;
+  }
+
+  @mixin mainSignUpBtn {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .my-nav .navbar-brand,
+  button.navbar-toggler {
+    @include navBarAndLogo;
+  }
+
+  .my-nav .nav-link {
+    @include navbarLinks;
+  }
+
+  .heading2 {
+    @include subTitles;
+  }
+
+  .homepage .heading2 {
+    @include homepagePusher;
+  }
+
+  section.homepage p {
+    @include homepageParas;
+  }
+
+  .all_testimonials p {
+    @include testimonialParas;
+  }
+
+  .heading3 {
+    @include paraTitles;
+  }
+
+  .heading4 {
+    @include lessonTitles;
+  }
+
+  .schedule p {
+    @include paras;
+  }
+
+  a.button {
+    @include signUpLinks;
+  }
+
+  label {
+    @include formLabels;
+  }
+
+  select#chosen_schedule {
+    @include selectBox;
+  }
+
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    @include preferenceBox;
+  }
+
+  button.form_button {
+    @include mainSignUpBtn;
+  }
+}
+
+@media (min-width: 766px) {
+  /*navbar logo*/
+  .my-nav .navbar-brand {
+    font-size: 40px;
+  }
+
+  /*Company sub-titles*/
+  .heading2 {
+    font-size: 50px;
+  }
+
+  /*pushes homepage down from navbar*/
+  .homepage .heading2 {
+    margin-top: 80px;
+  }
+  /*content in preference box*/
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    font-size: 28px;
+  }
+
+  /*inside space of ALL text boxes*/
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+  }
+
+  /*controls sign up box growth*/
+  #sign_up_form {
+    width: 650px;
+  }
+
+  /*controls select box growth*/
+  select#chosen_schedule {
+    width: 390px;
+  }
+
+  /*provides space on box sides*/
+  .schedule .times.mx-auto {
+    width: 95%;
+  }
+}
+/*end*/
+
+@media (min-width: 992px) {
+  /*gets rid of navbar logo*/
+  .my-nav .navbar-brand {
+    display: none;
+  }
+
+  /*navbar bar*/
+  .my-nav {
+    border: 0px;
+    top: 0;
+  }
+
+  /*canters navbar links*/
+  div#navbarNavAltMarkup.collapse.navbar-collapse {
+    justify-content: center;
+  }
+
+  /*navbar links*/
+  a.nav-item.nav-link {
+    font-size: 35px;
+    padding: 0px;
+  }
+
+  /*navbar hovering links*/
+  a.nav-item.nav-link:hover {
+    border-radius: 9px;
+    margin: 0px 5px;
+  }
+
+  /*lines between navbar links*/
+  .vertical_line {
+    border: solid white 1px;
+    padding-left: 2px;
+  }
+
+  /*Company website title*/
+  .heading1 {
+    display: block;
+    height: 35px;
+    width: 100%;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 100px 0px 0px;
+    padding-top: 110px;
+  }
+
+  /*pulls company title up towards navbar*/
+  .heading1 {
+    margin-top: 0px;
+    padding-top: 95px;
+  }
+
+  /*enables headings to be seen under navbar*/
+  .heading2 {
+    padding-top: 110px;
+  }
+
+  /*pulls homepage up to navbar*/
+  .homepage .heading2 {
+    margin-top: 0px;
+    padding-top: 120px;
+  }
+
+  /*para titles*/
+  .heading3 {
+    font-size: 45px;
+  }
+
+  /*lesson level titles*/
+  .heading4 {
+    font-size: 35px;
+  }
+
+  /*para content*/
+  .schedule p {
+    font-size: 30px;
+  }
+
+  /*content in preference box*/
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    font-size: 30px;
+  }
+
+  /*controls select box growth*/
+  select#chosen_schedule {
+    width: 425px;
+  }
+}
+/*end*/
+
+@media (min-width: 1125px) {
+  /*navbar links*/
+  a.nav-item.nav-link {
+    font-size: 40px;
+  }
+
+  /*decorates paragraph background */
+  .about_us_paras {
+    padding-bottom: 0px;
+  }
+}
+/*end*/
+
+@media (min-width: 1360px) {
+  /*pushes subheading down*/
+  h1.heading1 {
+    padding-top: 130px;
+  }
+
+  /*pushes subheading down*/
+  .homepage .heading2 {
+    margin-top: 35px;
+  }
+}
+/*end*/
+
+@media (min-width: 1440px) {
+  /*footer paragraphs*/
+  footer p {
+    font-size: 20px;
+  }
+
+  /*footer icons*/
+  footer i.fab {
+    height: 105px;
+  }
+
+  /*footer contacts*/
+  .contacts {
+    height: 50px;
+  }
+
+  /*footer copyright*/
+  .copyright {
+    height: 34px;
+  }
+}
+/*end*/
