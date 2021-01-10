@@ -1,10 +1,27 @@
+$allColours: (
+  "textBoxesColour": black,
+  "white": white,
+  "GoldenRod": GoldenRod,
+  "DarkGoldenRod": DarkGoldenRod,
+  "bodyAndImgBgColour": rgba(218, 165, 32, 0.753),
+  "testimonialsBgColour": rgba(218, 165, 32, 0.87),
+  "contactsAndFormBgColour": rgba(218, 165, 32, 0.582),
+);
+
+$allColouredBorders: (
+  "iconBorder": 0.1em solid DarkGoldenRod,
+  "allOtherBorders": 5px solid DarkGoldenRod,
+  "signUpBtnsAndTextBoxesBorderAndTimeBoxBorder": 2px solid DarkGoldenRod,
+);
+
+$allNones: none;
+
 $mainFont: cursive, Arial, Helvetica, sans-serif;
 $universal: (
+  "universalText": center,
   "universalPadding": 0em,
   "universalMargin": 0em,
-  "universalFontColour": white,
   "universalLineHeight": 1.6,
-  "universalText": center,
 );
 
 $bodyBgImg: linear-gradient(
@@ -16,64 +33,49 @@ $bodyBgImg: linear-gradient(
   url(/assets/images/background.jpg);
 $body: (
   "bodyRelativePosition": relative,
-  "bodyPaddingBottom": 140px,
-  "bodyMinHeight": 100vh,
-  "bodyHeight": 100%,
-  "bodyBgColour": rgba(218, 165, 32, 0.753),
   "bodyBgSize": cover,
   "bodyBgAttachment": fixed,
   "bodyBgPosition": center,
+  "bodyMinHeight": 100vh,
+  "bodyPaddingBottom": 140px,
+  "bodyHeight": 100%,
 );
 
 $backToTop: (
-  "display": none,
-  "bottom": 1em,
+  "iconCursor": pointer,
   "position": fixed,
   "right": 0.5em,
+  "bottom": 1em,
   "z-index": 1,
-  "bgColour": GoldenRod,
   "borderRadius": 50%,
   "iconBorderRadius": 2em,
-  "iconCursor": pointer,
-  "iconBorder": solid 0.1em DarkGoldenRod,
 );
 
 $nav: (
-  "navBarBgColour": DarkGoldenRod,
-  "navLogoFontColour": white,
   "navFontSize": 26px,
-  "navLinksColour": white,
   "navLinkFontSize": 22px,
   "navLinkMargins": 3px 0px,
-  "navLinkHoverColor": GoldenRod,
   "navLinkHoverBorderRadius": 9pc,
   "navLinkHoverPadding": 0px,
-  "navBurgerOutline": none,
-  "navBurgerBoxShadow": none,
 );
 
 $headings: (
-  "companyHeading": none,
-  "subtitleHeadingFontSize": 35px,
+  "paraHeadingsFontStyle": italic,
   "subtitleHeadingUppercase": uppercase,
+  "subtitleHeadingFontSize": 35px,
   "subtitleHeadingMargins": 30px 0px,
   "subtitleHeadingParaTop": 100px,
   "paraHeadingsFontSize": 30px,
-  "paraHeadingsFontStyle": italic,
 );
 
 $imgs: (
   "imgWidth": 270px,
   "imgHeight": 350px,
-  "imgBorder": 5px solid DarkGoldenRod,
   "imgBorderRadius": 50%,
-  "imgBgColour": rgba(218, 165, 32, 0.753),
   "imgMargins": 0px,
 );
 
 $testimonialsScheduleAboutUs: (
-  "bgColour": rgba(218, 165, 32, 0.87),
-  "border": 5px solid DarkGoldenRod,
   "borderRadius": 9px,
   "borderWidth": 100%,
   "padding": 0px,
@@ -81,10 +83,6 @@ $testimonialsScheduleAboutUs: (
 );
 
 $signUpBtn: (
-  "signUpBtnColour": white,
-  "signUpBtnBgColour": GoldenRod,
-  "signUpBtnBorder": 2px solid DarkGoldenRod,
-  "signUpBtnTextDec": none,
   "signUpBtnPadding": 0px 5px 5px,
   "signUpBtnBorderRadius": 10px,
   "signUpBtnFontSize": 20px,
@@ -92,8 +90,8 @@ $signUpBtn: (
 );
 
 $footers: (
-  "sectionWidth": 100%,
   "position": absolute,
+  "sectionWidth": 100%,
   "minHeight": 0%,
   "bottom": 0em,
   "footerWidth": 100%,
@@ -101,93 +99,79 @@ $footers: (
   "iconsFontSize": 250%,
   "iconsLetterSpacing": 5px,
   "iconsHeight": 94px,
-  "contactsBgColour": rgba(218, 165, 32, 0.582),
   "contactsHeight": 57px,
-  "copyrightBgColour": DarkGoldenRod,
   "copyrightHeight": 20px,
   "copyrightPaddingBottom": 23px,
   "copyrightMarginBottom": 0px,
 );
 
 $homePage: (
+  "homePageCrossOut": line-through,
+  "homePageFontWeight": bold,
+  "homePageFonStyle": italic,
   "homePagePaddingTop": 90px,
   "homePageFontSize": 20px,
   "homePageMargin": 40px 20px 40px 20px,
-  "homePageCrossOut": line-through,
-  "homePageFontWeight": bold,
-  "homePageBgColour": GoldenRod,
-  "homePageFonStyle": italic,
 );
 
 $testimonials: (
+  "paraFontStyle": italic,
+  "pplNames": block,
   "innerBoxPaddingTop": 15px,
   "innerBoxWidth": 100%,
-  "paraFontStyle": italic,
   "paraFontSize": 25px,
   "paraBorderRadius": 30px,
   "paraPadding": 5px,
   "paraMargin": 5px,
-  "pplNames": block,
 );
 
 $schedule: (
-  "scheduleMargin": 30px 29px 15px,
   "scheduleFontWeight": bold,
+  "subheading&Para": italic,
+  "scheduleMargin": 30px 29px 15px,
   "scheduleFontSize": 23px,
   "scheduleMarginBottom": 2px,
   "scheduleMarginTop": 15px,
   "scheduleParaMarginBottom": 8px,
   "scheduleParaFontSize": 20px,
-  "subheading&Para": italic,
 );
 
 $aboutUs: (
   "founder&SieveImgFloat": left,
-  "founder&SieveImgMargin": 40px 2px 5px 20px,
   "bunsFloatImg": right,
+  "aboutUsParaFontStyle": italic,
+  "founder&SieveImgMargin": 40px 2px 5px 20px,
   "bunsMarginImg": 40px 20px 5px 2px,
   "aboutUsParaFontSize": 25px,
-  "aboutUsParaFontStyle": italic,
 );
 
 $signUp: (
-  "formBgColour": rgba(218, 165, 32, 0.582),
-  "formBorder": 5px solid DarkGoldenRod,
+  "preferenceBoxTextAlign": left,
+  "textInput": left,
+  "fromLabelInputTextAlign": center,
+  "fromLabelInputDisplay": block,
+  "labelFontWeight": bold,
+  "formMargin": auto,
   "formBorderRadius": 9px,
   "formWidth": 100%,
   "formPadding": 0px 10px,
-  "formMargin": auto,
   "formMinHeight": 100%,
-  "labelFontWeight": bold,
   "labelFontSize": 150%,
   "labelMarginTop": 10px,
-  "fromLabelInputDisplay": block,
-  "fromLabelInputTextAlign": center,
-  "textInput": left,
   "textBoxesPaddingBottom": 5px,
-  "textBoxesColour": black,
-  "textBoxesBorder": 2px solid DarkGoldenRod,
   "textBoxesBorderRadius": 4px,
-  "textBoxesBgColour": GoldenRod,
   "textBoxesWidth": 100%,
-  "textBoxesOutlineColour": GoldenRod,
   "timeBoxPaddingBottom": 5px,
   "timeBoxMargin": 0px 5px,
-  "timeBoxBorder": 2px solid DarkGoldenRod,
   "timeBoxBorderRadius": 4px,
-  "timeBoxBg": GoldenRod,
   "selectBoxWidth": 250px,
   "selectBoxWiMarginBottom": 20px,
-  "preferenceBoxTextAlign": left,
   "preferenceBoxFontSize": 18px,
   "preferenceBoxWidth": 100%,
-  "btnBg": GoldenRod,
-  "btnBorder": px solid DarkGoldenRod,
   "btnPadding": 0px 5px 5px,
   "btnBorderRadius": 10px,
   "btnFontSize": 20px,
   "btnMarginBottom": 10px,
-  "btnOutline": DarkGoldenRod,
   "btnBorderWidth": 3px,
 );
 
@@ -195,7 +179,7 @@ $signUp: (
   font-family: $mainFont;
   padding: map-get($universal, "universalPadding");
   margin: map-get($universal, "universalMargin");
-  color: map-get($universal, "universalFontColour");
+  color: map-get($allColours, "white");
   line-height: map-get($universal, "universalLineHeight");
   text-align: map-get($universal, "universalText");
 }
@@ -208,46 +192,46 @@ body {
   height: map-get($body, "bodyHeight");
   /* for background img */
   background-image: $bodyBgImg;
-  background-color: map-get($body, "bodyBgColour");
+  background-color: map-get($allColours, "bodyAndImgBgColour");
   background-size: map-get($body, "bodyBgSize");
   background-attachment: map-get($body, "bodyBgAttachment");
   background-position: map-get($body, "bodyBgPosition");
 }
 
 .fixed-arrow {
-  display: map-get($backToTop, "display");
+  display: $allNones;
   bottom: map-get($backToTop, "bottom");
   position: map-get($backToTop, "position");
   right: map-get($backToTop, "right");
   z-index: map-get($backToTop, "z-index");
-  background-color: map-get($backToTop, "bgColour");
+  background-color: map-get($allColours, "GoldenRod");
   border-radius: map-get($backToTop, "borderRadius");
 }
 
 .fas.fa-arrow-circle-up {
   border-radius: map-get($backToTop, "iconBorderRadius");
   cursor: map-get($backToTop, "iconCursor");
-  border: map-get($backToTop, "iconBorder");
+  border: map-get($allColouredBorders, "iconBorder");
 }
 
 /****************************************************************************** Navbar */
 .my-nav {
-  background-color: map-get($nav, "navBarBgColour");
+  background-color: map-get($allColours, "DarkGoldenRod");
 }
 
 .my-nav .navbar-brand {
-  color: map-get($nav, "navLogoFontColour");
+  color: map-get($allColours, "white");
   font-size: map-get($nav, "navFontSize");
 }
 
 .my-nav .nav-link {
-  color: map-get($nav, "navLinksColour");
+  color: map-get($allColours, "white");
   font-size: map-get($nav, "navLinkFontSize");
   margin: map-get($nav, "navLinkMargins");
 }
 
 .my-nav .nav-link:hover {
-  background-color: map-get($nav, "navLinkHoverColor");
+  background-color: map-get($allColours, "GoldenRod");
   border-radius: map-get($nav, "navLinkHoverBorderRadius");
   padding: map-get($nav, "navLinkHoverPadding");
 }
@@ -255,14 +239,14 @@ body {
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-  outline: map-get($nav, "navBurgerOutline");
-  box-shadow: map-get($nav, "navBurgerBoxShadow");
+  outline: $allNones;
+  box-shadow: $allNones;
 }
 
 /****************************************************************************** Headings */
 
 .heading1 {
-  display: map-get($headings, "companyHeading");
+  display: $allNones;
 }
 
 .heading2 {
@@ -282,9 +266,9 @@ body {
 .wrapping img {
   width: map-get($imgs, "imgWidth");
   height: map-get($imgs, "imgHeight");
-  border: map-get($imgs, "imgBorder");
+  border: map-get($allColouredBorders, "allOtherBorders");
   border-radius: map-get($imgs, "imgBorderRadius");
-  background-color: map-get($imgs, "imgBgColour");
+  background-color: map-get($allColours, "bodyAndImgBgColour");
 }
 
 div.row {
@@ -296,8 +280,8 @@ div.row {
 .schedule div.times,
 .all_testimonials div.testimonial,
 .about_us_paras {
-  background-color: map-get($testimonialsScheduleAboutUs, "bgColour");
-  border: map-get($testimonialsScheduleAboutUs, "border");
+  background-color: map-get($allColours, "testimonialsBgColour");
+  border: map-get($allColouredBorders, "allOtherBorders");
   border-radius: map-get($testimonialsScheduleAboutUs, "borderRadius");
   width: map-get($testimonialsScheduleAboutUs, "borderWidth");
 }
@@ -317,10 +301,13 @@ div.col-12 {
 /****************************************************************************** Sign Up Button */
 /* sign up button for all BUT sign up page */
 a.button {
-  color: map-get($signUpBtn, "signUpBtnColour");
-  background-color: map-get($signUpBtn, "signUpBtnBgColour");
-  border: map-get($signUpBtn, "signUpBtnBorder");
-  text-decoration: map-get($signUpBtn, "signUpBtnTextDec");
+  color: map-get($allColours, "white");
+  background-color: map-get($allColours, "GoldenRod");
+  border: map-get(
+    $allColouredBorders,
+    "signUpBtnsAndTextBoxesBorderAndTimeBoxBorder"
+  );
+  text-decoration: $allNones;
   padding: map-get($signUpBtn, "signUpBtnPadding");
   border-radius: map-get($signUpBtn, "signUpBtnBorderRadius");
   font-size: map-get($signUpBtn, "signUpBtnFontSize");
@@ -352,12 +339,12 @@ footer i.fab {
 }
 
 .contacts {
-  background-color: map-get($footers, "contactsBgColour");
+  background-color: map-get($allColours, "contactsAndFormBgColour");
   height: map-get($footers, "contactsHeight");
 }
 
 .copyright {
-  background-color: map-get($footers, "copyrightBgColour");
+  background-color: map-get($allColours, "DarkGoldenRod");
   height: map-get($footers, "copyrightHeight");
   padding-bottom: map-get($footers, "copyrightPaddingBottom");
   margin-bottom: map-get($footers, "copyrightMarginBottom");
@@ -379,7 +366,7 @@ section.homepage p {
 
 .bold {
   font-weight: map-get($homePage, "homePageFontWeight");
-  background-color: map-get($homePage, "homePageBgColour");
+  background-color: map-get($allColours, "GoldenRod");
   font-style: map-get($homePage, "homePageFonStyle");
 }
 
@@ -442,8 +429,8 @@ section.homepage p {
 
 /******************************************************************************* Sign Up */
 #sign_up_form {
-  background-color: map-get($signUp, "formBgColour");
-  border: map-get($signUp, "formBorder");
+  background-color: map-get($allColours, "contactsAndFormBgColour");
+  border: map-get($allColouredBorders, "allOtherBorders");
   border-radius: map-get($signUp, "formBorderRadius");
   width: map-get($signUp, "formWidth");
   padding: map-get($signUp, "formPadding");
@@ -471,25 +458,31 @@ input {
 input[type="text"],
 input[type="email"] {
   padding-bottom: map-get($signUp, "textBoxesPaddingBottom");
-  color: map-get($signUp, "textBoxesColour");
-  border: map-get($signUp, "textBoxesBorder");
+  color: map-get($allColours, "textBoxesColour");
+  border: map-get(
+    $allColouredBorders,
+    "signUpBtnsAndTextBoxesBorderAndTimeBoxBorder"
+  );
   border-radius: map-get($signUp, "textBoxesBorderRadius");
-  background-color: map-get($signUp, "textBoxesBgColour");
+  background-color: map-get($allColours, "GoldenRod");
   width: map-get($signUp, "textBoxesWidth");
 }
 
 input[type="text"],
 input[type="email"],
 select#chosen_schedule:focus {
-  outline-color: map-get($signUp, "textBoxesOutlineColour");
+  outline-color: map-get($allColours, "GoldenRod");
 }
 
 select {
   padding-bottom: map-get($signUp, "timeBoxPaddingBottom");
   margin: map-get($signUp, "timeBoxMargin");
-  border: map-get($signUp, "timeBoxBorder");
+  border: map-get(
+    $allColouredBorders,
+    "signUpBtnsAndTextBoxesBorderAndTimeBoxBorder"
+  );
   border-radius: map-get($signUp, "timeBoxBorderRadius");
-  background-color: map-get($signUp, "timeBoxBg");
+  background-color: map-get($allColours, "GoldenRod");
 }
 
 select#chosen_schedule {
@@ -505,8 +498,8 @@ select#chosen_schedule optgroup option {
 }
 
 button.form_button {
-  background-color: map-get($signUp, "btnBg");
-  border: map-get($imgs, "imgBorder");
+  background-color: map-get($allColours, "GoldenRod");
+  border: map-get($allColouredBorders, "allOtherBorders");
   padding: map-get($signUp, "btnPadding");
   border-radius: map-get($signUp, "btnBorderRadius");
   font-size: map-get($signUp, "btnFontSize");
@@ -514,7 +507,7 @@ button.form_button {
 }
 
 button.form_button:focus {
-  outline: map-get($signUp, "btnOutline");
+  outline: map-get($allColours, "DarkGoldenRod");
   border-width: map-get($signUp, "btnBorderWidth");
 }
 

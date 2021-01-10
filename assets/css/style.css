@@ -35,7 +35,7 @@ body {
 .fas.fa-arrow-circle-up {
   border-radius: 2em;
   cursor: pointer;
-  border: solid 0.1em DarkGoldenRod;
+  border: 0.1em solid DarkGoldenRod;
 }
 
 /****************************************************************************** Navbar */
