@@ -183,7 +183,7 @@ $signUp: (
   "preferenceBoxWidth": 100%,
   "btnBg": GoldenRod,
   "btnBorder": px solid DarkGoldenRod,
-  "btnPadding": 0px 5px 5p,
+  "btnPadding": 0px 5px 5px,
   "btnBorderRadius": 10px,
   "btnFontSize": 20px,
   "btnMarginBottom": 10px,
@@ -506,7 +506,7 @@ select#chosen_schedule optgroup option {
 
 button.form_button {
   background-color: map-get($signUp, "btnBg");
-  border: map-get($signUp, "btnBorder");
+  border: map-get($imgs, "imgBorder");
   padding: map-get($signUp, "btnPadding");
   border-radius: map-get($signUp, "btnBorderRadius");
   font-size: map-get($signUp, "btnFontSize");
@@ -749,185 +749,265 @@ button.form_button:focus {
 }
 
 @media (min-width: 766px) {
-  /*navbar logo*/
-  .my-nav .navbar-brand {
+  @mixin navLogo {
     font-size: 40px;
   }
 
-  /*Company sub-titles*/
-  .heading2 {
+  @mixin subTitles {
     font-size: 50px;
   }
 
-  /*pushes homepage down from navbar*/
-  .homepage .heading2 {
+  @mixin homepagePusher {
     margin-top: 80px;
   }
-  /*content in preference box*/
-  select#chosen_schedule optgroup,
-  select#chosen_schedule optgroup option {
+
+  @mixin preferenceBoxContents {
     font-size: 28px;
   }
 
-  /*inside space of ALL text boxes*/
-  input[type="text"],
-  input[type="email"] {
+  @mixin textBoxSpace {
     padding: 10px;
   }
 
-  /*controls sign up box growth*/
-  #sign_up_form {
+  @mixin signUpBoxGrowth {
     width: 650px;
   }
 
-  /*controls select box growth*/
-  select#chosen_schedule {
+  @mixin selectBoxGrowth {
     width: 390px;
   }
 
-  /*provides space on box sides*/
-  .schedule .times.mx-auto {
+  @mixin boxSideSpace {
     width: 95%;
   }
+
+  .my-nav .navbar-brand {
+    @include navLogo;
+  }
+
+  .heading2 {
+    @include subTitles;
+  }
+
+  .homepage .heading2 {
+    @include homepagePusher;
+  }
+
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    @include preferenceBoxContents;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    @include textBoxSpace;
+  }
+
+  #sign_up_form {
+    @include signUpBoxGrowth;
+  }
+
+  select#chosen_schedule {
+    @include selectBoxGrowth;
+  }
+
+  .schedule .times.mx-auto {
+    @include boxSideSpace;
+  }
 }
-/*end*/
 
 @media (min-width: 992px) {
-  /*gets rid of navbar logo*/
-  .my-nav .navbar-brand {
+  @mixin navLogoRemoval {
     display: none;
   }
 
-  /*navbar bar*/
-  .my-nav {
+  @mixin NavbarBar {
     border: 0px;
     top: 0;
   }
 
-  /*canters navbar links*/
-  div#navbarNavAltMarkup.collapse.navbar-collapse {
+  @mixin centerNavLinks {
     justify-content: center;
   }
 
-  /*navbar links*/
-  a.nav-item.nav-link {
+  @mixin navBarLinks {
     font-size: 35px;
     padding: 0px;
   }
 
-  /*navbar hovering links*/
-  a.nav-item.nav-link:hover {
+  @mixin navBarLinksHover {
     border-radius: 9px;
     margin: 0px 5px;
   }
 
-  /*lines between navbar links*/
-  .vertical_line {
+  @mixin linesBetweenNavBarLinks {
     border: solid white 1px;
     padding-left: 2px;
   }
 
-  /*Company website title*/
-  .heading1 {
+  @mixin mainTitle {
     display: block;
     height: 35px;
     width: 100%;
     font-size: 70px;
     font-weight: bold;
-    margin: 100px 0px 0px;
-    padding-top: 110px;
-  }
-
-  /*pulls company title up towards navbar*/
-  .heading1 {
-    margin-top: 0px;
+    margin: 0px;
     padding-top: 95px;
   }
 
-  /*enables headings to be seen under navbar*/
-  .heading2 {
+  @mixin keepHeadingsUnderNavBar {
     padding-top: 110px;
   }
 
-  /*pulls homepage up to navbar*/
-  .homepage .heading2 {
+  @mixin homepagePuller {
     margin-top: 0px;
     padding-top: 120px;
   }
 
-  /*para titles*/
-  .heading3 {
+  @mixin paraTitles {
     font-size: 45px;
   }
 
-  /*lesson level titles*/
-  .heading4 {
+  @mixin lessonTitles {
     font-size: 35px;
   }
 
-  /*para content*/
-  .schedule p {
+  @mixin paraContent {
     font-size: 30px;
   }
 
-  /*content in preference box*/
-  select#chosen_schedule optgroup,
-  select#chosen_schedule optgroup option {
+  @mixin preferenceContentBox {
     font-size: 30px;
   }
 
-  /*controls select box growth*/
-  select#chosen_schedule {
+  @mixin selectBoxGrowth {
     width: 425px;
   }
+
+  .my-nav .navbar-brand {
+    @include navLogoRemoval;
+  }
+
+  .my-nav {
+    @include NavbarBar;
+  }
+
+  div#navbarNavAltMarkup.collapse.navbar-collapse {
+    @include centerNavLinks;
+  }
+
+  a.nav-item.nav-link {
+    @include navBarLinks;
+  }
+
+  a.nav-item.nav-link:hover {
+    @include navBarLinksHover;
+  }
+
+  .vertical_line {
+    @include linesBetweenNavBarLinks;
+  }
+
+  .heading1 {
+    @include mainTitle;
+  }
+
+  .heading2 {
+    @include keepHeadingsUnderNavBar;
+  }
+
+  .homepage .heading2 {
+    @include homepagePuller;
+  }
+
+  .heading3 {
+    @include paraTitles;
+  }
+
+  .heading4 {
+    @include lessonTitles;
+  }
+
+  .schedule p {
+    @include paraContent;
+  }
+
+  select#chosen_schedule optgroup,
+  select#chosen_schedule optgroup option {
+    @include preferenceContentBox;
+  }
+
+  select#chosen_schedule {
+    @include selectBoxGrowth;
+  }
 }
-/*end*/
 
 @media (min-width: 1125px) {
-  /*navbar links*/
-  a.nav-item.nav-link {
+  @mixin navBarLinks {
     font-size: 40px;
   }
 
-  /*decorates paragraph background */
-  .about_us_paras {
+  @mixin paraBg {
     padding-bottom: 0px;
   }
+
+  a.nav-item.nav-link {
+    @include navBarLinks;
+  }
+
+  .about_us_paras {
+    @include paraBg;
+  }
 }
-/*end*/
 
 @media (min-width: 1360px) {
-  /*pushes subheading down*/
-  h1.heading1 {
+  @mixin mainHeadingPusher {
     padding-top: 130px;
   }
 
-  /*pushes subheading down*/
-  .homepage .heading2 {
+  @mixin subheadingPusher {
     margin-top: 35px;
   }
+
+  h1.heading1 {
+    @include mainHeadingPusher;
+  }
+
+  .homepage .heading2 {
+    @include subheadingPusher;
+  }
 }
-/*end*/
 
 @media (min-width: 1440px) {
-  /*footer paragraphs*/
-  footer p {
+  @mixin footerParas {
     font-size: 20px;
   }
 
-  /*footer icons*/
-  footer i.fab {
+  @mixin footerIcons {
     height: 105px;
   }
 
-  /*footer contacts*/
-  .contacts {
+  @mixin footerContacts {
     height: 50px;
   }
 
-  /*footer copyright*/
-  .copyright {
+  @mixin footerCopyright {
     height: 34px;
   }
+
+  footer p {
+    @include footerParas;
+  }
+
+  footer i.fab {
+    @include footerIcons;
+  }
+
+  .contacts {
+    @include footerContacts;
+  }
+
+  .copyright {
+    @include footerCopyright;
+  }
 }
-/*end*/
