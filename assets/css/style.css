@@ -28,14 +28,14 @@ body {
   position: fixed;
   right: 0.5em;
   z-index: 1;
-  background-color: white;
+  background-color: GoldenRod;
   border-radius: 50%;
 }
 
 .fas.fa-arrow-circle-up {
   border-radius: 2em;
   cursor: pointer;
-  border: solid 0.1em lightblue;
+  border: solid 0.1em DarkGoldenRod;
 }
 
 /****************************************************************************** Navbar */

@@ -25,6 +25,19 @@ $body: (
   "bodyBgPosition": center,
 );
 
+$backToTop: (
+  "display": none,
+  "bottom": 1em,
+  "position": fixed,
+  "right": 0.5em,
+  "z-index": 1,
+  "bgColour": GoldenRod,
+  "borderRadius": 50%,
+  "iconBorderRadius": 2em,
+  "iconCursor": pointer,
+  "iconBorder": solid 0.1em DarkGoldenRod,
+);
+
 $nav: (
   "navBarBgColour": DarkGoldenRod,
   "navLogoFontColour": white,
@@ -202,19 +215,19 @@ body {
 }
 
 .fixed-arrow {
-	display: none;
-	bottom: 1em;
-	position: fixed;
-	right: 0.5em;
-	z-index: 1;
-	background-color: white;
-	border-radius: 50%;
+  display: map-get($backToTop, "display");
+  bottom: map-get($backToTop, "bottom");
+  position: map-get($backToTop, "position");
+  right: map-get($backToTop, "right");
+  z-index: map-get($backToTop, "z-index");
+  background-color: map-get($backToTop, "bgColour");
+  border-radius: map-get($backToTop, "borderRadius");
 }
 
 .fas.fa-arrow-circle-up {
-	border-radius: 2em;
-	cursor: pointer;
-	border: solid 0.1em lightblue;
+  border-radius: map-get($backToTop, "iconBorderRadius");
+  cursor: map-get($backToTop, "iconCursor");
+  border: map-get($backToTop, "iconBorder");
 }
 
 /****************************************************************************** Navbar */

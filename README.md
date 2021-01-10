@@ -38,8 +38,6 @@ This project is the best way to help these users achieve this because this proje
 
 ## BusyBakes' Wireframes
 
-<!-- <a href="/Milestone-Project-1/BusyBakesWireframes.pdf">My Wireframes</a>  -->
-
 ![alt text](assets/images/wireframes/wireframe1.PNG)
 ![alt text](assets/images/wireframes/wireframe2.PNG)
 ![alt text](assets/images/wireframes/wireframe3.PNG)
