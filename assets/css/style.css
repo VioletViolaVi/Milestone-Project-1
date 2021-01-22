@@ -14,8 +14,8 @@ body {
   min-height: 100vh;
   height: 100%;
   /* for background img */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 165, 32, 0)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(245, 246, 252, 0))), url(assets/images/background.jpg);
-  background-image: linear-gradient(to bottom, rgba(218, 165, 32, 0), rgba(0, 0, 0, 0.5), rgba(245, 246, 252, 0)), url(assets/images/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 165, 32, 0)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(245, 246, 252, 0))), url(../images/background.jpg);
+  background-image: linear-gradient(to bottom, rgba(218, 165, 32, 0), rgba(0, 0, 0, 0.5), rgba(245, 246, 252, 0)), url(../images/background.jpg);
   background-color: rgba(218, 165, 32, 0.753);
   background-size: cover;
   background-attachment: fixed;
