@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 $allColours: (
   "textBoxesColour": black,
   "white": white,
@@ -5,23 +7,24 @@ $allColours: (
   "DarkGoldenRod": DarkGoldenRod,
   "bodyAndImgBgColour": rgba(218, 165, 32, 0.753),
   "testimonialsBgColour": rgba(218, 165, 32, 0.87),
-  "contactsAndFormBgColour": rgba(218, 165, 32, 0.582),
+  "contactsAndFormBgColour": rgba(218, 165, 32, 0.582)
 );
 
 $allColouredBorders: (
   "iconBorder": 0.1em solid DarkGoldenRod,
   "allOtherBorders": 5px solid DarkGoldenRod,
-  "signUpBtnsAndTextBoxesBorderAndTimeBoxBorder": 2px solid DarkGoldenRod,
+  "signUpBtnsAndTextBoxesBorderAndTimeBoxBorder": 2px solid DarkGoldenRod
 );
 
 $allNones: none;
 
-$mainFont: cursive, Arial, Helvetica, sans-serif;
+$mainFont: "Nunito", Georgia, Times, Arial, Helvetica, "Times New Roman",
+  sans-serif;
 $universal: (
   "universalText": center,
   "universalPadding": 0em,
   "universalMargin": 0em,
-  "universalLineHeight": 1.6,
+  "universalLineHeight": 1.6
 );
 
 $bodyBgImg: linear-gradient(
@@ -38,7 +41,7 @@ $body: (
   "bodyBgPosition": center,
   "bodyMinHeight": 100vh,
   "bodyPaddingBottom": 140px,
-  "bodyHeight": 100%,
+  "bodyHeight": 100%
 );
 
 $backToTop: (
@@ -48,7 +51,7 @@ $backToTop: (
   "bottom": 1em,
   "z-index": 1,
   "borderRadius": 50%,
-  "iconBorderRadius": 2em,
+  "iconBorderRadius": 2em
 );
 
 $nav: (
@@ -56,7 +59,7 @@ $nav: (
   "navLinkFontSize": 22px,
   "navLinkMargins": 3px 0px,
   "navLinkHoverBorderRadius": 9pc,
-  "navLinkHoverPadding": 0px,
+  "navLinkHoverPadding": 0px
 );
 
 $headings: (
@@ -65,28 +68,28 @@ $headings: (
   "subtitleHeadingFontSize": 35px,
   "subtitleHeadingMargins": 30px 0px,
   "subtitleHeadingParaTop": 100px,
-  "paraHeadingsFontSize": 30px,
+  "paraHeadingsFontSize": 30px
 );
 
 $imgs: (
   "imgWidth": 270px,
   "imgHeight": 350px,
   "imgBorderRadius": 50%,
-  "imgMargins": 0px,
+  "imgMargins": 0px
 );
 
 $testimonialsScheduleAboutUs: (
   "borderRadius": 9px,
   "borderWidth": 100%,
   "padding": 0px,
-  "margin": 0px,
+  "margin": 0px
 );
 
 $signUpBtn: (
   "signUpBtnPadding": 0px 5px 5px,
   "signUpBtnBorderRadius": 10px,
   "signUpBtnFontSize": 20px,
-  "signUpBtnMargins": 0px,
+  "signUpBtnMargins": 0px
 );
 
 $footers: (
@@ -102,7 +105,7 @@ $footers: (
   "contactsHeight": 57px,
   "copyrightHeight": 20px,
   "copyrightPaddingBottom": 23px,
-  "copyrightMarginBottom": 0px,
+  "copyrightMarginBottom": 0px
 );
 
 $homePage: (
@@ -111,7 +114,7 @@ $homePage: (
   "homePageFonStyle": italic,
   "homePagePaddingTop": 90px,
   "homePageFontSize": 20px,
-  "homePageMargin": 40px 20px 40px 20px,
+  "homePageMargin": 40px 20px 40px 20px
 );
 
 $testimonials: (
@@ -122,7 +125,7 @@ $testimonials: (
   "paraFontSize": 25px,
   "paraBorderRadius": 30px,
   "paraPadding": 5px,
-  "paraMargin": 5px,
+  "paraMargin": 5px
 );
 
 $schedule: (
@@ -133,7 +136,7 @@ $schedule: (
   "scheduleMarginBottom": 2px,
   "scheduleMarginTop": 15px,
   "scheduleParaMarginBottom": 8px,
-  "scheduleParaFontSize": 20px,
+  "scheduleParaFontSize": 20px
 );
 
 $aboutUs: (
@@ -142,7 +145,7 @@ $aboutUs: (
   "aboutUsParaFontStyle": italic,
   "founder&SieveImgMargin": 40px 2px 5px 20px,
   "bunsMarginImg": 40px 20px 5px 2px,
-  "aboutUsParaFontSize": 25px,
+  "aboutUsParaFontSize": 25px
 );
 
 $signUp: (
@@ -172,7 +175,7 @@ $signUp: (
   "btnBorderRadius": 10px,
   "btnFontSize": 20px,
   "btnMarginBottom": 10px,
-  "btnBorderWidth": 3px,
+  "btnBorderWidth": 3px
 );
 
 * {

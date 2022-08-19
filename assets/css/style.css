@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
-  font-family: 'Nunito', Georgia, Times, Arial, Helvetica, 'Times New Roman', sans-serif;
+  font-family: "Nunito", Georgia, Times, Arial, Helvetica, "Times New Roman", sans-serif;
   padding: 0em;
   margin: 0em;
   color: white;
